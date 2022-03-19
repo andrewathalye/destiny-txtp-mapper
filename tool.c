@@ -15,8 +15,15 @@
 uint64_t FLAGS = 0;
 extern int optind;
 
-void export(char * entryid, char * entryname) {
-        printf("[Todo] Export %s (%s)\n", entryname, entryid);
+void export(char * entryid, char * entryname, char * outputdir) {
+        printf("[Info] Export %s (%s)\n", entryname, entryid);
+	/* Replace processed name with true name */
+	char entryid_tmp[256];
+	for(int i=0; i < strlen(entryid); i++)
+		entryid_tmp[i] = (entryid[i] == '_') ? ' ': entryid[i];
+	char cmd_buf[256];
+	snprintf(cmd_buf, 256, "%s txtp/\"%s\".txtp -o %s/\"%s\".wav >/dev/null", VGMSTREAMCLI_PATH, entryid_tmp, outputdir, entryname);
+	system(cmd_buf);
 }
 
 void playconfirm(char * entryid, char * entryname) {
@@ -94,7 +101,7 @@ void playidentify(char * entryid, char * entryname) {
 }
 
 int main(int argc, char *argv[]) { 
-	puts("txtp renamer tool v0.1\n");
+	puts("txtp renamer tool v0.2\n");
 	const char * usage = "Usage: %s [options] [input] [outputdir])\n -i: Identify mode. Entries marked with + will be played for you to identify. No output files will be produced.\n -c: Confirm mode. Entries marked with ! will be played for you to identify. No output files will be produced.\n -y: Approximate mode. Generate output for entries marked with !. Must not be paired with -i or -c.\n -q: Quiet mode. Do not generate any warnings for unconfirmed or unidentified entries.\n";
 
 	{
@@ -129,11 +136,6 @@ int main(int argc, char *argv[]) {
 
 	char * filename = argv[optind];
 	char * outputdir = argv[optind + 1];
-	#ifdef DEBUG
-	printf("[Debug] Flags: %lu\n", FLAGS);
-	printf("[Debug] Infile, outdir: %s,%s\n", filename, outputdir);
-	fflush(stdout);
-	#endif
 
 	FILE * file;
 	if(!(file=fopen(filename, "r"))) {
@@ -153,10 +155,6 @@ int main(int argc, char *argv[]) {
 		if(strlen(entry)>1)
 			entry[strlen(entry)-1] = 0; /* Remove \n */
 
-		#ifdef DEBUG
-		printf("[Debug] %s\n", entry); /* Print current entry being processed */
-		#endif
-
 		strcpy(entrytmp, entry);
 		entrytype = strtok(entrytmp, " ")[0]; 
 		entryid = strtok(NULL, " ");
@@ -172,7 +170,7 @@ int main(int argc, char *argv[]) {
 		switch(entrytype) {
 			case '!': /* Approximate entry */
 				if(FLAGS & FLAG_APPROX)
-					export(entryid, entryname);
+					export(entryid, entryname, outputdir);
 				else if(FLAGS & FLAG_CONFIRM)
 					playconfirm(entryid, entryname);
 				else if(!(FLAGS & FLAG_QUIET))
@@ -185,7 +183,7 @@ int main(int argc, char *argv[]) {
 					printf("[Warn] Unidentified %s (%s)\n", entryname, entryid);
 				break;
 			case '.': /* Confirmed entry */
-				if(!((FLAGS & FLAG_IDENTIFY)|(FLAGS & FLAG_CONFIRM))) export(entryid, entryname);
+				if(!((FLAGS & FLAG_IDENTIFY)|(FLAGS & FLAG_CONFIRM))) export(entryid, entryname, outputdir);
 				break;
 			case '\n': /* Skip blank lines */
 				break;

@@ -1,2 +1,4 @@
 a.out
 txtp
+output/**
+.tool.c.swp
