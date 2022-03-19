@@ -2,14 +2,13 @@
 Mappings from txtp names to human-readable track names for Shadowkeep.
 
 As a result of Bungie's new stance on music redistribution, new methods have been developed for listening to sunsetted / hidden music.
-This repository contains mappings between TXTP names for Shadowkeep and approximate track names.
-
-When completed, I will also upload a programme allowing the user to automatically export high quality music of their choice from their txtp files.
+This repository contains mappings between TXTP names for Shadowkeep and approximate track names, as well as a tool to produce named tracks from TXTP files.
 
 Please note: In order to comply with the Bungie EULA, you may _not_ redistribute any music files unaltered (and redistributing modified files is also risky). Please only use this tool for your personal listening pleasure, and purchase the official soundtracks where available.
 
 # How to use the mappings?
 [TODO]
+
 # How can I get the necessary files?
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
