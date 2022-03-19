@@ -1,9 +1,11 @@
-! 03ae-1e34-1069-event [1246133352=1139621362] UNK
-! 03ae-1e34-1069-event [1246133352=1139621372] 2_Watchtower Phase 3
-! 03ae-1e34-1069-event [1246133352=1139621374] 2_UNK
-! 03ae-1e34-1069-event [1246133352=1156398948] 3_UNK
-! 03ae-1e34-1069-event [1246133352=1156398953] 2_The Fanatic (Strike High Action)
-! 03ae-1e34-1069-event [1246133352=1156398958] 4_UNK
+. 03ae-1e34-1069-event_[1246133352=1139621362] Watchtower Var. 1 (High Action)
+. 03ae-1e34-1069-event_[1246133352=1139621372] Watchtower Var. 2 (High Action)
+. 03ae-1e34-1069-event_[1246133352=1139621373] Watchtower Var. 3 (High Action)
+. 03ae-1e34-1069-event_[1246133352=1139621374] Watchtower Var. 1 (Action)
+. 03ae-1e34-1069-event_[1246133352=1139621375] Watchtower Var. 2 (Action)
+. 03ae-1e34-1069-event_[1246133352=1156398948] Of Starlight and the Dark Var. 1
+. 03ae-1e34-1069-event_[1246133352=1156398953] The Fanatic Var. 1 (Watchtower) 
+. 03ae-1e34-1069-event_[1246133352=1156398958] The Fanatic Var. 2 (Watchtower)
 
 . 038f-0edc-0239-event_[1246133352=1156398958] A Thousand Wings (Tension)
 . 038f-0edc-0239-event_[1246133352=1139621369] A Thousand Wings (Action)
@@ -11,22 +13,26 @@
 . 038f-0edc-0239-event_[1246133352=1139621374] A Thousand Wings (High Action)
 
 . 038f-15da-1692-event_[1246133352=1072510797]_{s}=(3176498016=3163453698) Consecrated Mind (Entry)
-! 038f-15da-1692-event_[1246133352=1122843649] Consecrated Mind (High Action)
-! 038f-15da-1692-event_[1246133352=1139621363] CM AHA
-! 038f-15da-1692-event_[1246133352=1156398955] CM AAHA
-! 038f-15da-1692-event_[1246133352=1089288480] Sanctified Mind (High Action)
-! 038f-15da-1692-event_[1246133352=1106066076] SM AHA
+. 038f-15da-1692-event_[1246133352=1122843649] Consecrated Mind (High Action)
+. 038f-15da-1692-event_[1246133352=1139621363] Consecrated Mind Var. 1 (Action)
+. 038f-15da-1692-event_[1246133352=1156398955] Consecrated Mind Var. 2 (Action)
+. 038f-15da-1692-event_[1246133352=1089288480] Sanctified Mind Var. 1
+. 038f-15da-1692-event_[1246133352=1106066076] Sanctified Mind Var. 2
 . 038f-15da-1692-event_[1246133352=1106066071]_{s}=(3176498016=3163453698) Eden (Tension)
 
-! 0249-1f60-1591-event_[1246133352=1106066065] Shell of What Was (High Action)
-! 0249-1f60-1591-event_[1246133352=1139621371] SOWW AHA
-! 0249-1f60-1591-event_[1246133352=1139621370] SOWW AAHA
-. 0249-1f60-1591-event_[1246133352=1122843663] Riven Entrance
-. 0249-1f60-1591-event_[1246133352=1122843650] Riven (High Action)
-! 0249-1f60-1591-event_[1246133352=1106066070] Riven Ascendant
-. 0249-1f60-1591-event_[1246133352=1156398955] Watchtower Phase 1 + 2
-. 0249-1f60-1591-event_[1246133352=1122843663] Watchtower Phase 3
-. 0249-1f60-1591-event_[1246133352=1139621372] Morgeth
+. 0249-1f60-1591-event_[1246133352=1106066065] Shell of What Was (Last Wish) (High Action)
+. 0249-1f60-1591-event_[1246133352=1139621371] Shell of What Was (High Action)
+. 0249-1f60-1591-event_[1246133352=1139621370] Shell of What Was (Action)
+! 0249-1f60-1591-event_[1246133352=1122843663] Riven UNK
+! 0249-1f60-1591-event_[1246133352=1122843650] Riven UNK
+! 0249-1f60-1591-event_[1246133352=1106066068]_{s} Riven UNK
+! 0249-1f60-1591-event_[1246133352=1106066070] Riven UNK
+! 0249-1f60-1591-event_[1246133352=1106066071]_{s} Riven UNK
+! 0249-1f60-1591-event_[1246133352=1122843663] Riven UNK
+. 0249-1f60-1591-event_[1246133352=1156398955] Watchtower (Last Wish) (Action)
+. 0249-1f60-1591-event_[1246133352=1122843663] Watchtower (Last Wish) (High Action)
+. 0249-1f60-1591-event_[1246133352=1139621372] Morgeth Var. 1
+. 0249-1f60-1591-event [1246133352=1139621373] Morgeth Var. 2
 
 . 03ae-1fa8-0447-event_[1246133352=1139621369] The Fanatic (Watchtower)
 . 03ae-1fa8-0447-event_[1246133352=1139621375] The Fanatic (Watchtower Death)
@@ -99,5 +105,5 @@
 . 01fa-082b-0913-event_[207938986=554809137]_[1164767985=1156398955] The Hunted Phase 0 (Tension)
 . 01fa-082b-0913_event_[207938986=554809137]_[1164767985=1156398952] The Hunted Phase 1 (Action)
 . 01fa-082b-0913_event_[207938986=554809137]_[1164767985=1156398954] The Hunted Phase 2 (Action)
-. 01fa-082b-0913-event_[207938986=680256650]_[1164767985=1156398948] Inverted Spire (Action)
+! 01fa-082b-0913-event_[207938986=680256650]_[1164767985=1156398948] Inverted Spire (Action)
 . 01fa-082b-0913-event_[207938986=1840777923]_[1164767985=1139621371] Royal Pools
