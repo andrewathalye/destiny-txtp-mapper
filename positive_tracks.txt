@@ -1,0 +1,103 @@
+! 03ae-1e34-1069-event [1246133352=1139621362] UNK
+! 03ae-1e34-1069-event [1246133352=1139621372] 2_Watchtower Phase 3
+! 03ae-1e34-1069-event [1246133352=1139621374] 2_UNK
+! 03ae-1e34-1069-event [1246133352=1156398948] 3_UNK
+! 03ae-1e34-1069-event [1246133352=1156398953] 2_The Fanatic (Strike High Action)
+! 03ae-1e34-1069-event [1246133352=1156398958] 4_UNK
+
+. 038f-0edc-0239-event_[1246133352=1156398958] A Thousand Wings (Tension)
+. 038f-0edc-0239-event_[1246133352=1139621369] A Thousand Wings (Action)
+. 038f-0edc-0239-event_[1246133352=1139621370] A Thousand Wings (Green Room)
+. 038f-0edc-0239-event_[1246133352=1139621374] A Thousand Wings (High Action)
+
+. 038f-15da-1692-event_[1246133352=1072510797]_{s}=(3176498016=3163453698) Consecrated Mind (Entry)
+! 038f-15da-1692-event_[1246133352=1122843649] Consecrated Mind (High Action)
+! 038f-15da-1692-event_[1246133352=1139621363] CM AHA
+! 038f-15da-1692-event_[1246133352=1156398955] CM AAHA
+! 038f-15da-1692-event_[1246133352=1089288480] Sanctified Mind (High Action)
+! 038f-15da-1692-event_[1246133352=1106066076] SM AHA
+. 038f-15da-1692-event_[1246133352=1106066071]_{s}=(3176498016=3163453698) Eden (Tension)
+
+! 0249-1f60-1591-event_[1246133352=1106066065] Shell of What Was (High Action)
+! 0249-1f60-1591-event_[1246133352=1139621371] SOWW AHA
+! 0249-1f60-1591-event_[1246133352=1139621370] SOWW AAHA
+. 0249-1f60-1591-event_[1246133352=1122843663] Riven Entrance
+. 0249-1f60-1591-event_[1246133352=1122843650] Riven (High Action)
+! 0249-1f60-1591-event_[1246133352=1106066070] Riven Ascendant
+. 0249-1f60-1591-event_[1246133352=1156398955] Watchtower Phase 1 + 2
+. 0249-1f60-1591-event_[1246133352=1122843663] Watchtower Phase 3
+. 0249-1f60-1591-event_[1246133352=1139621372] Morgeth
+
+. 03ae-1fa8-0447-event_[1246133352=1139621369] The Fanatic (Watchtower)
+. 03ae-1fa8-0447-event_[1246133352=1139621375] The Fanatic (Watchtower Death)
+. 03ae-1fa8-0447-event_[1246133352=1139621370] The Hangman (Action)
+
++ 03ae-0eb2-0480 Warmind High Action (in Official OST)
++ 03e8-0a18-0279|03e8-010e-0360 The Rifleman
++ 03ae-1e34-1069 Dreaming City (can be heard in Shattered Throne) maybe Accursed
++ 01e8-03e5-0501 The Corrupted (Action)
++ 01e8-10b0-0472 The Corrupted (High Action)
++ 03fa-1cc3-0628 Garden World Future (Action)
++ 03fb-10d5-0293 From Scarlet Keep Strike?
++ 038f-0edc-0239 Whisper Boss (High) Action
++ 03ae-1e34-1069|03ae-1ce6-0300|03e8-0a2b-0281|03fb-0f73-0395 The Fanatic (Strike High Action)
++ 03ae-036b-0228 Mercury's Golden Age Present (High Action)
++ 038f-1b6f-0230 Mercury's Golden Age Past (High Action)
++ 038f-1e3a-0399 Mercury's Golden Age Future (High Action)
++ 01e8-0dec-0311 EDZ Tunnels Theme
++ 038f-1e3a-0399 Mercury's Golden Age Future (Action)
++ 038f-1b6b-0313 Garden World Past (High Action)
++ 038f-1ce5-0595 Garden World Future (High Action)
++ 03e8-0a26-0316 Unknown Baron
++ 03fb-0fe3-0594 Pit of Heresy (Unknown, Jumping Puzzle?)
++ 0249-1f60-1591 2x: Gambit/Strike-Style Shell of What Was & Morgeth Theme
++ 03ae-0365-0304 Garden World Present (Action)
++ 01e8-10b0-0472 The Corrupted (Tension/Action)
++ 03fa-1cc3-0628 Garden World Future (?) -> Neither Action nor High Action
++ 038f-0440-1278 Forsaken High Action (VERY well known)
++ 03ae-0353-0352 CoO Tension / Ambient
++ 038f-0449-1383 Accursed Ascendant (Action)
++ 06e0-1745-0225 Garden World Future (Action)
++ 03ae-035e-0310 Mercury Tension / Ambient
++ 03ae-035b-0311 Garden World Future (Action)
++ 01e8-1528-0357|0215-0dc6-0131 Arms Dealer (Action)
++ 06df-1d47-0288 Prophecy (Various)
+
+. 06df-1edd-1009-event_[1246133352=1106066064] Heretical Omen (High Action)
+. 06df-1edd-1009-event_[1246133352=1106066070] Heretical Omen (Damage 1)
+. 06df-1edd-1009-event_[1246133352=1106066071] Heretical Omen (Damage 2)
+. 06df-1edd-1009-event_[1246133352=1122843652] Necropolis (Action)
+. 06df-1edd-1009-event_[1246133352=1122843653] Necropolis (High Action)
+
++ 03fb-0d1a-0034|03ff-174a-0118|06df-1ee5-0648 Insanity (Nightmare Fanatic)
++ 01e8-0f7d-0330 Arms Dealer (High Action)
++ 038f-1b6b-0313 Garden World Past (Action)
++ 03ae-0362-0213 All the Time in the World Future (Action)
++ 038f-1b6d-0308 Fields of Glass Past (Action)
++ 03ae-0367-0310 Fields of Glass Present (Action)
++ 03e8-006b-0633 Broodhold (High Action)
++ 01fa-0ebd-0569 Inverted Spire (High Action)
++ 038f-10a1-0351 Whisper of the Worm (Action)
++ 038f-0e96-0240 Deep Storage (Action)
++ 01fa-05b7-0340 Exodus Song (Red War Campaign)
++ 03fa-1e62-0390 Insurrection Prime (High Action)
+
+. 0400-1d8a-0301-event_[1246133352=1139621370] Bad Juju
+
+. 03ff-1a1d-0276-event_[1246133352=1139621368] Visage of Oryx
+. 03ff-1a1d-0276-event_[1246133352=1139621372]_{r} Dark Blade
+
++ 01df-0a6c-0054 Activity Complete
++ 01a7-1065-0032 Activity Complete D1
+
+! 03ae-126c-0338-event_[1246133352=1139621369] Warden's Choice
+! 03ae-126c-0338-event_[1246133352=1156398948] Valus Ca'uor (Prison of Elders)
+. 03ae-126c-0338-event_[1246133352=1156398958] Ishtar Sink (Tension)
+
++ 038f-14d3-3067 Gambit Intro + Shattered Throne Music
+
+. 01fa-082b-0913-event_[207938986=554809137]_[1164767985=1156398955] The Hunted Phase 0 (Tension)
+. 01fa-082b-0913_event_[207938986=554809137]_[1164767985=1156398952] The Hunted Phase 1 (Action)
+. 01fa-082b-0913_event_[207938986=554809137]_[1164767985=1156398954] The Hunted Phase 2 (Action)
+. 01fa-082b-0913-event_[207938986=680256650]_[1164767985=1156398948] Inverted Spire (Action)
+. 01fa-082b-0913-event_[207938986=1840777923]_[1164767985=1139621371] Royal Pools
