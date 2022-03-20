@@ -19,7 +19,7 @@ void export(char * entryid, char * entryname, char * outputdir) {
         printf("[Info] Export %s (%s)\n", entryname, entryid);
 	/* Replace processed name with true name */
 	char entryid_tmp[256];
-	for(int i=0; i < strlen(entryid); i++)
+	for(int i=0; i <= strlen(entryid); i++)
 		entryid_tmp[i] = (entryid[i] == '_') ? ' ': entryid[i];
 	char cmd_buf[256];
 	snprintf(cmd_buf, 256, "%s txtp/\"%s\".txtp -o %s/\"%s\".wav >/dev/null", VGMSTREAMCLI_PATH, entryid_tmp, outputdir, entryname);
@@ -30,30 +30,31 @@ void playconfirm(char * entryid, char * entryname) {
 	printf("[Info] Confirm %s (%s)\n", entryname, entryid);
 	/* Replace processed name with true name */
 	char entryid_tmp[256];
-	for(int i=0; i < strlen(entryid); i++)
+	for(int i=0; i <= strlen(entryid); i++)
 		entryid_tmp[i] = (entryid[i] == '_') ? ' ' : entryid[i];
-	char buf[256];
-	snprintf(buf, 256, "%s txtp/\"%s\".txtp >/dev/null", VGMSTREAM123_PATH, entryid_tmp); 
+	char cmd_buf[256];
+	char response_buf[256];
+	snprintf(cmd_buf, 256, "%s txtp/\"%s\".txtp >/dev/null", VGMSTREAM123_PATH, entryid_tmp); 
 	/* Potential loop */
 	char response = '?';
 	while(response == '?') {
-		system(buf); /* Play txtp */
+		system(cmd_buf); /* Play txtp */
 		fputs("[Interactive] Is this title correct? (y/n/?) ", stdout);
 		response=fgetc(stdin);
 		char c;
 		while((c = fgetc(stdin)) != '\n' && c != EOF) {} /* Clear buffer */
 		if(response == 'y')
-			strcpy(buf, entryname);
+			strcpy(response_buf, entryname);
 		else if(response == 'n') {
 			fputs("[Interactive] Please input the title: ", stdout);
-			fgets(buf, 256, stdin);
-			if(strlen(buf)>1)
-				buf[strlen(buf)-1] = 0;
+			fgets(response_buf, 256, stdin);
+			if(strlen(response_buf)>1)
+				response_buf[strlen(response_buf)-1] = 0;
 		}
 		else /* Default if invalid input */
 			response = '?';
 	}
-	fprintf(stderr, ". %s %s\n", entryid, buf);
+	fprintf(stderr, ". %s %s\n", entryid, response_buf);
 }
 
 void playidentify(char * entryid, char * entryname) {
@@ -84,7 +85,7 @@ void playidentify(char * entryid, char * entryname) {
 				char c;
 				while((c = fgetc(stdin)) != '\n' && c != EOF) {} /* Clear buffer */
 				if(response == 'y') {
-					for(int i=0; i<256 && i<strlen(txtpdirent->d_name); i++) {
+					for(int i=0; i<256 && i<=strlen(txtpdirent->d_name); i++) {
 						txtpdirent_buf[i] = (txtpdirent->d_name[i] == ' ') ? '_' : txtpdirent->d_name[i];
 						if(txtpdirent_buf[i] == '.') { /* Omit extension */
 							txtpdirent_buf[i] = 0;
@@ -101,7 +102,7 @@ void playidentify(char * entryid, char * entryname) {
 }
 
 int main(int argc, char *argv[]) { 
-	puts("txtp renamer tool v0.2\n");
+	puts("txtp renamer tool v0.3\n");
 	const char * usage = "Usage: %s [options] [input] [outputdir])\n -i: Identify mode. Entries marked with + will be played for you to identify. No output files will be produced.\n -c: Confirm mode. Entries marked with ! will be played for you to identify. No output files will be produced.\n -y: Approximate mode. Generate output for entries marked with !. Must not be paired with -i or -c.\n -q: Quiet mode. Do not generate any warnings for unconfirmed or unidentified entries.\n";
 
 	{

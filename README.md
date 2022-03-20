@@ -29,10 +29,15 @@ run the tool again in confirm mode:
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
 
 # How can I get the necessary files?
+In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GCC installed.
+I personally ran the steps below up until the vgmstream compilation on Windows using MinGW, and then used Linux for the subsequent work.
+
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
+`./DepotDownloader.exe -app 1085660 -depot 1085661 -manifest 4160053308690659072 -username [steam username] `
 
 https://github.com/nblockbuster/DestinyUnpackerCPP
+In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
 Use this excellent tool to extract wem's and bnk files from the pkgs:
 `for i in packages/w64_audio*; do ./DestinyUnpackerCPP.exe -p [packages folder] -o shadowkeep -i "$i"; done`
 DestinyUnpacker also supports a -f flag to unpack all pkgs (this did not work when I first tested it):
@@ -40,11 +45,15 @@ DestinyUnpacker also supports a -f flag to unpack all pkgs (this did not work wh
 
 https://github.com/bnnm/wwiser
 Use wwiser to convert the bnk files to txtps:
-`wwiser -g *.bnk`
+`py wwiser.pyz -g *.bnk`
 
 https://github.com/vgmstream/vgmstream
 Compile vgmstream or download a precompiled version.
-Note: to use the creation features, you'll need to compile vgmstream123 yourself.
+Note: to use the creation features, you'll need to compile vgmstream123 yourself. Don't forget to install libao, as it is a dep. for vgmstream123.
 Place vgmstream123 (if desired) and vgmstream-cli (rename if you only see test.exe) into this folder.
 
 Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
+
+To compile the tool itself:
+First edit tool.c to set the VGMSTREAM paths to the correct ones for your system.
+cc tool.c -o mappingstool
