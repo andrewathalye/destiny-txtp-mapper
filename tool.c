@@ -5,6 +5,9 @@
 #include <string.h>
 #include <dirent.h>
 
+/* Macro to clear stdin buffer after reading y/n prompt */
+#define CLEAR_CHAR_C while((c = fgetc(stdin)) != '\n' && c != EOF) {}
+
 #define VGMSTREAM123_PATH "~/bin/vgmstream123"
 #define VGMSTREAMCLI_PATH "~/bin/vgmstream-cli"
 
@@ -42,7 +45,7 @@ void playconfirm(char * entryid, char * entryname) {
 		fputs("[Interactive] Is this title correct? (y/n/?) ", stdout);
 		response=fgetc(stdin);
 		char c;
-		while((c = fgetc(stdin)) != '\n' && c != EOF) {} /* Clear buffer */
+		CLEAR_CHAR_C;
 		if(response == 'y')
 			strcpy(response_buf, entryname);
 		else if(response == 'n') {
@@ -69,6 +72,7 @@ void playidentify(char * entryid, char * entryname) {
 	char cmd_buf[256];
 	char txtpdirent_buf[256];
 	char response;
+	char temp_name[256]; /* Hold temporary name for track */
 	while(txtpdirent = readdir(txtpdir)) {
 		strncpy(txtpdirent_buf, txtpdirent->d_name, 256);
 		txtpdirent_buf[14]=0; /* Shorten file name to test whether it matches bank name */
@@ -83,7 +87,7 @@ void playidentify(char * entryid, char * entryname) {
 				fputs("[Interactive] Keep piece? (y/n/?) ", stdout);
 				response=fgetc(stdin);
 				char c;
-				while((c = fgetc(stdin)) != '\n' && c != EOF) {} /* Clear buffer */
+				CLEAR_CHAR_C;
 				if(response == 'y') {
 					for(int i=0; i<256 && i<=strlen(txtpdirent->d_name); i++) {
 						txtpdirent_buf[i] = (txtpdirent->d_name[i] == ' ') ? '_' : txtpdirent->d_name[i];
@@ -93,7 +97,11 @@ void playidentify(char * entryid, char * entryname) {
 						}
 					}
 					txtpdirent_buf[255]=0; /* Prevent printing boundless string */
-					fprintf(stderr, "! %s UNCONFIRMED\n", txtpdirent_buf);
+					fputs("[Interactive] Temporary name for piece: ", stdout);
+					fgets(temp_name, 256, stdin);
+					if(strlen(temp_name)>1)
+						temp_name[strlen(temp_name)-1] = 0;
+					fprintf(stderr, "! %s %s\n", txtpdirent_buf, strlen(temp_name) > 1 ? temp_name : "UNCONFIRMED");
 				}
 			}
 		}
@@ -102,7 +110,7 @@ void playidentify(char * entryid, char * entryname) {
 }
 
 int main(int argc, char *argv[]) { 
-	puts("txtp renamer tool v0.3\n");
+	puts("txtp renamer tool v0.4\n");
 	const char * usage = "Usage: %s [options] [input] [outputdir])\n -i: Identify mode. Entries marked with + will be played for you to identify. No output files will be produced.\n -c: Confirm mode. Entries marked with ! will be played for you to identify. No output files will be produced.\n -y: Approximate mode. Generate output for entries marked with !. Must not be paired with -i or -c.\n -q: Quiet mode. Do not generate any warnings for unconfirmed or unidentified entries.\n";
 
 	{
