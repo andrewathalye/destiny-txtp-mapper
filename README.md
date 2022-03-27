@@ -1,7 +1,7 @@
 # shadowkeep-txtp-mappings
 Mappings from txtp names to human-readable track names for Shadowkeep.
 
-As a result of Bungie's new stance on music redistribution, new methods have been developed for listening to sunsetted / hidden music.
+As a result of a recent incident involving mass takedowns of Destiny music, I've made a small tool to help you extract music from your own copy of the game.
 This repository contains mappings between TXTP names for Shadowkeep and approximate track names, as well as a tool to produce named tracks from TXTP files.
 
 Please note: In order to comply with the Bungie EULA, you may _not_ redistribute any music files unaltered (and redistributing modified files is also risky). Please only use this tool for your personal listening pleasure, and purchase the official soundtracks where available.

@@ -26,3 +26,60 @@
 ! 03fa-1cc3-0628-event_[1246133352=1156398955] UNCONFIRMED
 ! 03fa-1cc3-0628-event_[1246133352=1156398956]_{s}_{r} UNCONFIRMED
 ! 03fa-1cc3-0628-event_[1246133352=1156398959]_{r} UNCONFIRMED
+! 03fb-10d5-0293-event_[1246133352=1139621372] Shadowkeep Nightmare
+! 03fb-10d5-0293-event_[1246133352=1156398954] New Light / Scarlet Keep Elevator
+! 038f-0edc-0239-event_[1246133352=1139621369] Whisper
+! 038f-0edc-0239-event_[1246133352=1139621370]_(3176498016=58138747)_(3176498016=58138747) Whisper Green Room
+! 038f-0edc-0239-event_[1246133352=1139621370]#15009 Whisper Green Room Calm
+! 038f-0edc-0239-event_[1246133352=1139621370] Whisper Green Room Calm 2
+! 038f-0edc-0239-event_[1246133352=1139621374] Whisper High Action
+! 038f-0edc-0239-event_[1246133352=1156398953] Whisper Ambient
+
+! 03ae-1e34-1069-event_[1246133352=1139621362] Watchtower
+! 03ae-1e34-1069-event_[1246133352=1139621372] Watchtower
+! 03ae-1e34-1069-event_[1246133352=1139621373] Watchtower
+! 03ae-1e34-1069-event_[1246133352=1139621374] Watchtower A
+! 03ae-1e34-1069-event_[1246133352=1139621375] Watchtower A
+! 03ae-1e34-1069-event_[1246133352=1156398948] UNCONFIRMED
+! 03ae-1e34-1069-event_[1246133352=1156398953] The Fanatic
+! 03ae-1e34-1069-event_[1246133352=1156398958] The Fanatic
+
+! 03ae-1ce6-0300-event_[1246133352=1139621368] Once Upon a Time in the Reef (Unknown Mix)
+! 03ae-1ce6-0300-event_[1246133352=1139621371] Once Upon a Time in the Reef
+! 03ae-1ce6-0300-event_[1246133352=1156398952] The Fanatic
+! 03ae-1ce6-0300-event_[1246133352=1156398954] The Fanatic
+
+! 03e8-0a2b-0281-event_[2211399158=1571361561] UNCONFIRMED
+! 03e8-0a2b-0281-event_[2211399158=184709120] The Fanatic
+! 03e8-0a2b-0281-event_[2211399158=2054095106] The Fanatic
+
+! 03fb-0f73-0395-event_[1246133352=1139621368] Moon Music
+! 03fb-0f73-0395-event_[1246133352=1156398948] The Fanatic (Nightmare?)
+! 03fb-0f73-0395-event_[1246133352=1156398955] Dominus Ghaul (Nightmare)
+
+! 03ae-036b-0228-event_[2211399158=184709120] Mercury's Golden Age Present (Action)
+! 03ae-036b-0228-event_[2211399158=2054095106] Mercury's Golden Age Present (High Action)
+
+! 01a7-1065-0032-event_{r}_{m} Activity Complete 1
+
+! 01df-0a6c-0054-event_{r}_{m} Activity Complete 2
+
+! 01e8-0dec-0311-event_[1246133352=1139621370](1433286457=none) EDZ Tunnels
+! 01e8-0dec-0311-event_[1246133352=1139621371](1433286457=none) EDZ Tunnels (HA)
+! 01e8-0dec-0311-event_[1246133352=1156398949](1433286457=none) UNCONFIRMED
+
+! 01e8-0f7d-0330-event_[1246133352=1139621369](1433286457=none) Arms Dealer?
+! 01e8-0f7d-0330-event_[1246133352=1139621370](1433286457=none) Arms Dealer
+! 01e8-0f7d-0330-event_[1246133352=1156398949](1433286457=none) Arms Dealer
+! 01e8-0f7d-0330-event_[1246133352=1156398952](1433286457=none) Arms Dealer
+
+! 01e8-10b0-0472-event_[1246133352=1139621370](1433286457=none) The Consumed
+! 01e8-10b0-0472-event_[1246133352=1156398952](1433286457=none) The Consumed (Bridge)
+! 01e8-10b0-0472-event_[1246133352=1156398959](1433286457=none) The Consumed (Mid Percussion)
+
+! 01e8-1528-0357-event_[1246133352=1139621368](1433286457=none) Arms Dealer
+! 01e8-1528-0357-event_[1246133352=1139621369](1433286457=none) Arms Dealer
+! 01e8-1528-0357-event_[1246133352=1139621370](1433286457=none) Arms Dealer
+! 01e8-1528-0357-event_[1246133352=1156398949](1433286457=none) Arms Dealer
+! 01e8-1528-0357-event_[1246133352=1156398959](1433286457=none) Arms Dealer (Dunk Section)
+
