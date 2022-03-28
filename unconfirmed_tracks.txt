@@ -83,3 +83,147 @@
 ! 01e8-1528-0357-event_[1246133352=1156398949](1433286457=none) Arms Dealer
 ! 01e8-1528-0357-event_[1246133352=1156398959](1433286457=none) Arms Dealer (Dunk Section)
 
+! 01fa-05b7-0340-event_[1246133352=1139621368](1433286457=none) Dominus Ghaul
+! 01fa-05b7-0340-event_[1246133352=1139621372](1433286457=none) Dominus Ghaul
+! 01fa-05b7-0340-event_[1246133352=1139621373](1433286457=none) UNCONFIRMED
+! 01fa-05b7-0340-event_[1246133352=1156398948](1433286457=none) The Immortal High Action
+! 01fa-05b7-0340-event_[1246133352=1156398949](1433286457=none) The Immortal
+! 01fa-05b7-0340-event_[1246133352=1156398954](1433286457=none) The Immortal Tension
+! 01fa-05b7-0340-event_[1246133352=1156398956](1433286457=none) Journey
+! 01fa-05b7-0340-event_[1246133352=1156398958](1433286457=none) Journey (Soulful)
+
+! 01fa-0ebd-0569-event_[1246133352=1139621362](1433286457=none) ASK BRESHI?
+! 01fa-0ebd-0569-event_[1246133352=1139621368](1433286457=none) The Gauntlet
+! 01fa-0ebd-0569-event_[1246133352=1139621373](1433286457=none) Nessus Unknown (Tension?)
+! 01fa-0ebd-0569-event_[1246133352=1156398949](1433286457=none) The Gauntlet
+! 01fa-0ebd-0569-event_[1246133352=1156398953](1433286457=none)_{s} Nessus Interior Tension
+! 01fa-0ebd-0569-event_[1246133352=1156398953](1433286457=none)_{s}=(3176498016=3163453698) Nessus Interior Tension (More Calm)
+
+! 0215-0dc6-0131-event_[2211399158=184709120] Arms Dealer
+
+! 038f-0440-1278-event_[2211399158=184709120]_(3083934417=1709986314)_{s} Shaper of Wishes
+! 038f-0440-1278-event_[2211399158=184709120]_(3083934417=1709986315)_{s} Shaper of Wishes
+! 038f-0440-1278-event_[2211399158=184709120]_{s} Shaper of Wishes
+! 038f-0440-1278-event_[2211399158=2054095106]_(3083934417=1709986314)_{s} The Dreaming City (High Action)
+! 038f-0440-1278-event_[2211399158=2054095106]_(3083934417=1709986315)_{s} The Dreaming City (High Action)
+! 038f-0440-1278-event_[2211399158=2054095106]_{s} The Dreaming City (High Action)
+! 038f-0440-1278-event_[2211399158=209137191]_(3083934417=1709986314)_{s} The Dreaming City (Action)
+! 038f-0440-1278-event_[2211399158=209137191]_(3083934417=1709986315)_{s} The Dreaming City (Action)
+! 038f-0440-1278-event_[2211399158=209137191]_{s} The Dreaming City (Action)
+
+
+! 038f-0449-1383-event_[2211399158=184709120]_(3083934417=1709986314)_{s} Accursed
+! 038f-0449-1383-event_[2211399158=184709120]_(3083934417=1709986315)_{s} Accursed
+! 038f-0449-1383-event_[2211399158=184709120]_{s} Accursed
+! 038f-0449-1383-event_[2211399158=2054095106]_(3083934417=1709986314)_{s} Watchtower HA
+! 038f-0449-1383-event_[2211399158=2054095106]_(3083934417=1709986315)_{s} Watchtower HA
+! 038f-0449-1383-event_[2211399158=2054095106]_{s} Watchtower HA
+! 038f-0449-1383-event_[2211399158=209137191]_(3083934417=1709986314)_{s} Watchtower (Action)
+! 038f-0449-1383-event_[2211399158=209137191]_(3083934417=1709986315)_{s} Watchtower (Action)
+! 038f-0449-1383-event_[2211399158=209137191]_{s} Watchtower (Action)
+
+
+! 038f-0e96-0240-event_[1246133352=1139621370] Deep Storage
+! 038f-0e96-0240-event_[1246133352=1156398949] Deep Storage (Tension / Ambient)
+! 038f-0e96-0240-event_[1246133352=1156398955] Deep Storage Unknown
+
+! 038f-10a1-0351-event_[1246133352=1156398948] Off-World Recovery
+! 038f-10a1-0351-event_[1246133352=1156398952] Off-World Recovery
+! 038f-10a1-0351-event_[1246133352=1156398956] UNCONFIRMED
+
+! 038f-14d3-3067-event_[2690182778=1626737477]_{r} Gambit Intro
+! 038f-14d3-3067-event_[2690182778=1655629056]_{r} Gambit Intro (SOWW)
+! 038f-14d3-3067-event_[2690182778=2076855010]_[1119114332=1455639803]_{r} Gambit Boss?
+! 038f-14d3-3067-event_[2690182778=2076855010]_[1119114332=3821439926]_{r} Gambit Boss?
+! 038f-14d3-3067-event_[2690182778=2076855010]_[1119114332=planet_x]_{r} Nessus Gambit?
+! 038f-14d3-3067-event_[2690182778=2076855010]_{r} Gambit Boss Critical
+! 038f-14d3-3067-event_[2690182778=2763968768]_[1119114332=1416096592]_{s}_{r} Uncorrupted?
+! 038f-14d3-3067-event_[2690182778=2763968768]_[1119114332=1455639803]_{r} Gambit Boss
+! 038f-14d3-3067-event_[2690182778=2763968768]_[1119114332=2527054255]_{r} Gambit Boss
+! 038f-14d3-3067-event_[2690182778=2763968768]_[1119114332=3821439926]_{r} Gambit Boss?
+! 038f-14d3-3067-event_[2690182778=2076855010]_[1119114332=1416096592]_{s}_{r} Gambit Boss?
+! 038f-14d3-3067-event_[2690182778=2763968768]_[1119114332=planet_x]_{r} Nessus Gambit Boss
+! 038f-14d3-3067-event_[2690182778=2763968768]_{r} UNCONFIRMED
+! 038f-14d3-3067-event_[2690182778=488002615]_[1119114332=1416096592]_{s}_{r} UNCONFIRMED
+
+! 038f-1b6b-0313-event_[2211399158=1571361561]_{s} Garden World Past (Tension)
+! 038f-1b6b-0313-event_[2211399158=1571361561]_{s}=(3176498016=3163453698) GWP (T) 2
+! 038f-1b6b-0313-event_[2211399158=184709120] Garden World Past (Action)
+! 038f-1b6b-0313-event_[2211399158=2054095106] Garden World Past (High Action)
+! 038f-1b6b-0313-event_[2211399158=default]_{s} UNCONFIRMED
+
+! 038f-1b6d-0308-event_[2211399158=184709120] Fields of Glass Past
+! 038f-1b6d-0308-event_[2211399158=intro]_{s} Fields of Glass Past (Intro)
+
+! 038f-1b6f-0230-event_[2211399158=184709120] Mercury's Golden Age Past (Action)
+! 038f-1b6f-0230-event_[2211399158=2054095106] Mercury's Golden Age Past (High Action)
+
+
+! 038f-1ce5-0595-event_[1246133352=1139621368] Garden World Future Unknown
+! 038f-1ce5-0595-event_[1246133352=1139621369] Garden World Future (Action)
+! 038f-1ce5-0595-event_[1246133352=1139621373] Garden World Future (High Action)
+! 038f-1ce5-0595-event_[1246133352=1156398949] Garden World Future (Action) 2
+! 038f-1ce5-0595-event_[1246133352=1156398954] Garden World Future (Tension)
+! 038f-1ce5-0595-event_[1246133352=1156398955] Garden World Future Unknown
+
+! 038f-1e3a-0399-event_[1246133352=1139621368] Mercury's Golden Age Future (Action)
+! 038f-1e3a-0399-event_[1246133352=1139621369] Mercury's Golden Age Future (High Action)
+! 038f-1e3a-0399-event_[1246133352=1156398952]_{s} UNCONFIRMED
+! 038f-1e3a-0399-event_[1246133352=1156398958]_{s} Deep Storage (Tension?)
+
+! 03ae-0353-0352-event_[2211399158=intro]_{s} CoO Unusual Intro
+
+! 03ae-035b-0311-event_[2211399158=184709120] Garden World Future (Action) 3
+
+! 03ae-035e-0310-event_[2211399158=184709120] Fields of Glass Future (Action)
+
+! 03ae-0362-0213-event_[2211399158=184709120] All the Time in the World Future (Action)
+
+! 03ae-0365-0304-event_[2211399158=1571361561]_{s} Garden World Present (Tension)
+! 03ae-0365-0304-event_[2211399158=184709120] Garden World Present (Action)
+! 03ae-0365-0304-event_[2211399158=2054095106]_{r} Garden World Present (High Action)
+
+! 03ae-0367-0310-event_[2211399158=184709120] Fields of Glass Present (Action)
+! 03ae-0367-0310-event_[2211399158=2054095106]_{r} Garden World Present (High Action) 2
+
+! 03e8-006b-0633-event_[1246133352=1139621362] Broodhold - The Mad Bomber (Tension) + The Mindbender (Action)
+! 03e8-006b-0633-event_[1246133352=1139621363] The Mindbender
+! 03e8-006b-0633-event_[1246133352=1139621371] Tangled Shore Unknown
+! 03e8-006b-0633-event_[1246133352=1156398954] Broodhold (Tension)
+
+! 03e8-0a26-0316-event_[2211399158=184709120] The Mad Bomber (Action) (Destination)
+! 03e8-0a26-0316-event_[2211399158=2054095106] The Mad Bomber (High Action) (Destination)
+
+! 03fa-1cc3-0628-event_[1246133352=1156398953]_{r} Garden World Future (High Action Mash-Up)
+! 03fa-1cc3-0628-event_[1246133352=1156398955] Dark Blade Remix
+! 03fa-1cc3-0628-event_[1246133352=1156398956]_{s}_{r} Mercury Future Tension
+! 03fa-1cc3-0628-event_[1246133352=1156398959]_{r} Garden World Future (Action) Remix
+
+! 03fa-1e62-0390-event_[1246133352=1122843655] Insurrection Prime
+! 03fa-1e62-0390-event_[1246133352=1139621363] Scourge of the Past
+! 03fa-1e62-0390-event_[1246133352=1139621373] Scourge of the Past
+
+! 03fb-0d1a-0034-event_[1246133352=1156398959] Insanity
+
+! 03fb-0fe3-0594-event_[1246133352=1139621373] Shadowkeep Unknown
+! 03fb-0fe3-0594-event_[1246133352=1139621374] Shadowkeep Unknown Tension
+! 03fb-0fe3-0594-event_[1246133352=1156398953] Necropolis / PoH Tunnels
+! 03fb-0fe3-0594-event_[1246133352=1156398956]_{s} PoH Tension
+! 03fb-0fe3-0594-event_[1246133352=1156398958] PoH Jumping Puzzle
+
+! 03ff-174a-0118-event_[2211399158=209137191] Insanity 2
+
+! 06df-1d47-0288-event_[1246133352=1122843649]_{s} Prophecy
+! 06df-1d47-0288-event_[1246133352=1122843652] Prophecy Wasteland
+! 06df-1d47-0288-event_[1246133352=1122843654]_{r} Prophecy Rainbow Road?
+! 06df-1d47-0288-event_[1246133352=1122843663]_{r} Prophecy
+! 06df-1d47-0288-event_[1246133352=1139621363]_{r} NEEDS FURTHER RESEARCH
+! 06df-1d47-0288-event_[1246133352=1139621374] Prophecy Cool Mix
+! 06df-1d47-0288-event_[1246133352=1156398949]_{r} Prophecy Tension
+
+! 06df-1ee5-0648-event_[1246133352=1139621368] Shadowkeep Unknown Nightmare Tension
+! 06df-1ee5-0648-event_[1246133352=1139621369] Shadowkeep Unknown Nightmare
+! 06df-1ee5-0648-event_[1246133352=1139621371]_{r} Insanity 3
+! 06df-1ee5-0648-event_[1246133352=1139621374] Shadowkeep Unknown Nightmare
+
+! 06e0-1745-0225-event_[1246133352=1156398952] Garden World Future (Action) Strange Remix
