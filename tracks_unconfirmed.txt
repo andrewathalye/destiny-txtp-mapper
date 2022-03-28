@@ -194,10 +194,10 @@
 ! 03e8-0a26-0316-event_[2211399158=184709120] The Mad Bomber (Action) (Destination)
 ! 03e8-0a26-0316-event_[2211399158=2054095106] The Mad Bomber (High Action) (Destination)
 
-! 03fa-1cc3-0628-event_[1246133352=1156398953]_{r} Garden World Future (High Action Mash-Up)
-! 03fa-1cc3-0628-event_[1246133352=1156398955] Dark Blade Remix
+! 03fa-1cc3-0628-event_[1246133352=1156398953]_{r} Garden World Future (Haunted Forest) (High Action)
+! 03fa-1cc3-0628-event_[1246133352=1156398955] Dark Blade (Haunted Forest)
 ! 03fa-1cc3-0628-event_[1246133352=1156398956]_{s}_{r} Mercury Future Tension
-! 03fa-1cc3-0628-event_[1246133352=1156398959]_{r} Garden World Future (Action) Remix
+! 03fa-1cc3-0628-event_[1246133352=1156398959]_{r} Garden World Future (Haunted Forest) (Action)
 
 ! 03fa-1e62-0390-event_[1246133352=1122843655] Insurrection Prime
 ! 03fa-1e62-0390-event_[1246133352=1139621363] Scourge of the Past
@@ -205,7 +205,7 @@
 
 ! 03fb-0d1a-0034-event_[1246133352=1156398959] Insanity
 
-! 03fb-0fe3-0594-event_[1246133352=1139621373] Shadowkeep Unknown
+! 03fb-0fe3-0594-event_[1246133352=1139621373] Escape the Abyss (High Action)
 ! 03fb-0fe3-0594-event_[1246133352=1139621374] Shadowkeep Unknown Tension
 ! 03fb-0fe3-0594-event_[1246133352=1156398953] Necropolis / PoH Tunnels
 ! 03fb-0fe3-0594-event_[1246133352=1156398956]_{s} PoH Tension

@@ -9,7 +9,7 @@ Please note: In order to comply with the Bungie EULA, you may _not_ redistribute
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
 Next, collect the list of desired tracks and save it as tracks.txt.
-An easy way to do this is: `cat confirmed_tracks.txt unconfirmed_tracks.txt > tracks.txt`
+An easy way to do this is: `cat tracks_confirmed.txt tracks_unconfirmed.txt > tracks.txt`
 Run the tool as follows to export all confirmed tracks as WAVs:
 `./tools/mapper tracks.txt output`
 If you would like some identified but unconfirmed tracks to also be exported, run: (-y allows unconfirmed export)
@@ -18,18 +18,32 @@ If you would like some identified but unconfirmed tracks to also be exported, ru
 # How to create mappings?
 Follow the steps in the section "How can I get the necessary files?"
 First, you'll want to come up with a list of interesting bnk files to explore.
--- TODO: A tool to help you do this is in progress.
+See the section "How can I find interesting banks?" for more information.
 Place them in a format similar to the example file in a text file of your choice.
 . means complete, + means needs identification, and ! means identified, but not confirmed.
 Run the tool as follows with the -i flag to automatically help you identify txtps.
-`./tools/mapper -i [list file] [any name, will not be used here] 2>> unconfirmed_tracks.txt`
+`./tools/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
 
 As you will note, this produces a file on [output] containing many ! lines.
 The next step is to clean them up and organise them however you would like, and then
 run the tool again in confirm mode:
-`./tools/mapper -c [list file] [any name, will not be used here] 2>> confirmed_tracks.txt`
+`./tools/mapper -c [list file] [any name, will not be used here] 2>> tracks_confirmed.txt`
 
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
+
+# How can I find interesting banks?
+Use the tool "search.sh:" (Warning, this is extremely slow)
+`./tools/search.sh > matches_unsorted.txt`
+This will produce an unsorted list of txtp lengths and the soundbank associated with the txtp.
+Next, sort this list and clean out unprocessed txtp entries:
+`sort -rg matches_unsorted.txt | grep -vE '^0' | awk '{ print $2 " " $1}' > matches_sorted.txt`
+Remove all entries that are already contained in a (master) tracks file:
+`./tools/findnew.sh matches_sorted.txt tracks.txt | sort -rg > matches_new.txt`
+To pare down the list even more, keep only the top 150 sound banks in matches_new.txt:
+`head -n150 matches_new.txt > matches_newtop.txt`
+Finally, view matches_newtop.txt and add interesting banks to tracks_unidentified.txt
+This can be automated:
+`cut -d' ' -f2 matches_newtop.txt | xargs -I '{}' echo '+ {} UNIDENTIFIED' >> tracks_unidentified.txt`
 
 # How can I get the necessary files?
 In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GCC installed.
