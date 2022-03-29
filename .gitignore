@@ -1,3 +1,4 @@
 txtp
 tools/mapper
-output/**
+tools/cleaner
+output

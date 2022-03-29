@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "$0 [dedup matches] [tracks file]: find banks not yet seen" 1>&2
+echo "$0 [clean matches file] [tracks file]: find banks not yet seen" 1>&2
 while read -n14 id # Read bank ID
 do
 	read num # Finish line

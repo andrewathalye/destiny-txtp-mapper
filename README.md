@@ -33,10 +33,10 @@ Once again, organise the file to your taste, and you will have a complete mappin
 
 # How can I find interesting banks?
 Use the tool "search.sh:" (Warning, this is extremely slow)
-`./tools/search.sh > matches/matches_unsorted.txt`
+`./tools/search.sh | grep -vE '^0' > matches/matches_unsorted.txt`
 This will produce an unsorted list of txtp lengths and the soundbank associated with the txtp.
-Next, sort this list and clean out unprocessed txtp entries:
-`sort -rg matches/matches_unsorted.txt | grep -vE '^0' | awk '{ print $2 " " $1}' > matches/matches_sorted.txt`
+Next, sort this list and clean out duplicate entries:
+`./tools/sort.sh matches/matches_unsorted.txt | ./tools/cleaner | sort -rg | awk '{ print $2 " " $1}' > matches/matches_clean.txt`
 Remove all entries that are already contained in a (master) tracks file:
 `./tools/findnew.sh matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
 To export the top 150 new banks by size for identification:
@@ -71,3 +71,5 @@ Finally, place the wem folder inside of the txtp folder and put the txtp folder 
 To compile the tool itself:
 First edit tools/mapper.c to set the VGMSTREAM paths to the correct ones for your system.
 `cc tools/mapper.c -o tools/mapper`
+To compile the cleaner tool (needed if you want to make your own mappings):
+`cc tools/cleaner.c -o tools/cleaner`
