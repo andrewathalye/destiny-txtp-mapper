@@ -110,7 +110,7 @@ void playidentify(char * entryid, char * entryname) {
 }
 
 int main(int argc, char *argv[]) { 
-	puts("txtp renamer tool v0.4\n");
+	puts("txtp renamer tool v0.5\n");
 	const char * usage = "Usage: %s [options] [input] [outputdir])\n -i: Identify mode. Entries marked with + will be played for you to identify. No output files will be produced.\n -c: Confirm mode. Entries marked with ! will be played for you to identify. No output files will be produced.\n -y: Approximate mode. Generate output for entries marked with !. Must not be paired with -i or -c.\n -q: Quiet mode. Do not generate any warnings for unconfirmed or unidentified entries.\n";
 
 	{
@@ -194,6 +194,7 @@ int main(int argc, char *argv[]) {
 			case '.': /* Confirmed entry */
 				if(!((FLAGS & FLAG_IDENTIFY)|(FLAGS & FLAG_CONFIRM))) export(entryid, entryname, outputdir);
 				break;
+			case '#': /* Comment */
 			case '\n': /* Skip blank lines */
 				break;
 			default:

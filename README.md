@@ -9,7 +9,7 @@ Please note: In order to comply with the Bungie EULA, you may _not_ redistribute
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
 Next, collect the list of desired tracks and save it as tracks.txt.
-An easy way to do this is: `cat tracks_confirmed.txt tracks_unconfirmed.txt > tracks.txt`
+An easy way to do this is: `cat tracks/tracks_*confirmed.txt > tracks.txt`
 Run the tool as follows to export all confirmed tracks as WAVs:
 `./tools/mapper tracks.txt output`
 If you would like some identified but unconfirmed tracks to also be exported, run: (-y allows unconfirmed export)
@@ -33,17 +33,14 @@ Once again, organise the file to your taste, and you will have a complete mappin
 
 # How can I find interesting banks?
 Use the tool "search.sh:" (Warning, this is extremely slow)
-`./tools/search.sh > matches_unsorted.txt`
+`./tools/search.sh > matches/matches_unsorted.txt`
 This will produce an unsorted list of txtp lengths and the soundbank associated with the txtp.
 Next, sort this list and clean out unprocessed txtp entries:
-`sort -rg matches_unsorted.txt | grep -vE '^0' | awk '{ print $2 " " $1}' > matches_sorted.txt`
+`sort -rg matches/matches_unsorted.txt | grep -vE '^0' | awk '{ print $2 " " $1}' > matches/matches_sorted.txt`
 Remove all entries that are already contained in a (master) tracks file:
-`./tools/findnew.sh matches_sorted.txt tracks.txt | sort -rg > matches_new.txt`
-To pare down the list even more, keep only the top 150 sound banks in matches_new.txt:
-`head -n150 matches_new.txt > matches_newtop.txt`
-Finally, view matches_newtop.txt and add interesting banks to tracks_unidentified.txt
-This can be automated:
-`cut -d' ' -f2 matches_newtop.txt | xargs -I '{}' echo '+ {} UNIDENTIFIED' >> tracks_unidentified.txt`
+`./tools/findnew.sh matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
+To export the top 150 new banks by size for identification:
+`./tools/extractnew.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
 In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GCC installed.
