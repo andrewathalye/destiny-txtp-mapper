@@ -1,2 +1,2 @@
 #!/bin/sh
-gnatmake-10.3.1 -O2 -D obj src/main.adb -bargs -shared
+gnatmake-10.3.1 -O2 -D obj src/main.adb -bargs -shared -margs -o mapper
