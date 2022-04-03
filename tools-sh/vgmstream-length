@@ -1,0 +1,2 @@
+#!/bin/sh
+~/bin/vgmstream-cli -m "$1" | tail -n1

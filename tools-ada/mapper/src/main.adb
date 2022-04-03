@@ -1,4 +1,4 @@
-with Mapper; use Mapper;
+with Mapper;
 
 procedure Main is
 begin

@@ -1,8 +1,10 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with GNAT.OS_Lib; use GNAT.OS_Lib;
 
-with Mapper.Shared; use Mapper.Shared;
 package body Mapper.Export is
+	-- Local Exceptions
+	Export_Exception : Exception;
+
 	-- Local Variables
 	H : Boolean := False; -- Has init export tasks
 
@@ -20,7 +22,7 @@ package body Mapper.Export is
 		A : constant Argument_List := (I, P, O);
 	begin
 		Put_Line ("[Info][T" & Task_ID'Image & "] Export " & N & " (" & ID & ")");
-		GNAT.OS_Lib.Spawn (VGMStream_CLI_Path, A, B);	
+		Spawn (Program_Name => VGMStream_CLI_Path, Args => A, Success => B);	
 		if not B then
 			raise Export_Exception;
 		end if;

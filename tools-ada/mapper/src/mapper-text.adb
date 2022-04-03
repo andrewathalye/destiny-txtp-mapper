@@ -10,6 +10,7 @@ package body Mapper.Text is
 	-- Procedures
 	-- Given input line, fill in Text_Entry record
 	procedure Fill_Entry (L : in String; T : out Text_Entry) is
+		Entry_Error : Exception;
 	begin
 		if L'Length = 0 then
 			T.Entry_type := Comment;
@@ -37,6 +38,11 @@ package body Mapper.Text is
 				T.Name := new String'(L (N + 1 .. L'Last));
 			end;
 		end if;
+	exception
+		when E : Entry_Error =>
+			Put_Line (Standard_Error, "[Error] Unable to process entry:" & Exception_Message (E));
+			Set_Exit_Status (Failure);
+			raise Handled_Fatal_Error;
 	end Fill_Entry;
 
 	-- Parse command-line arguments

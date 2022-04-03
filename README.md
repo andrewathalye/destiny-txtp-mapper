@@ -6,6 +6,11 @@ This repository contains mappings between TXTP names for Shadowkeep and approxim
 
 Please note: In order to comply with the Bungie EULA, you may _not_ redistribute any music files unaltered (and redistributing modified files is also risky). Please only use this tool for your personal listening pleasure, and purchase the official soundtracks where available.
 
+# Important Note
+The tools in this folder are currently being rewritten from C + Shell Scripts to 100% Ada in order to make them parallelised and faster.
+As a result of this change, I will distribute GPL-licensed Linux GLIBC_x64 statically-linked binaries when the rewrite is complete.
+Until the rewrite is complete, I recommend not using this tool as things may be in a state of flux.
+
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
 Next, collect the list of desired tracks and save it as tracks.txt.
@@ -52,9 +57,8 @@ Use this to download the last release of Destiny 2 before 10 Nov 2020.
 
 https://github.com/nblockbuster/DestinyUnpackerCPP
 In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
-Use this excellent tool to extract wem's and bnk files from the pkgs:
-`for i in packages/w64_audio*; do ./DestinyUnpackerCPP.exe -p [packages folder] -o shadowkeep -i "$i"; done`
-DestinyUnpacker also supports a -f flag to unpack all pkgs (this did not work when I first tested it):
+
+To create the BNK and WEM files:
 `./DestinyUnpackerCPP.exe -fp [packages folder] -o shadowkeep`
 
 https://github.com/bnnm/wwiser

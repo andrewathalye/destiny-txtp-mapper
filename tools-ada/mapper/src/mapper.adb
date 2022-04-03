@@ -1,15 +1,13 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Command_Line; use Ada.Command_Line;
-with Ada.Exceptions; use Ada.Exceptions;
 
 with Mapper.Text; use Mapper.Text;
 with Mapper.Shared; use Mapper.Shared;
 with Mapper.Export; use Mapper.Export;
+with Mapper.Confirm; use Mapper.Confirm;
+with Mapper.Identify; use Mapper.Identify;
 
 package body Mapper is
-	-- Exceptions
-	Unimplemented_Error : Exception;
-
 	-- Print usage message
 	procedure Show_Usage is
 	        U_1 : constant String := "Usage: " & Command_Name & " [options] [input] [outputdir]";
@@ -38,14 +36,14 @@ package body Mapper is
 			Fill_Entry (Get_Line (F), T);	
 			case T.Entry_Type is	
 				when Unidentified =>
-					if M = Identify then
-						raise Unimplemented_Error with "Identify";
+					if M = Shared.Identify then
+						Identify_Entry (T);
 					elsif not Quiet then
 						Put_Line ("[Warn] Unidentified entry skipped: " & T.ID.all);
 					end if;
 				when Approximate =>
 					if M = ApproximateConfirm then
-						raise Unimplemented_Error with "Confirm";
+						Confirm_Entry (T);
 					elsif M = ApproximateExport then
 						Delegate_Export_Task (T);
 					elsif not Quiet then
@@ -55,21 +53,18 @@ package body Mapper is
 					if M = Default or M = ApproximateExport then
 						Delegate_Export_Task (T);
 					end if;
-				when Comment =>
-					null; -- No action needed
 				when others =>
-					null; -- Not logically possible (no action needed)
+					null; -- No action needed
 			end case;
 			end loop;
 		Close (F);
 	exception
-		when E : Entry_Error =>
-			Put_Line (Standard_Error, "[Error] Unable to process entry:" & Exception_Message (E));
-			Set_Exit_Status (Failure);
-			return;
 		when Arguments_Error =>
 			Put_Line (Standard_Error, "[Error] Invalid argument combination or unknown argument.");
 			Show_Usage;
+			Set_Exit_Status (Failure);
+			return;
+		when Handled_Fatal_Error => -- Error already handled by subprogram, just need to exit
 			Set_Exit_Status (Failure);
 			return;
 	end Mapper;

@@ -31,7 +31,7 @@ If unknown entry, error out
 
 489 Directories
 
---
+-- Reorginisation into Packages
 Package Mapper.Shared =>
 	CLI Path
 	Max Tasks
@@ -65,3 +65,18 @@ Package Mapper
 	M
 	Mapper
 	Show_Usage
+Main
+	Main => Mapper.Mapper
+
+--
+For Confirm_Entry:
+	Input Text Entry
+	Print Confirm Message (Info Confirm Name (ID))
+	Play track
+--
+For Identify_Entry:
+	Input Text Entry
+	Print Identify Message
+	Search txtp directory for T.ID*
+	for each result, Play_Track and query whether to keep
+	if will keep, query name and output ! entry

@@ -1,8 +1,6 @@
-with Mapper.Text; use Mapper.Text;
+with Mapper.Shared; use Mapper.Shared;
 
 package Mapper.Export is
-	-- Exceptions
-	Export_Exception : Exception;
 	-- Subprograms
 	procedure Delegate_Export_Task (T : Text_Entry);
 end Mapper.Export;

@@ -26,7 +26,7 @@
 . 0249-1f60-1591-event_[1246133352=1156398955] Watchtower (Last Wish) (Action)
 . 0249-1f60-1591-event_[1246133352=1122843663] Watchtower (Last Wish) (High Action)
 . 0249-1f60-1591-event_[1246133352=1139621372] Morgeth Var. 1
-. 0249-1f60-1591-event [1246133352=1139621373] Morgeth Var. 2
+. 0249-1f60-1591-event_[1246133352=1139621373] Morgeth Var. 2
 
 . 03ae-1fa8-0447-event_[1246133352=1139621369] The Fanatic (Watchtower)
 . 03ae-1fa8-0447-event_[1246133352=1139621375] The Fanatic (Watchtower Death)
