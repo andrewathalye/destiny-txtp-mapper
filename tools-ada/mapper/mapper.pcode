@@ -36,10 +36,12 @@ Package Mapper.Shared =>
 	CLI Path
 	Max Tasks
 	Swap Whitespace
-	D
+	Dir
+	Quiet
 	Mode Type
+	Handled Fatal Error
+	Boolean Array
 Package Mapper.Export =>
-	CLI Path
 	Export_Exception
 	Export Entry
 	Export Task Busy
@@ -47,7 +49,7 @@ Package Mapper.Export =>
 	Export Tasks
 	Init Export Tasks
 	Delegate Export Task
-Package Mapper.Entry
+Package Mapper.Text_Entry
 	Entry_Error
 	Arguments_Error;
 	Fill Entry
@@ -55,9 +57,11 @@ Package Mapper.Entry
 	F_O
 	D_O
 	Text Entry Type
+	Text Entry
 Package Mapper
-	Unimplemented_Exception
+	Unimplemented_Error
 	F
 	T
 	M
-	Q
+	Mapper
+	Show_Usage
