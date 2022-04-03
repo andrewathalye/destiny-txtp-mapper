@@ -1,0 +1,63 @@
+Print "txtp renamer tool v0.6a\n"
+Store usage message.
+Parse arguments:
+	Flags are:
+		-i : identify
+		-c : confirm
+		-a : approx
+		-q : quiet
+If not enough arguments or bad argument combinations :
+	Print Usage
+	Exit
+
+Open file for reading
+Parse lines for entry type, entry id, and entry name.
+store in Text_Entry record
+
+Switch based upon entry type:
+	! = Approx
+	+ = Unidentified
+	. = Confirmed
+	# = Commented
+	Skip blank lines
+If type cannot be identified:
+	Exit;
+
+If Approx, export, confirm, or print warning to stdout.
+If Unident, identify or print warning to stdout.
+If Confirmed, export if mode is Standard
+If Comment or Newline, skip
+If unknown entry, error out
+
+489 Directories
+
+--
+Package Mapper.Shared =>
+	CLI Path
+	Max Tasks
+	Swap Whitespace
+	D
+	Mode Type
+Package Mapper.Export =>
+	CLI Path
+	Export_Exception
+	Export Entry
+	Export Task Busy
+	Export Task
+	Export Tasks
+	Init Export Tasks
+	Delegate Export Task
+Package Mapper.Entry
+	Entry_Error
+	Arguments_Error;
+	Fill Entry
+	Parse Arguments
+	F_O
+	D_O
+	Text Entry Type
+Package Mapper
+	Unimplemented_Exception
+	F
+	T
+	M
+	Q
