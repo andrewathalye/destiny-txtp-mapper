@@ -13,16 +13,19 @@ package body Mapper.Export is
 		ID : String renames T.ID.all;
 		N : String renames T.Name.all;
 		-- Input file construction
-		I : constant String_Access := new String'("txtp/" & Swap_Whitespace (ID) & ".txtp");	
+		I : String_Access := new String'("txtp/" & Swap_Whitespace (ID) & ".txtp");	
 		-- Parameters construction
-		P : constant String_Access := new String'("-o");
+		P : String_Access := new String'("-o");
 		-- Output file construction
-		O : constant String_Access := new String'(Dir.all & "/" & N & ".wav");
+		O : String_Access := new String'(Dir.all & "/" & N & ".wav");
 		B : Boolean := False;
 		A : constant Argument_List := (I, P, O);
 	begin
 		Put_Line ("[Info][T" & Task_ID'Image & "] Export " & N & " (" & ID & ")");
 		Spawn (Program_Name => VGMStream_CLI_Path, Args => A, Success => B);	
+		Free (I);
+		Free (P);
+		Free (O);
 		if not B then
 			raise Export_Exception;
 		end if;

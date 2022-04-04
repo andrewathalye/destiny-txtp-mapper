@@ -1,0 +1,4 @@
+For searcher:
+	Go through all txtp files in txtp/ and print sample count using vgmstream
+For finder:
+	Go through specified clean matches file and exclude matches where ID is in tracks_all

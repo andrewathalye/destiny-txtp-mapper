@@ -1,12 +1,13 @@
 txtp
-tools-c-sh/mapper
-tools-c-sh/cleaner
+output
 
 tools-ada/mapper/mapper
 tools-ada/mapper/obj
 
 tools-ada/cleaner/cleaner
-tools-ada/cleaner/cleaner.o
-tools-ada/cleaner/cleaner.ali
+tools-ada/cleaner/obj
 
-output
+tools-ada/search/search
+tools-ada/search/obj
+
+tools-ada/vgmstream-ada/ext
