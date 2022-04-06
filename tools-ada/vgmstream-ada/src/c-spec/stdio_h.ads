@@ -5,7 +5,7 @@ pragma Warnings ("U");
 with Interfaces.C; use Interfaces.C;
 with stdarg_h;
 with bits_types_u_fpos_t_h;
-limited with bits_types_FILE_h;
+with bits_types_FILE_h;
 with Interfaces.C.Strings;
 with System;
 with stddef_h;

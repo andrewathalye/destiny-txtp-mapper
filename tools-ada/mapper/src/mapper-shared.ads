@@ -29,5 +29,4 @@ package Mapper.Shared is
 	function Swap_Whitespace (S : String) return String; -- Replace ' ' with '_' and vice-versa
 	procedure Play_Track (T : Text_Entry); -- Play track from Text_Entry
 	procedure Play_Track (S : String); -- Play track from file path
-	procedure Print_Length (S : String); -- Print duration of txtp from file path
 end Mapper.Shared;

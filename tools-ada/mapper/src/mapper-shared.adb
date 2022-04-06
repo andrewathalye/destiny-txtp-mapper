@@ -40,22 +40,4 @@ package body Mapper.Shared is
 			Put_Line (Standard_Error, "[Error] Could not play track: " & S);
 			raise Handled_Fatal_Error;
 	end Play_Track;
-
-	-- Print duration of txtp from file path
-	procedure Print_Length (S : String) is
-		P : String_Access := new String'(S); -- Filename parameter
-		A : constant Argument_List := (1 => P);
-		B : Boolean := False; -- Process result
-		Print_Length_Error : Exception;
-	begin
-		Spawn (VGMStream_Length_Path, A, B);
-		Free (P);
-		if not B then
-			raise Print_Length_Error;
-		end if;
-	exception
-		when Print_Length_Error => -- Non-fatal error
-			Put_Line (Standard_Error, "[Error] Could not print length of track: " & S);
-			return;
-	end Print_Length;
 end Mapper.Shared;

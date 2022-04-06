@@ -1,5 +1,8 @@
 with Ada.Directories; use Ada.Directories;
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+
+with VGMStream.Extra; use VGMStream.Extra;
 
 package body Mapper.Identify is
 	procedure Identify_Entry (T : Text_Entry) is
@@ -14,7 +17,7 @@ package body Mapper.Identify is
 			Get_Next_Entry (S, D);
 			Put_Line ("[Info] Found " & Base_Name (Simple_Name (D)));
 			loop
-				Print_Length (Full_Name (D));
+				Put_Line ("[Info] Length:" & Integer'Image (Integer (Get_Length_Seconds (Full_Name (D)))) & " seconds");
 				Play_Track (Full_Name (D));
 				Put ("[Interactive] Keep track? (y/n/?) ");
 				Get (C);

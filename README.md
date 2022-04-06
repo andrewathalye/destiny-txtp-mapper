@@ -8,7 +8,6 @@ Please note: In order to comply with the Bungie EULA, you may _not_ redistribute
 
 # Important Note
 The tools in this folder are currently being rewritten from C + Shell Scripts to 100% Ada in order to make them parallelised and faster.
-As a result of this change, I will distribute GPL-licensed Linux GLIBC_x64 statically-linked binaries when the rewrite is complete.
 Until the rewrite is complete, I recommend not using this tool as things may be in a state of flux.
 
 # How to use the mappings in this folder?
@@ -37,12 +36,13 @@ run the tool again in confirm mode:
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
 
 # How can I find interesting banks?
-Use the tool "search.sh:" (Warning, this is extremely slow)
-`./tools/search.sh | grep -vE '^0' > matches/matches_unsorted.txt`
+Use the tool "search:"
+`./tools-ada/search/search | grep -vE '^0' > matches/matches_unsorted.txt`
 This will produce an unsorted list of txtp lengths and the soundbank associated with the txtp.
 Next, sort this list and clean out duplicate entries:
-`./tools/sort.sh matches/matches_unsorted.txt | ./tools/cleaner | sort -rg | awk '{ print $2 " " $1}' > matches/matches_clean.txt`
+`./tools/sort.sh matches/matches_unsorted.txt | ./tools-ada/cleaner/cleaner | sort -rg | awk '{ print $2 " " $1}' > matches/matches_clean.txt`
 Remove all entries that are already contained in a (master) tracks file:
+`TODO: ./tools-ada/find/find matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
 `./tools/findnew.sh matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
 To export the top 150 new banks by size for identification:
 `./tools/extractnew.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
@@ -72,8 +72,13 @@ Place vgmstream123 (if desired) and vgmstream-cli (rename if you only see test.e
 
 Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
 
-To compile the tool itself:
-First edit tools/mapper.c to set the VGMSTREAM paths to the correct ones for your system.
-`cc tools/mapper.c -o tools/mapper`
-To compile the cleaner tool (needed if you want to make your own mappings):
-`cc tools/cleaner.c -o tools/cleaner`
+Please see the below section if you need the tools in this repository.
+
+# How to Compile the Necessary Tools?
+Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
+
+`gprbuild -Pmapper`
+`gprbuild -Psearch`
+`gprbuild -Pfind TODO`
+`gprbuild -Pextract TODO`
+`gprbuild -Pcleaner`
