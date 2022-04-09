@@ -1,5 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
-with Unchecked_Deallocation;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 with VGMStream.Extra; use VGMStream.Extra;
 
@@ -40,17 +40,24 @@ package body Search_Task is
 		entry Run (F : String; I : String);
 	end Search_Task;
 
+	-- Replace '_' with ' ' and vice-versa
+	function Swap_Whitespace (S : in String) return String is	
+		O : String (S'Range);
+	begin
+		for I in S'Range loop
+			O (I) := (case S (I) is
+				when ' ' => '_',
+				when '_' => ' ',
+				when others => S (I));
+		end loop;
+		return O;
+	end Swap_Whitespace;
+
 	-- Task implementation
 	task body Search_Task is
-		-- String Access type
-		type String_Access is access String;
-
-		-- Free String_Access
-		procedure Free is new Unchecked_Deallocation (Object => String, Name => String_Access);
-
 		Task_ID : Positive;
-		File_Name : String_Access;
-		Entry_ID : String_Access;
+		File_Name : Unbounded_String;
+		Entry_ID : Unbounded_String;
 	begin
 		accept Init (P : Positive) do
 			Task_ID := P;
@@ -58,16 +65,15 @@ package body Search_Task is
 		loop
 			select
 				accept Run (F : String; I : String) do
-					File_Name := new String'(F);
-					Entry_Id := new String'(I);
+					File_Name := To_Unbounded_String (F);
+					-- Make parsing the output easier
+					Entry_Id := To_Unbounded_String (Swap_Whitespace (I));
 					Search_Task_Busy.Set (Task_ID);
 				end Run;
 			or
 				terminate;
 			end select;
-			Put_Line (Natural'Image (Get_Length (File_Name.all)) & " " & Entry_ID.all);
-			Free (File_Name);
-			Free (Entry_ID);
+			Put_Line (Natural'Image (Get_Length (To_String (File_Name))) & " " & To_String (Entry_ID));
 			Search_Task_Busy.Unset (Task_ID);
 		end loop;
 	end Search_Task;

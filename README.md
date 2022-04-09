@@ -34,11 +34,11 @@ Once again, organise the file to your taste, and you will have a complete mappin
 
 # How can I find interesting banks?
 Find txtp entries, list their sizes, remove duplicates, and sort:
-`./tools-sh/search_sort_clean.sh > matches/matches_clean.txt`
+`./tools-sh/search_sort.sh > matches/matches_sorted.txt`
 Next, collect a master list of tracks: (This can be deleted after the next step)
 `cat tracks/* > tmp_all.txt`
 Next, remove entries that are already in one of your track files:
-`./tools-sh/find_sort.sh tmp_all.txt < matches/matches_clean.txt > matches/matches_new.txt`
+`./tools-ada/find/find tmp_all.txt < matches/matches_sorted.txt > matches/matches_new.txt`
 To export the top 150 new banks by size for identification:
 `./tools-sh/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
@@ -77,4 +77,3 @@ Please follow the below commands (in order) to compile all necessary tools:
 `gprbuild -Pmapper/mapper`
 `gprbuild -Psearch/search`
 `gprbuild -Pfind/find`
-`gprbuild -Pcleaner/cleaner`

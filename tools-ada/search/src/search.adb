@@ -16,11 +16,9 @@ begin
 		Get_Next_Entry (S, D);	
 		declare
 			T : constant String := Simple_Name (D);
-			I : String (1 .. 14); -- ID
 		begin
 			if T'Length > 14 then
-				I := T (T'First .. T'First + 13);	
-				Delegate_Search_Task (Full_Name (D), I); -- Send work to task
+				Delegate_Search_Task (Full_Name (D), T (T'First .. T'Last - 5)); -- Send work to task
 			else
 				Put_Line (Standard_Error, "[Error] Invalid file name length: " & T);
 			end if;
