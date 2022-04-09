@@ -6,7 +6,6 @@ package Mapper.Shared is
 	Max_Tasks : constant Positive := 11;
 	VGMStream_CLI_Path : constant String := "./tools-sh/vgmstream-cli-silent";
 	VGMStream123_Path : constant String := "./tools-sh/vgmstream123-silent";
-	VGMStream_Length_Path : constant String := "./tools-sh/vgmstream-length";
 
 	-- Shared Variables
 	Dir : access String; -- Output directory

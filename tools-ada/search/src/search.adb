@@ -1,5 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Directories; use Ada.Directories;
+with Ada.Command_Line; use Ada.Command_Line;
 
 with Search_Task; use Search_Task;
 
@@ -8,6 +9,7 @@ procedure Search is
 	D : Directory_Entry_Type;
 
 begin
+	Put_Line (Standard_Error, Command_Name & ": Search txtp directory for files and output with length");
 	Init_Search_Tasks; -- Setup tasks
 	Start_Search (S, "txtp/", "*.txtp");	
 	while More_Entries (S) loop

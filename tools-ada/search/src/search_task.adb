@@ -54,7 +54,6 @@ package body Search_Task is
 	begin
 		accept Init (P : Positive) do
 			Task_ID := P;
-			Put_Line ("Task " & Positive'Image (P) & " was init");
 		end Init;
 		loop
 			select

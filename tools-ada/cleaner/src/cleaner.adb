@@ -16,7 +16,7 @@ procedure Cleaner is
 		S : String (1 .. 14);
 		P : Positive;
 	begin
-		if I'Length < 16 then -- Minimum Length for valid ID and Size
+		if I'Length < 17 then -- Minimum Length for valid ID and Size, since size length 1 cannot be handled
 			raise Invalid_Entry_Error with "Invalid entry length";
 		end if;
 		S := I (I'First .. I'First + 13);	

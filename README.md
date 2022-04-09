@@ -36,16 +36,14 @@ run the tool again in confirm mode:
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
 
 # How can I find interesting banks?
-Use the tool "search:"
-`./tools-ada/search/search | grep -vE '^0' > matches/matches_unsorted.txt`
-This will produce an unsorted list of txtp lengths and the soundbank associated with the txtp.
-Next, sort this list and clean out duplicate entries:
-`./tools/sort.sh matches/matches_unsorted.txt | ./tools-ada/cleaner/cleaner | sort -rg | awk '{ print $2 " " $1}' > matches/matches_clean.txt`
-Remove all entries that are already contained in a (master) tracks file:
-`TODO: ./tools-ada/find/find matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
-`./tools/findnew.sh matches/matches_sorted.txt tracks.txt | sort -rg > matches/matches_new.txt`
+Find txtp entries, list their sizes, remove duplicates, and sort:
+`./tools-sh/search_sort_clean.sh > matches/matches_clean.txt`
+Next, collect a master list of tracks: (This can be deleted after the next step)
+`cat tracks/* > tmp_all.txt`
+Next, remove entries that are already in one of your track files:
+`./tools-sh/find_sort.sh tmp_all.txt < matches/matches_clean.txt > matches/matches_new.txt`
 To export the top 150 new banks by size for identification:
-`./tools/extractnew.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
+`./tools-sh/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
 In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GCC installed.
@@ -69,16 +67,18 @@ https://github.com/vgmstream/vgmstream
 Compile vgmstream or download a precompiled version.
 Note: to use the creation features, you'll need to compile vgmstream123 yourself. Don't forget to install libao, as it is a dep. for vgmstream123.
 Place vgmstream123 (if desired) and vgmstream-cli (rename if you only see test.exe) into this folder.
+Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
 
 Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
 
 Please see the below section if you need the tools in this repository.
 
 # How to Compile the Necessary Tools?
-Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
+In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler.
+Please follow the below commands (in order) to compile all necessary tools:
 
-`gprbuild -Pmapper`
-`gprbuild -Psearch`
-`gprbuild -Pfind TODO`
-`gprbuild -Pextract TODO`
-`gprbuild -Pcleaner`
+`cd tools-ada/`
+`gprbuild -Pmapper/mapper`
+`gprbuild -Psearch/search`
+`gprbuild -Pfind/find`
+`gprbuild -Pcleaner/cleaner`

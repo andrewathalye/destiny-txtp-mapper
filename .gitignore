@@ -10,6 +10,9 @@ tools-ada/cleaner/obj
 tools-ada/search/search
 tools-ada/search/obj
 
+tools-ada/find/find
+tools-ada/find/obj
+
 tools-ada/vgmstream-ada/ext_lib
 tools-ada/vgmstream-ada/obj
 tools-ada/vgmstream-ada/lib
