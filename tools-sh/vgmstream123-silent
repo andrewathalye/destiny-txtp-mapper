@@ -1,5 +1,5 @@
 #!/bin/sh
-~/bin/vgmstream123 "$@" >/dev/null &
+tools-ext/vgmstream123 "$@" >/dev/null &
 PID=$!
 read -n1 -sp "[Interactive] Press any key to return to mapper..."
 echo

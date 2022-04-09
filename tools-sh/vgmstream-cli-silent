@@ -1,2 +1,2 @@
 #!/bin/sh
-~/bin/vgmstream-cli "$@" >/dev/null
+tools-ext/vgmstream-cli "$@" >/dev/null

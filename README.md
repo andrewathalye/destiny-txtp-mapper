@@ -6,18 +6,14 @@ This repository contains mappings between TXTP names for Shadowkeep and approxim
 
 Please note: In order to comply with the Bungie EULA, you may _not_ redistribute any music files unaltered (and redistributing modified files is also risky). Please only use this tool for your personal listening pleasure, and purchase the official soundtracks where available.
 
-# Important Note
-The tools in this folder are currently being rewritten from C + Shell Scripts to 100% Ada in order to make them parallelised and faster.
-Until the rewrite is complete, I recommend not using this tool as things may be in a state of flux.
-
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
-Next, collect the list of desired tracks and save it as tracks.txt.
-An easy way to do this is: `cat tracks/tracks_*confirmed.txt > tracks.txt`
+Next, collect the list of desired tracks and save it as tmp_tracks.txt.
+An easy way to do this is: `cat tracks/tracks_*confirmed.txt > tmp_tracks.txt`
 Run the tool as follows to export all confirmed tracks as WAVs:
-`./tools/mapper tracks.txt output`
-If you would like some identified but unconfirmed tracks to also be exported, run: (-y allows unconfirmed export)
-`./tools/mapper -y tracks.txt output`
+`./tools-ada/mapper/mapper tmp_tracks.txt output`
+If you would like some identified but unconfirmed tracks to also be exported, run: (-a allows unconfirmed export)
+`./tools-ada/mapper/mapper -a tmp_tracks.txt output`
 
 # How to create mappings?
 Follow the steps in the section "How can I get the necessary files?"
@@ -26,12 +22,12 @@ See the section "How can I find interesting banks?" for more information.
 Place them in a format similar to the example file in a text file of your choice.
 . means complete, + means needs identification, and ! means identified, but not confirmed.
 Run the tool as follows with the -i flag to automatically help you identify txtps.
-`./tools/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
+`./tools-ada/mapper/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
 
-As you will note, this produces a file on [output] containing many ! lines.
+As you will note, this produces a file containing many ! lines.
 The next step is to clean them up and organise them however you would like, and then
 run the tool again in confirm mode:
-`./tools/mapper -c [list file] [any name, will not be used here] 2>> tracks_confirmed.txt`
+`./tools-ada/mapper/mapper -c [list file] output 2>> tracks_confirmed.txt`
 
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
 
@@ -46,8 +42,8 @@ To export the top 150 new banks by size for identification:
 `./tools-sh/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
-In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GCC installed.
-I personally ran the steps below up until the vgmstream compilation on Windows using MinGW, and then used Linux for the subsequent work.
+In order to follow any of the steps in this document as written, you'll first need MinGW x64 or WSL x64 with GNAT installed
+I personally ran the steps below up to the wwiser extraction on Windows using MinGW, and then used Linux for the subsequent work.
 
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
@@ -64,17 +60,16 @@ Use wwiser to convert the bnk files to txtps:
 `py wwiser.pyz -g *.bnk`
 
 https://github.com/vgmstream/vgmstream
-Compile vgmstream or download a precompiled version.
-Note: to use the creation features, you'll need to compile vgmstream123 yourself. Don't forget to install libao, as it is a dep. for vgmstream123.
-Place vgmstream123 (if desired) and vgmstream-cli (rename if you only see test.exe) into this folder.
 Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
+Place vgmstream123 in tools-ext/ if you intend to make your own mappings.
+Place vgmstream-cli in tools-ext/ if you would like to export wav files.
 
 Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
 
-Please see the below section if you need the tools in this repository.
+Please see the below section if you need the tools in this repository (most people will, unless you plan to use foobar2000 or another player for the txtp files and not rename them).
 
 # How to Compile the Necessary Tools?
-In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler.
+In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler, as well as gprbuild.
 Please follow the below commands (in order) to compile all necessary tools:
 
 `cd tools-ada/`
