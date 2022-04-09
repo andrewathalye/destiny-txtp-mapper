@@ -1,0 +1,6 @@
+#!/bin/sh
+tools-ext/vgmstream123 "$@" >/dev/null &
+PID=$!
+read -n1 -sp "[Interactive] Press any key to return to mapper..." 2>&1
+echo
+kill $PID 2>/dev/null || true

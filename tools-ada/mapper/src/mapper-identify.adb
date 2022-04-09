@@ -34,7 +34,7 @@ package body Mapper.Identify is
 							S : constant String := Get_Line;
 							N : constant String := Swap_Whitespace (Base_Name (Simple_Name (D)));
 						begin
-							Put_Line ("! " & N & " " & S);
+							Put_Line (Standard_Error, "! " & N & " " & S);
 						end;
 						exit;
 					when 'n' =>

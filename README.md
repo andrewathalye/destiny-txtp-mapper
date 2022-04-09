@@ -23,6 +23,7 @@ Place them in a format similar to the example file in a text file of your choice
 . means complete, + means needs identification, and ! means identified, but not confirmed.
 Run the tool as follows with the -i flag to automatically help you identify txtps.
 `./tools-ada/mapper/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
+Note: Please do _not_ attempt to modify tracks_unconfirmed.txt while identifying. It can cause problems, unfortunately.
 
 As you will note, this produces a file containing many ! lines.
 The next step is to clean them up and organise them however you would like, and then
