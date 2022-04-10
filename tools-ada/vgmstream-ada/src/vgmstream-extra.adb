@@ -1,4 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Interfaces.C; use Interfaces.C;
+
 with VGMStream; use VGMStream;
 
 package body VGMStream.Extra is
@@ -39,4 +41,31 @@ package body VGMStream.Extra is
 		Free (C);
 		return F;
 	end Get_Length_Seconds;
+
+	-- Private C Export Procedure
+	function Export_Wav_C (O : char_array; V : VGMStream_Access) return int
+	with
+		Import => True,
+		Convention => C,
+		External_Name => "export_wav";
+
+	-- Export VGMStream input file to WAV file TODO: Write in Ada directly?
+	procedure Export_Wav (O : String; I : String) is
+		V : VGMStream_Access := VGMStream_Init (I);
+		C : VGMStream_Config_Access := new VGMStream_Config'(VGMStream_CLI_Config);
+	begin	
+		if V = null then
+			raise Export_Exception;
+		end if;
+
+		-- Apply config so that export length will be correct
+		VGMStream_Apply_Config (V, C);
+		-- If C function fails, raise exception
+		if Export_Wav_C (To_C (O), V) /= 1 then
+			raise Export_Exception;
+		end if;
+	
+		VGMStream_Close (V);
+		Free (C);
+	end Export_Wav;
 end VGMStream.Extra;

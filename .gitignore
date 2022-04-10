@@ -14,6 +14,7 @@ tools-ada/find/find
 tools-ada/find/obj
 
 tools-ada/vgmstream-ada/ext_lib
+tools-ada/vgmstream-ada/ext_src
 tools-ada/vgmstream-ada/obj
 tools-ada/vgmstream-ada/lib
 

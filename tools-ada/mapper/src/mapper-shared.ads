@@ -4,7 +4,6 @@ package Mapper.Shared is
 
 	-- Constants
 	Max_Tasks : constant Positive := 11;
-	VGMStream_CLI_Path : constant String := "./tools-ext/vgmstream-cli-silent";
 	VGMStream123_Path : constant String := "./tools-ext/vgmstream123-silent";
 
 	-- Shared Variables

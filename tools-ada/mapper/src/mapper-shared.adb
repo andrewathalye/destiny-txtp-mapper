@@ -22,7 +22,7 @@ package body Mapper.Shared is
 		Play_Track ("txtp/" & Swap_Whitespace (T.ID.all) & ".txtp");
 	end Play_Track;
 
-	-- Play a track using vgmstream123 TODO: Use the API
+	-- Play a track using vgmstream123 TODO: Use the PulseAudio + VGMStream API directly
 	-- S should be the relative path to a txtp file
 	procedure Play_Track (S : String) is
 		P : String_Access := new String'(S); -- Filename parameter

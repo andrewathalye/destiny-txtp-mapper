@@ -1,34 +1,20 @@
 with Ada.Text_IO; use Ada.Text_IO;
-with GNAT.OS_Lib; use GNAT.OS_Lib;
 
+with VGMStream.Extra; use VGMStream.Extra;
 package body Mapper.Export is
-	-- Local Exceptions
-	Export_Exception : Exception;
-
 	-- Local Variables
 	H : Boolean := False; -- Has init export tasks
 
-	-- Export specified entry. TODO: Use VGMStream API instead of separate executable
+	-- Local Types
+	subtype Task_Range is Positive range 1 .. Max_Tasks;
+
+	-- Export specified entry.
 	procedure Export_Entry (T : Text_Entry; Task_ID : Positive) is
-		ID : String renames T.ID.all;
+		I : String renames T.ID.all;
 		N : String renames T.Name.all;
-		-- Input file construction
-		I : String_Access := new String'("txtp/" & Swap_Whitespace (ID) & ".txtp");	
-		-- Parameters construction
-		P : String_Access := new String'("-o");
-		-- Output file construction
-		O : String_Access := new String'(Dir.all & "/" & N & ".wav");
-		B : Boolean := False;
-		A : constant Argument_List := (I, P, O);
 	begin
-		Put_Line ("[Info][T" & Task_ID'Image & "] Export " & N & " (" & ID & ")");
-		Spawn (Program_Name => VGMStream_CLI_Path, Args => A, Success => B);	
-		Free (I);
-		Free (P);
-		Free (O);
-		if not B then
-			raise Export_Exception;
-		end if;
+		Put_Line ("[Info][T" & Task_ID'Image & "] Export " & N & " (" & I & ")");
+		Export_Wav ("output/" & N & ".wav", "txtp/" & Swap_Whitespace (I) & ".txtp");
 	exception
 		when Export_Exception =>
 			Put_Line(Standard_Error, "[Error][T" & Task_ID'Image & "] Could not export track: " & N);
@@ -41,7 +27,7 @@ package body Mapper.Export is
 		procedure Unset (P : Positive);
 		function Query (P : Positive) return Boolean;
 	private
-		B : Boolean_Array (1 .. Max_Tasks) := (others => True);	-- Busy by default
+		B : Boolean_Array (Task_Range) := (others => True);	-- Busy by default
 	end Export_Task_Busy;
 
 	-- Body for status query of export task
@@ -96,7 +82,7 @@ package body Mapper.Export is
 	end Export_Task;
 
 	-- Array of export tasks
-	Export_Tasks : array (1 .. Max_Tasks) of Export_Task;
+	Export_Tasks : array (Task_Range) of Export_Task;
 
 	-- Export Task utility subprograms
 	procedure Init_Export_Tasks is
