@@ -1,2 +1,0 @@
-bits_types_siginfo_t_h.ads:99:34: error: "u_sigfault_struct1071" is undefined
-bits_types_siginfo_t_h.ads:109:26: error: "u_sifields_union1070" is undefined
