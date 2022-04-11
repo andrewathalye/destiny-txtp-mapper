@@ -14,5 +14,7 @@ tools-ada/find/find
 tools-ada/find/obj
 
 tools-ada/clibs/ext_lib
-tools-ada/clibs/obj
 tools-ada/clibs/lib
+tools-ada/clibs/obj
+
+tools-ada/clibs/lib/*
