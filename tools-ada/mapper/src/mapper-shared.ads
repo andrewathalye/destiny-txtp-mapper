@@ -4,7 +4,6 @@ package Mapper.Shared is
 
 	-- Constants
 	Max_Tasks : constant Positive := 11;
-	VGMStream123_Path : constant String := "./tools-ext/vgmstream123-silent";
 
 	-- Shared Variables
 	Dir : access String; -- Output directory
@@ -25,6 +24,4 @@ package Mapper.Shared is
 
 	-- Subprograms
 	function Swap_Whitespace (S : String) return String; -- Replace ' ' with '_' and vice-versa
-	procedure Play_Track (T : Text_Entry); -- Play track from Text_Entry
-	procedure Play_Track (S : String); -- Play track from file path
 end Mapper.Shared;

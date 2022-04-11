@@ -1,0 +1,46 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_rtclock_h%s	pulse_rtclock_h.ads	bfa1b448 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W pulse_sample_h%s	pulse_sample_h.ads	pulse_sample_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_rtclock_h.ads	20220411203905 1dc68dc1 pulse_rtclock_h%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_rtclock_now pulse_rtclock_h 32 13 none]
+X 3 bits_stdint_uintn_h.ads
+31M12*uint64_t{4|53M12}
+X 4 bits_types_h.ads
+53M12*uu_uint64_t{6|46M9}
+X 5 interfac.ads
+38K9*Interfaces 231e15 8|5r6 5r24
+X 6 i-c.ads
+18K20*C 237e17 8|5w17 5r35
+46M9*unsigned_long
+X 8 pulse_rtclock_h.ads
+8K9*pulse_rtclock_h 37l5 37e20
+32V13*pa_rtclock_now{9|220M12}
+X 9 pulse_sample_h.ads
+10K9*pulse_sample_h 8|6w6 32r35 9|378e19
+220M12*pa_usec_t{3|31M12} 8|32r50
+

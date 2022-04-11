@@ -1,0 +1,157 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_sigcontext_h%s	bits_sigcontext_h.ads	08f51a2f NE OO PK IL
+W bits_types_h%s	bits_types_h.ads	bits_types_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_sigcontext_h.ads	20220411204005 05d3168e bits_sigcontext_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tanon1160_array1161BIP bits_sigcontext_h 28 4 none]
+G c Z s s [u_fpx_sw_bytesIP bits_sigcontext_h 29 9 none]
+G c Z s s [Tanon1163_array1164BIP bits_sigcontext_h 38 4 none]
+G c Z s s [u_fpregIP bits_sigcontext_h 39 9 none]
+G c Z s s [Tanon1165_array1164BIP bits_sigcontext_h 45 4 none]
+G c Z s s [Tanon1165_array1167BIP bits_sigcontext_h 46 4 none]
+G c Z s s [u_fpxregIP bits_sigcontext_h 47 9 none]
+G c Z s s [Tanon1168_array1169BIP bits_sigcontext_h 54 4 none]
+G c Z s s [u_xmmregIP bits_sigcontext_h 55 9 none]
+G c Z s s [Tanon1171_array1172BIP bits_sigcontext_h 68 4 none]
+G c Z s s [Tanon1171_array1173BIP bits_sigcontext_h 69 4 none]
+G c Z s s [Tanon1171_array1175BIP bits_sigcontext_h 70 4 none]
+G c Z s s [u_fpstateIP bits_sigcontext_h 71 9 none]
+G c Z s s [anon1177_union1178IP bits_sigcontext_h 86 9 none]
+G c Z s s [Tanon1177_array1180BIP bits_sigcontext_h 96 4 none]
+G c Z s s [sigcontextIP bits_sigcontext_h 97 9 none]
+G c Z s s [Tanon1182_array1183BIP bits_sigcontext_h 129 4 none]
+G c Z s s [Tanon1182_array1186BIP bits_sigcontext_h 130 4 none]
+G c Z s s [u_xsave_hdrIP bits_sigcontext_h 131 9 none]
+G c Z s s [Tanon1188_array1190BIP bits_sigcontext_h 138 4 none]
+G c Z s s [u_ymmh_stateIP bits_sigcontext_h 139 9 none]
+G c Z s s [u_xstateIP bits_sigcontext_h 144 9 none]
+X 3 bits_sigcontext_h.ads
+8K9*bits_sigcontext_h 151l5 151e22
+10N4*FP_XSTATE_MAGIC1
+11N4*FP_XSTATE_MAGIC2
+28A9*anon1160_array1161(4|49M12)<integer> 34r36
+29R9*u_fpx_sw_bytes 36e4
+30m7*magic1{4|49M12}
+31m7*extended_size{4|49M12}
+32m7*xstate_bv{4|53M12}
+33m7*xstate_size{4|49M12}
+34a7*uu_glibc_reserved1{28A9}
+38A9*anon1163_array1164(6|45M9)<integer> 40r29
+39R9*u_fpreg 43e4
+40a7*significand{38A9}
+41m7*exponent{6|45M9}
+45A9*anon1165_array1164(6|45M9)<integer> 48r29
+46A9*anon1165_array1167(6|45M9)<integer> 50r36
+47R9*u_fpxreg 52e4 68r57
+48a7*significand{45A9}
+49m7*exponent{6|45M9}
+50a7*uu_glibc_reserved1{46A9}
+54A9*anon1168_array1169(4|49M12)<integer> 56r25
+55R9*u_xmmreg 58e4 69r58
+56a7*element{54A9}
+68A9*anon1171_array1172(47R9)<integer> 80r22
+69A9*anon1171_array1173(55R9)<integer> 81r23
+70A9*anon1171_array1175(4|49M12)<integer> 82r36
+71R9*u_fpstate 84e4 89r30 145r25
+72m7*cwd{4|45M12}
+73m7*swd{4|45M12}
+74m7*ftw{4|45M12}
+75m7*fop{4|45M12}
+76m7*rip{4|53M12}
+77m7*rdp{4|53M12}
+78m7*mxcsr{4|49M12}
+79m7*mxcr_mask{4|49M12}
+80a7*u_st{68A9}
+81a7*u_xmm{69A9}
+82a7*uu_glibc_reserved1{70A9}
+86R9*anon1177_union1178 86d29 94e4 124r26
+86m29*discr{6|44M9} 87r12
+89p13*fpstate(71R9)
+91m13*uu_fpstate_word{4|53M12}
+96A9*anon1177_array1180(4|53M12)<integer> 125r30
+97R9*sigcontext 127e4
+98m7*r8{4|53M12}
+99m7*r9{4|53M12}
+100m7*r10{4|53M12}
+101m7*r11{4|53M12}
+102m7*r12{4|53M12}
+103m7*r13{4|53M12}
+104m7*r14{4|53M12}
+105m7*r15{4|53M12}
+106m7*rdi{4|53M12}
+107m7*rsi{4|53M12}
+108m7*rbp{4|53M12}
+109m7*rbx{4|53M12}
+110m7*rdx{4|53M12}
+111m7*rax{4|53M12}
+112m7*rcx{4|53M12}
+113m7*rsp{4|53M12}
+114m7*rip{4|53M12}
+115m7*eflags{4|53M12}
+116m7*cs{6|45M9}
+117m7*gs{6|45M9}
+118m7*fs{6|45M9}
+119m7*uu_pad0{6|45M9}
+120m7*err{4|53M12}
+121m7*trapno{4|53M12}
+122m7*oldmask{4|53M12}
+123m7*cr2{4|53M12}
+124r7*anon2510{86R9}
+125a7*uu_reserved1{96A9}
+129A9*anon1182_array1183(4|53M12)<integer> 133r36
+130A9*anon1182_array1186(4|53M12)<integer> 134r36
+131R9*u_xsave_hdr 136e4 146r28
+132m7*xstate_bv{4|53M12}
+133a7*uu_glibc_reserved1{129A9}
+134a7*uu_glibc_reserved2{130A9}
+138A9*anon1188_array1190(4|49M12)<integer> 140r28
+139R9*u_ymmh_state 142e4 147r22
+140a7*ymmh_space{138A9}
+144R9*u_xstate 149e4
+145r7*fpstate{71R9}
+146r7*xstate_hdr{131R9}
+147r7*ymmh{139R9}
+X 4 bits_types_h.ads
+9K9*bits_types_h 3|6w6 28r57 30r24 31r31 32r27 33r29 54r57 70r58 72r21 73r21
+. 74r21 75r21 76r21 77r21 78r23 79r27 91r39 96r57 98r20 99r20 100r21 101r21
+. 102r21 103r21 104r21 105r21 106r21 107r21 108r21 109r21 110r21 111r21 112r21
+. 113r21 114r21 115r24 120r21 121r24 122r25 123r21 129r57 130r57 132r27 138r58
+. 4|241e17
+45M12*uu_uint16_t{6|45M9} 3|72r34 73r34 74r34 75r34
+49M12*uu_uint32_t{6|44M9} 3|28r70 30r37 31r44 33r42 54r70 70r71 78r36 79r40
+. 138r71
+53M12*uu_uint64_t{6|46M9} 3|32r40 76r34 77r34 91r52 96r70 98r33 99r33 100r34
+. 101r34 102r34 103r34 104r34 105r34 106r34 107r34 108r34 109r34 110r34 111r34
+. 112r34 113r34 114r34 115r37 120r34 121r37 122r38 123r34 129r70 130r70 132r40
+X 5 interfac.ads
+38K9*Interfaces 3|5r6 5r24 5|231e15
+X 6 i-c.ads
+18K20*C 3|5w17 5r35 6|237e17
+44M9*unsigned 3|86r37
+45M9*unsigned_short 3|38r57 41r26 45r57 46r57 49r26 116r20 117r20 118r20
+. 119r25
+46M9*unsigned_long
+

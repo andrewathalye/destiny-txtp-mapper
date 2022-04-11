@@ -13,10 +13,6 @@ tools-ada/search/obj
 tools-ada/find/find
 tools-ada/find/obj
 
-tools-ada/vgmstream-ada/ext_lib
-tools-ada/vgmstream-ada/ext_src
-tools-ada/vgmstream-ada/obj
-tools-ada/vgmstream-ada/lib
-
-tools-ext/vgmstream123
-tools-ext/vgmstream-cli
+tools-ada/clibs/ext_lib
+tools-ada/clibs/obj
+tools-ada/clibs/lib

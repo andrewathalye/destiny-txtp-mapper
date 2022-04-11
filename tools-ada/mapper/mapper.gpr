@@ -1,4 +1,4 @@
-with "../vgmstream-ada/vgmstream.gpr";
+with "../clibs/clibs.gpr";
 
 project Mapper is
 	for Source_Dirs use ("src");

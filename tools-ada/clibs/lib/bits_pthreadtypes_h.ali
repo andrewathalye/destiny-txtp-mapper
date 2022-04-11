@@ -1,0 +1,120 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_pthreadtypes_h%s	bits_pthreadtypes_h.ads	054115c6 NE OO PK IL
+W bits_struct_mutex_h%s	bits_struct_mutex_h.ads	bits_struct_mutex_h.ali
+W bits_struct_rwlock_h%s  bits_struct_rwlock_h.ads  bits_struct_rwlock_h.ali
+W bits_thread_shared_types_h%s  bits_thread_shared_types_h.ads  bits_thread_shared_types_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_pthreadtypes_h.ads  20220411204005 0d8fa210 bits_pthreadtypes_h%s
+D bits_struct_mutex_h.ads  20220411204005 826364b8 bits_struct_mutex_h%s
+D bits_struct_rwlock_h.ads  20220411204005 e67ba486 bits_struct_rwlock_h%s
+D bits_thread_shared_types_h.ads  20220411204005 b568a931 bits_thread_shared_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cexten.ads		20210520051132 be1de098 interfaces.c.extensions%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pthread_mutexattr_tIP bits_pthreadtypes_h 37 9 none]
+G c Z s s [pthread_condattr_tIP bits_pthreadtypes_h 52 9 none]
+G c Z s s [pthread_attr_tIP bits_pthreadtypes_h 70 9 none]
+G c Z s s [pthread_mutex_tIP bits_pthreadtypes_h 82 9 none]
+G c Z s s [pthread_cond_tIP bits_pthreadtypes_h 96 9 none]
+G c Z s s [pthread_rwlock_tIP bits_pthreadtypes_h 113 9 none]
+G c Z s s [pthread_rwlockattr_tIP bits_pthreadtypes_h 127 9 none]
+G c Z s s [pthread_barrier_tIP bits_pthreadtypes_h 145 9 none]
+G c Z s s [pthread_barrierattr_tIP bits_pthreadtypes_h 157 9 none]
+G r s uu_pthread_mutex_s [pthread_mutex_tIP bits_pthreadtypes_h 82 9 none] [uu_pthread_mutex_sIP bits_struct_mutex_h 25 9 none]
+X 3 bits_pthreadtypes_h.ads
+10K9*bits_pthreadtypes_h 168l5 168e24
+31M12*pthread_t{8|46M9}
+36A12*pthread_mutexattr_t_array974{8|86A9}<8|62M9> 40r31
+37R9*pthread_mutexattr_t 37d30 45e4
+37m30*discr{8|44M9} 38r12
+40a13*uu_size{36A12}
+42i13*uu_align{8|35I9}
+51A12*pthread_condattr_t_array974{8|86A9}<8|62M9> 55r31
+52R9*pthread_condattr_t 52d29 60e4
+52m29*discr{8|44M9} 53r12
+55a13*uu_size{51A12}
+57i13*uu_align{8|35I9}
+64M12*pthread_key_t{8|44M9}
+67I12*pthread_once_t{8|35I9}
+69A12*anon980_array982{8|86A9}<8|62M9> 73r31
+70R9*pthread_attr_t 70d25 78e4
+70m25*discr{8|44M9} 71r12
+73a13*uu_size{69A12}
+75i13*uu_align{8|37I9}
+81A12*pthread_mutex_t_array986{8|86A9}<8|62M9> 87r31
+82R9*pthread_mutex_t 82d26 92e4
+82m26*discr{8|44M9} 83r12
+85r13*uu_data{4|25R9}
+87a13*uu_size{81A12}
+89i13*uu_align{8|37I9}
+95A12*pthread_cond_t_array990{8|86A9}<8|62M9> 101r31
+96R9*pthread_cond_t 96d25 106e4
+96m25*discr{8|44M9} 97r12
+99r13*uu_data{6|112R9}
+101a13*uu_size{95A12}
+103i13*uu_align{long_long_integer}
+112A12*pthread_rwlock_t_array982{8|86A9}<8|62M9> 118r31
+113R9*pthread_rwlock_t 113d27 123e4
+113m27*discr{8|44M9} 114r12
+116r13*uu_data{5|25R9}
+118a13*uu_size{112A12}
+120i13*uu_align{8|37I9}
+126A12*pthread_rwlockattr_t_array996{8|86A9}<8|62M9> 130r31
+127R9*pthread_rwlockattr_t 127d31 135e4
+127m31*discr{8|44M9} 128r12
+130a13*uu_size{126A12}
+132i13*uu_align{8|37I9}
+139I12*pthread_spinlock_t{8|35I9}
+144A12*pthread_barrier_t_array1002{8|86A9}<8|62M9> 148r31
+145R9*pthread_barrier_t 145d28 153e4
+145m28*discr{8|44M9} 146r12
+148a13*uu_size{144A12}
+150i13*uu_align{8|37I9}
+156A12*pthread_barrierattr_t_array974{8|86A9}<8|62M9> 160r31
+157R9*pthread_barrierattr_t 157d32 165e4
+157m32*discr{8|44M9} 158r12
+160a13*uu_size{156A12}
+162i13*uu_align{8|35I9}
+X 4 bits_struct_mutex_h.ads
+8K9*bits_struct_mutex_h 3|6w6 85r31 4|40e24
+25R9*uu_pthread_mutex_s 3|85r51 4|35e4
+X 5 bits_struct_rwlock_h.ads
+7K9*bits_struct_rwlock_h 3|8w6 116r31 5|47e25
+25R9*uu_pthread_rwlock_arch_t 3|116r52 5|39e4
+X 6 bits_thread_shared_types_h.ads
+8K9*bits_thread_shared_types_h 3|7w6 99r31 6|132e31
+112R9*uu_pthread_cond_s 3|99r58 6|121e4
+X 7 interfac.ads
+38K9*Interfaces 3|5r6 5r24 36r44 51r43 69r32 81r40 95r39 112r41 126r45 144r43
+. 156r46 7|231e15
+X 8 i-c.ads
+18K20*C 3|5w17 5r35 36r55 51r54 69r43 81r51 95r50 112r52 126r56 144r54 156r57
+. 8|237e17
+35I9*int<integer> 3|42r32 57r32 67r30 139r34 162r32
+37I9*long<long_integer> 3|75r32 89r32 120r32 132r32 150r32
+44M9*unsigned 3|37r38 52r37 64r29 70r33 82r34 96r33 113r35 127r39 145r36
+. 157r40
+46M9*unsigned_long 3|31r25
+79E9*char<character>
+86A9*char_array(79E9)<62M9> 3|36r57 51r56 69r45 81r53 95r52 112r54 126r58
+. 144r56 156r59
+

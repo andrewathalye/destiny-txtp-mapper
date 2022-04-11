@@ -1,0 +1,80 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_timeval_h%s	pulse_timeval_h.ads	bec78288 NE OO PK IL
+Y bits_types_struct_timeval_h%s  bits_types_struct_timeval_h.ads  bits_types_struct_timeval_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W pulse_sample_h%s	pulse_sample_h.ads	pulse_sample_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_timeval_h.ads  20220411204005 f9cdbe47 bits_types_struct_timeval_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D pulse_timeval_h.ads	20220411203905 e56d0546 pulse_timeval_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_gettimeofday pulse_timeval_h 47 13 none]
+G c Z s s [pa_timeval_diff pulse_timeval_h 55 13 none]
+G c Z s s [pa_timeval_cmp pulse_timeval_h 61 13 none]
+G c Z s s [pa_timeval_age pulse_timeval_h 67 13 none]
+G c Z s s [pa_timeval_add pulse_timeval_h 73 13 none]
+G c Z s s [pa_timeval_sub pulse_timeval_h 79 13 none]
+G c Z s s [pa_timeval_store pulse_timeval_h 85 13 none]
+G c Z s s [pa_timeval_load pulse_timeval_h 91 13 none]
+X 3 bits_stdint_uintn_h.ads
+31M12*uint64_t{4|53M12}
+X 4 bits_types_h.ads
+53M12*uu_uint64_t{7|46M9}
+X 5 bits_types_struct_timeval_h.ads
+8K9 bits_types_struct_timeval_h 10|47r42 47r93 55r50 55r107 61r49 61r106
+. 67r50 73r41 73r122 79r41 79r122 85r43 85r124 91r51
+X 6 interfac.ads
+38K9*Interfaces 231e15 10|5r6 5r24
+X 7 i-c.ads
+18K20*C 237e17 10|5w17 5r35
+35I9*int<integer> 10|61r150
+46M9*unsigned_long
+X 9 pulse_sample_h.ads
+10K9*pulse_sample_h 378e19 10|7w6 55r151 67r94 73r82 79r82 85r84 91r95
+220M12*pa_usec_t{3|31M12} 10|55r166 67r109 73r97 79r97 85r99 91r110
+X 10 pulse_timeval_h.ads
+9K9*pulse_timeval_h 96l5 96e20
+47V13*pa_gettimeofday 47^30
+47p30 tv
+55V13*pa_timeval_diff{9|220M12} 55^30 55^87
+55p30 a
+55p87 b
+61V13*pa_timeval_cmp{7|35I9} 61^29 61^86
+61p29 a
+61p86 b
+67V13*pa_timeval_age{9|220M12} 67^29
+67p29 tv
+73V13*pa_timeval_add 73^29 73>78
+73p29 tv
+73m78 v{9|220M12}
+79V13*pa_timeval_sub 79^29 79>78
+79p29 tv
+79m78 v{9|220M12}
+85V13*pa_timeval_store 85^31 85>80
+85p31 tv
+85m80 v{9|220M12}
+91V13*pa_timeval_load{9|220M12} 91^30
+91p30 tv
+

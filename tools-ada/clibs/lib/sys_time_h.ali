@@ -1,0 +1,96 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U sys_time_h%s		sys_time_h.ads		020cabfa NE OO PK IL
+W bits_types_struct_timeval_h%s  bits_types_struct_timeval_h.ads  bits_types_struct_timeval_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_timeval_h.ads  20220411204005 f9cdbe47 bits_types_struct_timeval_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D sys_time_h.ads	20220411204005 b4b850a6 sys_time_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [gettimeofday sys_time_h 59 13 none]
+G c Z s s [settimeofday sys_time_h 70 13 none]
+G c Z s s [adjtime sys_time_h 80 13 none]
+G c Z s s [getitimer sys_time_h 116 13 none]
+G c Z s s [setitimer sys_time_h 125 13 none]
+G c Z s s [utimes sys_time_h 137 13 none]
+G c Z s s [lutimes sys_time_h 143 13 none]
+G c Z s s [futimes sys_time_h 149 13 none]
+G c Z s s [timezoneIP sys_time_h 44 9 none]
+G c Z s s [itimervalIP sys_time_h 101 9 none]
+X 4 bits_types_struct_timeval_h.ads
+8K9*bits_types_struct_timeval_h 23e32 8|6w6 59r42 70r51 80r49 80r107 102r29
+. 103r26 137r88 143r89 149r60
+16R9*timeval 20e4 8|59r70 70r79 80r77 80r135 102r57 103r54 137r116 143r117
+. 149r88
+X 5 interfac.ads
+38K9*Interfaces 231e15 8|5r6 5r24 8r6 137r31 143r32
+X 6 i-c.ads
+18K20*C 237e17 8|5w17 5r35 8r17 137r42 143r43
+35I9*int<integer> 8|45r32 46r28 59r110 70r129 80r151 111r33 116r90 128r41
+. 137r132 143r133 149r30 149r104
+X 7 i-cstrin.ads
+36K22*Strings 106e25 8|8w19 137r44 143r45
+47P9*chars_ptr 8|137r52 143r53
+X 8 sys_time_h.ads
+10K9*sys_time_h 161l5 161e15
+44R9*timezone 48e4 70r112
+45i7*tz_minuteswest{6|35I9}
+46i7*tz_dsttime{6|35I9}
+59V13*gettimeofday{6|35I9} 59^27 59>79
+59p27 uu_tv(4|16R9)
+59m79 uu_tz{9|67M9}
+70V13*settimeofday{6|35I9} 70^27 70^88
+70p27 uu_tv(4|16R9)
+70p88 uu_tz(44R9)
+80V13*adjtime{6|35I9} 80^22 80^86
+80p22 uu_delta(4|16R9)
+80p86 uu_olddelta(4|16R9)
+86E9*uu_itimer_which 90e4
+87n7*ITIMER_REAL{86E9}
+88n7*ITIMER_VIRTUAL{86E9}
+89n7*ITIMER_PROF{86E9}
+101R9*itimerval 105e4 116r72 127r32 128r23
+102r7*it_interval{4|16R9}
+103r7*it_value{4|16R9}
+111I12*uu_itimer_which_t{6|35I9} 116r35 126r18
+116V13*getitimer{6|35I9} 116>24 116^54
+116i24 uu_which{111I12}
+116p54 uu_value(101R9)
+125V13*setitimer{6|35I9} 126>7 127^7 128^7
+126i7 uu_which{111I12}
+127p7 uu_new(101R9)
+128p7 uu_old(101R9)
+137V13*utimes{6|35I9} 137>21 137^63
+137p21 uu_file{7|47P9}
+137p63 uu_tvp(4|16R9)
+143V13*lutimes{6|35I9} 143>22 143^64
+143p22 uu_file{7|47P9}
+143p64 uu_tvp(4|16R9)
+149V13*futimes{6|35I9} 149>22 149^35
+149i22 uu_fd{6|35I9}
+149p35 uu_tvp(4|16R9)
+X 9 system.ads
+37K9*System 8|7w6 59r87 9|154e11
+67M9*Address 8|59r94
+

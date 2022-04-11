@@ -1,0 +1,234 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U util_h%s		util_h.ads		6d5f23be NE OO PK IL
+W bits_stdint_intn_h%s	bits_stdint_intn_h.ads	bits_stdint_intn_h.ali
+W bits_stdint_uintn_h%s	bits_stdint_uintn_h.ads	bits_stdint_uintn_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W streamtypes_h%s	streamtypes_h.ads	streamtypes_h.ali
+W system%s		system.ads		system.ali
+W vgmstream_common%s	vgmstream_common.ads	vgmstream_common.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_intn_h.ads  20220411204005 e7dfa178 bits_stdint_intn_h%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D streamtypes_h.ads	20220411002006 b3efd96b streamtypes_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D unchdeal.ads		20210520051135 214516a4 unchecked_deallocation%s
+D util_h.ads		20220411203633 b928e62c util_h%s
+D vgmstream_common.ads	20220411202458 95d61bb0 vgmstream_common%s
+G a e
+G c Z s s [get_16bitbe util_h 32 13 none]
+G c Z s s [get_16bitle util_h 37 13 none]
+G c Z s s [get_32bitbe util_h 42 13 none]
+G c Z s s [get_32bitle util_h 47 13 none]
+G c Z s s [get_64bitbe util_h 52 13 none]
+G c Z s s [get_64bitle util_h 57 13 none]
+G c Z s s [get_s8 util_h 63 13 none]
+G c Z s s [get_u8 util_h 68 13 none]
+G c Z s s [get_s16le util_h 73 13 none]
+G c Z s s [get_u16le util_h 78 13 none]
+G c Z s s [get_s16be util_h 83 13 none]
+G c Z s s [get_u16be util_h 88 13 none]
+G c Z s s [get_s32le util_h 93 13 none]
+G c Z s s [get_u32le util_h 98 13 none]
+G c Z s s [get_s32be util_h 103 13 none]
+G c Z s s [get_u32be util_h 108 13 none]
+G c Z s s [get_s64le util_h 113 13 none]
+G c Z s s [get_u64le util_h 118 13 none]
+G c Z s s [get_s64be util_h 123 13 none]
+G c Z s s [get_u64be util_h 128 13 none]
+G c Z s s [get_f32be util_h 137 13 none]
+G c Z s s [get_f32le util_h 142 13 none]
+G c Z s s [get_d64be util_h 147 13 none]
+G c Z s s [get_d64le util_h 152 13 none]
+G c Z s s [put_8bit util_h 157 14 none]
+G c Z s s [put_16bitle util_h 162 14 none]
+G c Z s s [put_32bitle util_h 167 14 none]
+G c Z s s [put_16bitbe util_h 172 14 none]
+G c Z s s [put_32bitbe util_h 177 14 none]
+G c Z s s [Tnibble_to_intBIP util_h 185 4 none]
+G c Z s s [get_nibble_signed util_h 190 13 none]
+G c Z s s [get_high_nibble_signed util_h 196 13 none]
+G c Z s s [get_low_nibble_signed util_h 202 13 none]
+G c Z s s [clamp16 util_h 208 13 none]
+G c Z s s [get_id32be util_h 217 13 none]
+G c Z s s [get_id64be util_h 226 13 none]
+G c Z s s [round10 util_h 232 13 none]
+G c Z s s [filename_extension util_h 240 13 none]
+G c Z s s [swap_extension util_h 247 14 none]
+G c Z s s [swap_samples_le util_h 257 14 none]
+G c Z s s [concatn util_h 263 14 none]
+X 3 bits_stdint_intn_h.ads
+8K9*bits_stdint_intn_h 33e23 15|9w6 32r73 37r73 42r73 47r73 52r73 57r73 63r68
+. 73r71 83r71 93r71 103r71 113r71 123r71 157r70 162r73 167r73 172r73 177r73
+. 208r28
+25I12*int8_t{5|39I12} 15|63r87 157r89
+27I12*int16_t{5|43I12} 15|32r92 37r92 73r90 83r90 162r92 172r92
+29I12*int32_t{5|47I12} 15|42r92 47r92 93r90 103r90 167r92 177r92 208r47
+31I12*int64_t{5|51I12} 15|52r92 57r92 113r90 123r90
+X 4 bits_stdint_uintn_h.ads
+8K9*bits_stdint_uintn_h 33e24 15|8w6 32r37 37r37 42r37 47r37 52r37 57r37
+. 63r32 68r32 68r68 73r35 78r35 78r71 83r35 88r35 88r71 93r35 98r35 98r71
+. 103r35 108r35 108r71 113r35 118r35 118r71 123r35 128r35 128r71 137r35 142r35
+. 147r35 152r35 157r37 162r40 167r40 172r40 177r40 190r36 196r41 202r40 217r68
+. 226r68
+25M12*uint8_t{5|41M12} 15|32r57 37r57 42r57 47r57 52r57 57r57 63r52 68r52
+. 68r88 73r55 78r55 83r55 88r55 93r55 98r55 103r55 108r55 113r55 118r55 123r55
+. 128r55 137r55 142r55 147r55 152r55 157r57 162r60 167r60 172r60 177r60 190r56
+. 196r61 202r60
+27M12*uint16_t{5|45M12} 15|78r91 88r91
+29M12*uint32_t{5|49M12} 15|98r91 108r91 217r88
+31M12*uint64_t{5|53M12} 15|118r91 128r91 226r88
+X 5 bits_types_h.ads
+39I12*uu_int8_t{7|41I9}
+41M12*uu_uint8_t{7|49M9}
+43I12*uu_int16_t{7|36I9}
+45M12*uu_uint16_t{7|45M9}
+47I12*uu_int32_t{7|35I9}
+49M12*uu_uint32_t{7|44M9}
+51I12*uu_int64_t{7|37I9}
+53M12*uu_uint64_t{7|46M9}
+X 6 interfac.ads
+38K9*Interfaces 231e15 15|5r6 5r24 10r6 217r29 226r29 240r44 240r83 248r18
+. 250r14 265r13 266r13
+X 7 i-c.ads
+18K20*C 237e17 15|5w17 5r35 10r17 217r40 226r40 240r55 240r94 248r29 250r25
+. 265r24 266r24
+35I9*int<integer> 15|185r55 190r73 190r85 196r77 202r76 208r63 232r28 232r40
+. 249r22 257r67 264r16
+36I9*short<short_integer>
+37I9*long<long_integer>
+41I9*signed_char<short_short_integer>
+44M9*unsigned
+45M9*unsigned_short
+46M9*unsigned_long
+49M9*unsigned_char
+72F9*double<long_float> 15|147r71 152r71
+X 8 i-cstrin.ads
+36K22*Strings 106e25 15|10w19 217r42 226r42 240r57 240r96 248r31 250r27 265r26
+. 266r26
+47P9*chars_ptr 15|217r50 226r50 240r65 240r104 248r39 250r35 265r34 266r34
+X 9 streamtypes_h.ads
+8K9*streamtypes_h 26e18 15|11w6
+24I12*sample_t{3|27I12}
+X 10 system.ads
+37K9*System 154e11 15|6w6
+X 15 util_h.ads
+15K9*util_h 271l5 271e11
+32V13*get_16bitBE{3|27I12} 32^26
+32p26 p(4|25M12)
+37V13*get_16bitLE{3|27I12} 37^26
+37p26 p(4|25M12)
+42V13*get_32bitBE{3|29I12} 42^26
+42p26 p(4|25M12)
+47V13*get_32bitLE{3|29I12} 47^26
+47p26 p(4|25M12)
+52V13*get_64bitBE{3|31I12} 52^26
+52p26 p(4|25M12)
+57V13*get_64bitLE{3|31I12} 57^26
+57p26 p(4|25M12)
+63V13*get_s8{3|25I12} 63^21
+63p21 p(4|25M12)
+68V13*get_u8{4|25M12} 68^21
+68p21 p(4|25M12)
+73V13*get_s16le{3|27I12} 73^24
+73p24 p(4|25M12)
+78V13*get_u16le{4|27M12} 78^24
+78p24 p(4|25M12)
+83V13*get_s16be{3|27I12} 83^24
+83p24 p(4|25M12)
+88V13*get_u16be{4|27M12} 88^24
+88p24 p(4|25M12)
+93V13*get_s32le{3|29I12} 93^24
+93p24 p(4|25M12)
+98V13*get_u32le{4|29M12} 98^24
+98p24 p(4|25M12)
+103V13*get_s32be{3|29I12} 103^24
+103p24 p(4|25M12)
+108V13*get_u32be{4|29M12} 108^24
+108p24 p(4|25M12)
+113V13*get_s64le{3|31I12} 113^24
+113p24 p(4|25M12)
+118V13*get_u64le{4|31M12} 118^24
+118p24 p(4|25M12)
+123V13*get_s64be{3|31I12} 123^24
+123p24 p(4|25M12)
+128V13*get_u64be{4|31M12} 128^24
+128p24 p(4|25M12)
+137V13*get_f32be{float} 137^24
+137p24 p(4|25M12)
+142V13*get_f32le{float} 142^24
+142p24 p(4|25M12)
+147V13*get_d64be{7|72F9} 147^24
+147p24 p(4|25M12)
+152V13*get_d64le{7|72F9} 152^24
+152p24 p(4|25M12)
+157U14*put_8bit 157^24 157>66
+157p24 buf(4|25M12)
+157i66 i{3|25I12}
+162U14*put_16bitLE 162^27 162>69
+162p27 buf(4|25M12)
+162i69 i{3|27I12}
+167U14*put_32bitLE 167^27 167>69
+167p27 buf(4|25M12)
+167i69 i{3|29I12}
+172U14*put_16bitBE 172^27 172>69
+172p27 buf(4|25M12)
+172i69 i{3|27I12}
+177U14*put_32bitBE 177^27 177>69
+177p27 buf(4|25M12)
+177i69 i{3|29I12}
+185a4*nibble_to_int(7|35I9)
+190V13*get_nibble_signed{7|35I9} 190>32 190>65
+190m32 n{4|25M12}
+190i65 upper{7|35I9}
+196V13*get_high_nibble_signed{7|35I9} 196>37
+196m37 n{4|25M12}
+202V13*get_low_nibble_signed{7|35I9} 202>36
+202m36 n{4|25M12}
+208V13*clamp16{7|35I9} 208>22
+208i22 val{3|29I12}
+217V13*get_id32be{4|29M12} 217>25
+217p25 s{8|47P9}
+226V13*get_id64be{4|31M12} 226>25
+226p25 s{8|47P9}
+232V13*round10{7|35I9} 232>22
+232i22 val{7|35I9}
+240V13*filename_extension{8|47P9} 240>33
+240p33 pathname{8|47P9}
+247U14*swap_extension 248>7 249>7 250>7
+248p7 pathname{8|47P9}
+249i7 pathname_len{7|35I9}
+250p7 swap{8|47P9}
+257U14*swap_samples_le 257>31 257>59
+257p31 buf{16|8P14}
+257i59 count{7|35I9}
+263U14*concatn 264>7 265>7 266>7
+264i7 length{7|35I9}
+265p7 dst{8|47P9}
+266p7 src{8|47P9}
+X 16 vgmstream_common.ads
+4K9*VGMStream_Common 15|13w6 13r28 16|11e21
+5I17*Sample{9|24I12}
+6A14*Sample_Buffer(5I17)<integer>
+8P14*Sample_Buffer_Access(6A14) 15|257r37
+

@@ -1,0 +1,881 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_introspect_h%s	pulse_introspect_h.ads	17ba273a NE OO PK IL
+W bits_stdint_intn_h%s	bits_stdint_intn_h.ads	bits_stdint_intn_h.ali
+W bits_stdint_uintn_h%s	bits_stdint_uintn_h.ads	bits_stdint_uintn_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W pulse_channelmap_h%s	pulse_channelmap_h.ads	pulse_channelmap_h.ali
+W pulse_context_h%s	pulse_context_h.ads	pulse_context_h.ali
+W pulse_def_h%s		pulse_def_h.ads		pulse_def_h.ali
+Y pulse_format_h%s	pulse_format_h.ads	pulse_format_h.ali
+Y pulse_operation_h%s	pulse_operation_h.ads	pulse_operation_h.ali
+Y pulse_proplist_h%s	pulse_proplist_h.ads	pulse_proplist_h.ali
+W pulse_sample_h%s	pulse_sample_h.ads	pulse_sample_h.ali
+W pulse_volume_h%s	pulse_volume_h.ads	pulse_volume_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_intn_h.ads  20220411204005 e7dfa178 bits_stdint_intn_h%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_timeval_h.ads  20220411204005 f9cdbe47 bits_types_struct_timeval_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_channelmap_h.ads  20220411204005 132839f7 pulse_channelmap_h%s
+D pulse_context_h.ads	20220411203905 fd5d1282 pulse_context_h%s
+D pulse_def_h.ads	20220411204005 1fe1c178 pulse_def_h%s
+D pulse_format_h.ads	20220411203905 65d45d88 pulse_format_h%s
+D pulse_introspect_h.ads  20220411203905 43718cfc pulse_introspect_h%s
+D pulse_mainloop_api_h.ads  20220411203905 2c5f10d1 pulse_mainloop_api_h%s
+D pulse_operation_h.ads	20220411203905 d462c2a1 pulse_operation_h%s
+D pulse_proplist_h.ads	20220411203905 aeb2c9d6 pulse_proplist_h%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D pulse_volume_h.ads	20220411203905 33ccf72d pulse_volume_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_context_get_sink_info_by_name pulse_introspect_h 336 13 none]
+G c Z s s [pa_context_get_sink_info_by_index pulse_introspect_h 346 13 none]
+G c Z s s [pa_context_get_sink_info_list pulse_introspect_h 356 13 none]
+G c Z s s [pa_context_set_sink_volume_by_index pulse_introspect_h 365 13 none]
+G c Z s s [pa_context_set_sink_volume_by_name pulse_introspect_h 376 13 none]
+G c Z s s [pa_context_set_sink_mute_by_index pulse_introspect_h 387 13 none]
+G c Z s s [pa_context_set_sink_mute_by_name pulse_introspect_h 398 13 none]
+G c Z s s [pa_context_suspend_sink_by_name pulse_introspect_h 409 13 none]
+G c Z s s [pa_context_suspend_sink_by_index pulse_introspect_h 420 13 none]
+G c Z s s [pa_context_set_sink_port_by_index pulse_introspect_h 431 13 none]
+G c Z s s [pa_context_set_sink_port_by_name pulse_introspect_h 442 13 none]
+G c Z s s [pa_context_get_source_info_by_name pulse_introspect_h 563 13 none]
+G c Z s s [pa_context_get_source_info_by_index pulse_introspect_h 573 13 none]
+G c Z s s [pa_context_get_source_info_list pulse_introspect_h 583 13 none]
+G c Z s s [pa_context_set_source_volume_by_index pulse_introspect_h 592 13 none]
+G c Z s s [pa_context_set_source_volume_by_name pulse_introspect_h 603 13 none]
+G c Z s s [pa_context_set_source_mute_by_index pulse_introspect_h 614 13 none]
+G c Z s s [pa_context_set_source_mute_by_name pulse_introspect_h 625 13 none]
+G c Z s s [pa_context_suspend_source_by_name pulse_introspect_h 636 13 none]
+G c Z s s [pa_context_suspend_source_by_index pulse_introspect_h 647 13 none]
+G c Z s s [pa_context_set_source_port_by_index pulse_introspect_h 658 13 none]
+G c Z s s [pa_context_set_source_port_by_name pulse_introspect_h 669 13 none]
+G c Z s s [pa_context_get_server_info pulse_introspect_h 715 13 none]
+G c Z s s [pa_context_get_module_info pulse_introspect_h 756 13 none]
+G c Z s s [pa_context_get_module_info_list pulse_introspect_h 766 13 none]
+G c Z s s [pa_context_load_module pulse_introspect_h 782 13 none]
+G c Z s s [pa_context_unload_module pulse_introspect_h 793 13 none]
+G c Z s s [pa_context_send_message_to_object pulse_introspect_h 815 13 none]
+G c Z s s [pa_context_get_client_info pulse_introspect_h 855 13 none]
+G c Z s s [pa_context_get_client_info_list pulse_introspect_h 865 13 none]
+G c Z s s [pa_context_kill_client pulse_introspect_h 874 13 none]
+G c Z s s [pa_context_get_card_info_by_index pulse_introspect_h 1017 13 none]
+G c Z s s [pa_context_get_card_info_by_name pulse_introspect_h 1027 13 none]
+G c Z s s [pa_context_get_card_info_list pulse_introspect_h 1037 13 none]
+G c Z s s [pa_context_set_card_profile_by_index pulse_introspect_h 1046 13 none]
+G c Z s s [pa_context_set_card_profile_by_name pulse_introspect_h 1057 13 none]
+G c Z s s [pa_context_set_port_latency_offset pulse_introspect_h 1068 13 none]
+G c Z s s [pa_context_get_sink_input_info pulse_introspect_h 1134 13 none]
+G c Z s s [pa_context_get_sink_input_info_list pulse_introspect_h 1144 13 none]
+G c Z s s [pa_context_move_sink_input_by_name pulse_introspect_h 1153 13 none]
+G c Z s s [pa_context_move_sink_input_by_index pulse_introspect_h 1164 13 none]
+G c Z s s [pa_context_set_sink_input_volume pulse_introspect_h 1175 13 none]
+G c Z s s [pa_context_set_sink_input_mute pulse_introspect_h 1186 13 none]
+G c Z s s [pa_context_kill_sink_input pulse_introspect_h 1197 13 none]
+G c Z s s [pa_context_get_source_output_info pulse_introspect_h 1261 13 none]
+G c Z s s [pa_context_get_source_output_info_list pulse_introspect_h 1271 13 none]
+G c Z s s [pa_context_move_source_output_by_name pulse_introspect_h 1280 13 none]
+G c Z s s [pa_context_move_source_output_by_index pulse_introspect_h 1291 13 none]
+G c Z s s [pa_context_set_source_output_volume pulse_introspect_h 1302 13 none]
+G c Z s s [pa_context_set_source_output_mute pulse_introspect_h 1313 13 none]
+G c Z s s [pa_context_kill_source_output pulse_introspect_h 1324 13 none]
+G c Z s s [pa_context_stat pulse_introspect_h 1361 13 none]
+G c Z s s [pa_context_get_sample_info_by_name pulse_introspect_h 1408 13 none]
+G c Z s s [pa_context_get_sample_info_by_index pulse_introspect_h 1418 13 none]
+G c Z s s [pa_context_get_sample_info_list pulse_introspect_h 1428 13 none]
+G c Z s s [pa_context_get_autoload_info_by_name pulse_introspect_h 1474 13 none]
+G c Z s s [pa_context_get_autoload_info_by_index pulse_introspect_h 1485 13 none]
+G c Z s s [pa_context_get_autoload_info_list pulse_introspect_h 1495 13 none]
+G c Z s s [pa_context_add_autoload pulse_introspect_h 1504 13 none]
+G c Z s s [pa_context_remove_autoload_by_name pulse_introspect_h 1517 13 none]
+G c Z s s [pa_context_remove_autoload_by_index pulse_introspect_h 1528 13 none]
+G c Z s s [pa_sink_port_infoIP pulse_introspect_h 233 9 none]
+G c Z s s [pa_sink_infoIP pulse_introspect_h 276 9 none]
+G c Z s s [pa_source_port_infoIP pulse_introspect_h 459 9 none]
+G c Z s s [pa_source_infoIP pulse_introspect_h 503 9 none]
+G c Z s s [pa_server_infoIP pulse_introspect_h 686 9 none]
+G c Z s s [pa_module_infoIP pulse_introspect_h 730 9 none]
+G c Z s s [pa_client_infoIP pulse_introspect_h 833 9 none]
+G c Z s s [pa_card_profile_infoIP pulse_introspect_h 887 9 none]
+G c Z s s [pa_card_profile_info2IP pulse_introspect_h 905 9 none]
+G c Z s s [pa_card_port_infoIP pulse_introspect_h 930 9 none]
+G c Z s s [pa_card_infoIP pulse_introspect_h 981 9 none]
+G c Z s s [pa_sink_input_infoIP pulse_introspect_h 1086 9 none]
+G c Z s s [pa_source_output_infoIP pulse_introspect_h 1213 9 none]
+G c Z s s [pa_stat_infoIP pulse_introspect_h 1340 9 none]
+G c Z s s [pa_sample_infoIP pulse_introspect_h 1376 9 none]
+G c Z s s [pa_autoload_infoIP pulse_introspect_h 1452 9 none]
+X 3 bits_stdint_intn_h.ads
+8K9*bits_stdint_intn_h 33e23 14|16w6 939r32 1072r16
+31I12*int64_t{5|51I12} 14|939r51 1072r35
+X 4 bits_stdint_uintn_h.ads
+8K9*bits_stdint_uintn_h 33e24 14|7w6 236r26 239r24 278r23 282r30 285r32 294r32
+. 295r22 296r25 299r27 348r13 367r13 389r13 422r13 433r13 462r26 465r24 505r23
+. 509r30 512r33 521r32 522r22 523r25 526r27 575r13 594r13 616r13 649r13 660r13
+. 694r24 731r23 734r24 758r13 777r17 795r13 834r23 836r30 857r13 876r13 890r25
+. 891r27 892r26 908r25 909r27 910r26 933r26 936r28 942r24 982r23 984r30 986r28
+. 990r25 1019r13 1048r13 1087r23 1089r30 1090r24 1091r22 1136r13 1155r13
+. 1166r13 1167r18 1177r13 1188r13 1199r13 1214r23 1216r30 1217r24 1218r24
+. 1263r13 1282r13 1293r13 1294r20 1304r13 1315r13 1326r13 1341r32 1342r37
+. 1343r36 1344r41 1345r29 1377r23 1383r23 1420r13 1453r23 1487r13 1530r13
+25M12*uint8_t{5|41M12} 14|299r47 526r47
+29M12*uint32_t{5|49M12} 14|236r46 239r44 278r43 282r50 285r52 294r52 295r42
+. 296r45 348r33 367r33 389r33 422r33 433r33 462r46 465r44 505r43 509r50 512r53
+. 521r52 522r42 523r45 575r33 594r33 616r33 649r33 660r33 694r44 731r43 734r44
+. 758r33 777r37 795r33 834r43 836r50 857r33 876r33 890r45 891r47 892r46 908r45
+. 909r47 910r46 933r46 936r48 942r44 982r43 984r50 986r48 990r45 1019r33
+. 1048r33 1087r43 1089r50 1090r44 1091r42 1136r33 1155r33 1166r33 1167r38
+. 1177r33 1188r33 1199r33 1214r43 1216r50 1217r44 1218r44 1263r33 1282r33
+. 1293r33 1294r40 1304r33 1315r33 1326r33 1341r52 1342r57 1343r56 1344r61
+. 1345r49 1377r43 1383r43 1420r33 1453r43 1487r33 1530r33
+31M12*uint64_t{5|53M12}
+X 5 bits_types_h.ads
+41M12*uu_uint8_t{8|49M9}
+49M12*uu_uint32_t{8|44M9}
+51I12*uu_int64_t{8|37I9}
+53M12*uu_uint64_t{8|46M9}
+X 7 interfac.ads
+38K9*Interfaces 231e15 14|5r6 5r24 6r6 234r14 235r21 238r28 277r14 279r21
+. 286r29 288r16 338r14 378r14 400r14 411r19 434r14 444r14 445r14 460r14 461r21
+. 464r28 504r14 506r21 513r30 515r16 565r14 605r14 627r14 638r21 661r14 671r14
+. 672r14 687r19 688r19 689r24 690r21 692r27 693r29 732r14 733r18 784r14 785r18
+. 808r17 817r24 818r17 819r28 835r14 837r16 888r14 889r21 906r14 907r21 931r14
+. 932r21 941r28 983r14 985r16 1029r14 1049r17 1059r14 1060r17 1070r19 1071r19
+. 1088r14 1097r25 1098r16 1156r19 1215r14 1223r25 1224r16 1283r21 1378r14
+. 1385r18 1410r14 1454r14 1456r16 1457r18 1476r14 1506r14 1508r16 1509r18
+. 1519r14
+X 8 i-c.ads
+18K20*C 237e17 14|5w17 5r35 6r17 234r25 235r32 238r39 277r25 279r32 286r40
+. 288r27 338r25 378r25 400r25 411r30 434r25 444r25 445r25 460r25 461r32 464r39
+. 504r25 506r32 513r41 515r27 565r25 605r25 627r25 638r32 661r25 671r25 672r25
+. 687r30 688r30 689r35 690r32 692r38 693r40 732r25 733r29 784r25 785r29 808r28
+. 817r35 818r28 819r39 835r25 837r27 888r25 889r32 906r25 907r32 931r25 932r32
+. 941r39 983r25 985r27 1029r25 1049r28 1059r25 1060r28 1070r30 1071r30 1088r25
+. 1097r36 1098r27 1156r30 1215r25 1223r36 1224r27 1283r32 1378r25 1385r29
+. 1410r25 1454r25 1456r27 1457r29 1476r25 1506r25 1508r27 1509r29 1519r25
+35I9*int<integer> 14|237r27 284r22 331r17 390r14 401r14 412r17 423r17 463r27
+. 511r22 558r17 617r14 628r14 639r17 650r17 735r29 751r17 807r17 850r17 911r27
+. 934r27 935r27 1012r17 1099r22 1101r24 1102r28 1103r33 1129r17 1189r14 1226r24
+. 1228r22 1229r28 1230r33 1256r17 1316r14 1384r22 1403r17 1469r17
+37I9*long<long_integer>
+44M9*unsigned
+46M9*unsigned_long
+49M9*unsigned_char
+X 9 i-cstrin.ads
+36K22*Strings 106e25 14|6w19 234r27 235r34 238r41 277r27 279r34 286r42 288r29
+. 338r27 378r27 400r27 411r32 434r27 444r27 445r27 460r27 461r34 464r41 504r27
+. 506r34 513r43 515r29 565r27 605r27 627r27 638r34 661r27 671r27 672r27 687r32
+. 688r32 689r37 690r34 692r40 693r42 732r27 733r31 784r27 785r31 808r30 817r37
+. 818r30 819r41 835r27 837r29 888r27 889r34 906r27 907r34 931r27 932r34 941r41
+. 983r27 985r29 1029r27 1049r30 1059r27 1060r30 1070r32 1071r32 1088r27 1097r38
+. 1098r29 1156r32 1215r27 1223r38 1224r29 1283r34 1378r27 1385r31 1410r27
+. 1454r27 1456r29 1457r31 1476r27 1506r27 1508r29 1509r31 1519r27
+47P9*chars_ptr 14|234r35 235r42 238r49 277r35 279r42 286r50 288r37 338r35
+. 378r35 400r35 411r40 434r35 444r35 445r35 460r35 461r42 464r49 504r35 506r42
+. 513r51 515r37 565r35 605r35 627r35 638r42 661r35 671r35 672r35 687r40 688r40
+. 689r45 690r42 692r48 693r50 732r35 733r39 784r35 785r39 808r38 817r45 818r38
+. 819r49 835r35 837r37 888r35 889r42 906r35 907r42 931r35 932r42 941r49 983r35
+. 985r37 1029r35 1049r38 1059r35 1060r38 1070r40 1071r40 1088r35 1097r46
+. 1098r37 1156r40 1215r35 1223r46 1224r37 1283r42 1378r35 1385r39 1410r35
+. 1454r35 1456r37 1457r39 1476r35 1506r35 1508r37 1509r39 1519r35
+X 10 pulse_channelmap_h.ads
+11K9*pulse_channelmap_h 454e23 14|9w6 281r29 508r29 695r29 1093r29 1220r29
+. 1381r29
+270R9*pa_channel_map 274e4 14|281r48 508r48 695r48 1093r48 1220r48 1381r48
+X 11 pulse_context_h.ads
+16K9*pulse_context_h 444e20 14|14w6 329r24 337r18 347r18 357r18 366r18 369r12
+. 377r18 380r12 388r18 391r12 399r18 402r12 410r18 413r12 421r18 424r12 432r18
+. 435r12 443r18 446r12 556r24 564r18 574r18 584r18 593r18 596r12 604r18 607r12
+. 615r18 618r12 626r18 629r12 637r18 640r12 648r18 651r12 659r18 662r12 670r18
+. 673r12 709r24 716r18 749r24 757r18 767r18 776r24 783r18 794r18 796r12 806r24
+. 816r18 848r24 856r18 866r18 875r18 877r12 1010r24 1018r18 1028r18 1038r18
+. 1047r18 1050r12 1058r18 1061r12 1069r18 1073r12 1127r24 1135r18 1145r18
+. 1154r18 1157r12 1165r18 1168r12 1176r18 1179r12 1187r18 1190r12 1198r18
+. 1200r12 1254r24 1262r18 1272r18 1281r18 1284r12 1292r18 1295r12 1303r18
+. 1306r12 1314r18 1317r12 1325r18 1327r12 1355r24 1362r18 1401r24 1409r18
+. 1419r18 1429r18 1467r24 1475r18 1486r18 1496r18 1505r18 1518r18 1521r12
+. 1529r18 1531r12
+154R9*pa_context 14|329r40 337r34 347r34 357r34 366r34 377r34 388r34 399r34
+. 410r34 421r34 432r34 443r34 556r40 564r34 574r34 584r34 593r34 604r34 615r34
+. 626r34 637r34 648r34 659r34 670r34 709r40 716r34 749r40 757r34 767r34 776r40
+. 783r34 794r34 806r40 816r34 848r40 856r34 866r34 875r34 1010r40 1018r34
+. 1028r34 1038r34 1047r34 1058r34 1069r34 1127r40 1135r34 1145r34 1154r34
+. 1165r34 1176r34 1187r34 1198r34 1254r40 1262r34 1272r34 1281r34 1292r34
+. 1303r34 1314r34 1325r34 1355r40 1362r34 1401r40 1409r34 1419r34 1429r34
+. 1467r40 1475r34 1486r34 1496r34 1505r34 1518r34 1529r34
+161P9*pa_context_success_cb_t 14|369r28 380r28 391r28 402r28 413r28 424r28
+. 435r28 446r28 596r28 607r28 618r28 629r28 640r28 651r28 662r28 673r28 796r28
+. 877r28 1050r28 1061r28 1073r28 1157r28 1168r28 1179r28 1190r28 1200r28
+. 1284r28 1295r28 1306r28 1317r28 1327r28 1521r28 1531r28
+X 12 pulse_def_h.ads
+12K9*pulse_def_h 1102e16 14|11w6 289r23 293r23 516r23 520r23
+858M12*pa_sink_flags{8|44M9}
+906M12*pa_sink_flags_t{858M12} 14|289r35
+912I12*pa_sink_state{8|35I9}
+934I12*pa_sink_state_t{912I12} 14|293r35
+951M12*pa_source_flags{8|44M9}
+993M12*pa_source_flags_t{951M12} 14|516r35
+998I12*pa_source_state{8|35I9}
+1020I12*pa_source_state_t{998I12} 14|520r35
+X 13 pulse_format_h.ads
+14K9 pulse_format_h 14|1104r23 1231r23
+X 14 pulse_introspect_h.ads
+19K9*pulse_introspect_h 1539l5 1539e23
+233R9*pa_sink_port_info 241e4 298r28
+234p7*name{9|47P9}
+235p7*description{9|47P9}
+236m7*priority{4|29M12}
+237i7*available{8|35I9}
+238p7*availability_group{9|47P9}
+239m7*c_type{4|29M12}
+276R9*pa_sink_info 302e4 330r33
+277p7*name{9|47P9}
+278m7*index{4|29M12}
+279p7*description{9|47P9}
+280r7*sample_spec{18|209R9}
+281r7*channel_map{10|270R9}
+282m7*owner_module{4|29M12}
+283r7*volume{19|160R9}
+284i7*mute{8|35I9}
+285m7*monitor_source{4|29M12}
+286p7*monitor_source_name{9|47P9}
+287m7*latency{18|220M12}
+288p7*driver{9|47P9}
+289m7*flags{12|906M12}
+290p7*proplist
+291m7*configured_latency{18|220M12}
+292m7*base_volume{19|143M12}
+293i7*state{12|934I12}
+294m7*n_volume_steps{4|29M12}
+295m7*card{4|29M12}
+296m7*n_ports{4|29M12}
+297m7*ports{21|67M9}
+298p7*active_port(233R9)
+299m7*n_formats{4|25M12}
+300m7*formats{21|67M9}
+328P9*pa_sink_info_cb_t 329^10 330^10 331>10 332>10 339r12 349r12 358r12
+329p10 arg1(11|154R9)
+330p10 arg2(276R9)
+331i10 arg3{8|35I9}
+332m10 arg4{21|67M9}
+336V13*pa_context_get_sink_info_by_name 337^7 338>7 339>7 340>7
+337p7 c(11|154R9)
+338p7 name{9|47P9}
+339p7 cb{328P9}
+340m7 userdata{21|67M9}
+346V13*pa_context_get_sink_info_by_index 347^7 348>7 349>7 350>7
+347p7 c(11|154R9)
+348m7 idx{4|29M12}
+349p7 cb{328P9}
+350m7 userdata{21|67M9}
+356V13*pa_context_get_sink_info_list 357^7 358>7 359>7
+357p7 c(11|154R9)
+358p7 cb{328P9}
+359m7 userdata{21|67M9}
+365V13*pa_context_set_sink_volume_by_index 366^7 367>7 368^7 369>7 370>7
+366p7 c(11|154R9)
+367m7 idx{4|29M12}
+368p7 volume(19|160R9)
+369p7 cb{11|161P9}
+370m7 userdata{21|67M9}
+376V13*pa_context_set_sink_volume_by_name 377^7 378>7 379^7 380>7 381>7
+377p7 c(11|154R9)
+378p7 name{9|47P9}
+379p7 volume(19|160R9)
+380p7 cb{11|161P9}
+381m7 userdata{21|67M9}
+387V13*pa_context_set_sink_mute_by_index 388^7 389>7 390>7 391>7 392>7
+388p7 c(11|154R9)
+389m7 idx{4|29M12}
+390i7 mute{8|35I9}
+391p7 cb{11|161P9}
+392m7 userdata{21|67M9}
+398V13*pa_context_set_sink_mute_by_name 399^7 400>7 401>7 402>7 403>7
+399p7 c(11|154R9)
+400p7 name{9|47P9}
+401i7 mute{8|35I9}
+402p7 cb{11|161P9}
+403m7 userdata{21|67M9}
+409V13*pa_context_suspend_sink_by_name 410^7 411>7 412>7 413>7 414>7
+410p7 c(11|154R9)
+411p7 sink_name{9|47P9}
+412i7 suspend{8|35I9}
+413p7 cb{11|161P9}
+414m7 userdata{21|67M9}
+420V13*pa_context_suspend_sink_by_index 421^7 422>7 423>7 424>7 425>7
+421p7 c(11|154R9)
+422m7 idx{4|29M12}
+423i7 suspend{8|35I9}
+424p7 cb{11|161P9}
+425m7 userdata{21|67M9}
+431V13*pa_context_set_sink_port_by_index 432^7 433>7 434>7 435>7 436>7
+432p7 c(11|154R9)
+433m7 idx{4|29M12}
+434p7 port{9|47P9}
+435p7 cb{11|161P9}
+436m7 userdata{21|67M9}
+442V13*pa_context_set_sink_port_by_name 443^7 444>7 445>7 446>7 447>7
+443p7 c(11|154R9)
+444p7 name{9|47P9}
+445p7 port{9|47P9}
+446p7 cb{11|161P9}
+447m7 userdata{21|67M9}
+459R9*pa_source_port_info 467e4 525r28
+460p7*name{9|47P9}
+461p7*description{9|47P9}
+462m7*priority{4|29M12}
+463i7*available{8|35I9}
+464p7*availability_group{9|47P9}
+465m7*c_type{4|29M12}
+503R9*pa_source_info 529e4 557r33
+504p7*name{9|47P9}
+505m7*index{4|29M12}
+506p7*description{9|47P9}
+507r7*sample_spec{18|209R9}
+508r7*channel_map{10|270R9}
+509m7*owner_module{4|29M12}
+510r7*volume{19|160R9}
+511i7*mute{8|35I9}
+512m7*monitor_of_sink{4|29M12}
+513p7*monitor_of_sink_name{9|47P9}
+514m7*latency{18|220M12}
+515p7*driver{9|47P9}
+516m7*flags{12|993M12}
+517p7*proplist
+518m7*configured_latency{18|220M12}
+519m7*base_volume{19|143M12}
+520i7*state{12|1020I12}
+521m7*n_volume_steps{4|29M12}
+522m7*card{4|29M12}
+523m7*n_ports{4|29M12}
+524m7*ports{21|67M9}
+525p7*active_port(459R9)
+526m7*n_formats{4|25M12}
+527m7*formats{21|67M9}
+555P9*pa_source_info_cb_t 556^10 557^10 558>10 559>10 566r12 576r12 585r12
+556p10 arg1(11|154R9)
+557p10 arg2(503R9)
+558i10 arg3{8|35I9}
+559m10 arg4{21|67M9}
+563V13*pa_context_get_source_info_by_name 564^7 565>7 566>7 567>7
+564p7 c(11|154R9)
+565p7 name{9|47P9}
+566p7 cb{555P9}
+567m7 userdata{21|67M9}
+573V13*pa_context_get_source_info_by_index 574^7 575>7 576>7 577>7
+574p7 c(11|154R9)
+575m7 idx{4|29M12}
+576p7 cb{555P9}
+577m7 userdata{21|67M9}
+583V13*pa_context_get_source_info_list 584^7 585>7 586>7
+584p7 c(11|154R9)
+585p7 cb{555P9}
+586m7 userdata{21|67M9}
+592V13*pa_context_set_source_volume_by_index 593^7 594>7 595^7 596>7 597>7
+593p7 c(11|154R9)
+594m7 idx{4|29M12}
+595p7 volume(19|160R9)
+596p7 cb{11|161P9}
+597m7 userdata{21|67M9}
+603V13*pa_context_set_source_volume_by_name 604^7 605>7 606^7 607>7 608>7
+604p7 c(11|154R9)
+605p7 name{9|47P9}
+606p7 volume(19|160R9)
+607p7 cb{11|161P9}
+608m7 userdata{21|67M9}
+614V13*pa_context_set_source_mute_by_index 615^7 616>7 617>7 618>7 619>7
+615p7 c(11|154R9)
+616m7 idx{4|29M12}
+617i7 mute{8|35I9}
+618p7 cb{11|161P9}
+619m7 userdata{21|67M9}
+625V13*pa_context_set_source_mute_by_name 626^7 627>7 628>7 629>7 630>7
+626p7 c(11|154R9)
+627p7 name{9|47P9}
+628i7 mute{8|35I9}
+629p7 cb{11|161P9}
+630m7 userdata{21|67M9}
+636V13*pa_context_suspend_source_by_name 637^7 638>7 639>7 640>7 641>7
+637p7 c(11|154R9)
+638p7 source_name{9|47P9}
+639i7 suspend{8|35I9}
+640p7 cb{11|161P9}
+641m7 userdata{21|67M9}
+647V13*pa_context_suspend_source_by_index 648^7 649>7 650>7 651>7 652>7
+648p7 c(11|154R9)
+649m7 idx{4|29M12}
+650i7 suspend{8|35I9}
+651p7 cb{11|161P9}
+652m7 userdata{21|67M9}
+658V13*pa_context_set_source_port_by_index 659^7 660>7 661>7 662>7 663>7
+659p7 c(11|154R9)
+660m7 idx{4|29M12}
+661p7 port{9|47P9}
+662p7 cb{11|161P9}
+663m7 userdata{21|67M9}
+669V13*pa_context_set_source_port_by_name 670^7 671>7 672>7 673>7 674>7
+670p7 c(11|154R9)
+671p7 name{9|47P9}
+672p7 port{9|47P9}
+673p7 cb{11|161P9}
+674m7 userdata{21|67M9}
+686R9*pa_server_info 697e4 710r33
+687p7*user_name{9|47P9}
+688p7*host_name{9|47P9}
+689p7*server_version{9|47P9}
+690p7*server_name{9|47P9}
+691r7*sample_spec{18|209R9}
+692p7*default_sink_name{9|47P9}
+693p7*default_source_name{9|47P9}
+694m7*cookie{4|29M12}
+695r7*channel_map{10|270R9}
+708P9*pa_server_info_cb_t 709^10 710^10 711>10 717r12
+709p10 arg1(11|154R9)
+710p10 arg2(686R9)
+711m10 arg3{21|67M9}
+715V13*pa_context_get_server_info 716^7 717>7 718>7
+716p7 c(11|154R9)
+717p7 cb{708P9}
+718m7 userdata{21|67M9}
+730R9*pa_module_info 738e4 750r33
+731m7*index{4|29M12}
+732p7*name{9|47P9}
+733p7*argument{9|47P9}
+734m7*n_used{4|29M12}
+735i7*auto_unload{8|35I9}
+736p7*proplist
+748P9*pa_module_info_cb_t 749^10 750^10 751>10 752>10 759r12 768r12
+749p10 arg1(11|154R9)
+750p10 arg2(730R9)
+751i10 arg3{8|35I9}
+752m10 arg4{21|67M9}
+756V13*pa_context_get_module_info 757^7 758>7 759>7 760>7
+757p7 c(11|154R9)
+758m7 idx{4|29M12}
+759p7 cb{748P9}
+760m7 userdata{21|67M9}
+766V13*pa_context_get_module_info_list 767^7 768>7 769>7
+767p7 c(11|154R9)
+768p7 cb{748P9}
+769m7 userdata{21|67M9}
+775P9*pa_context_index_cb_t 776^10 777>10 778>10 786r12 1510r14
+776p10 arg1(11|154R9)
+777m10 arg2{4|29M12}
+778m10 arg3{21|67M9}
+782V13*pa_context_load_module 783^7 784>7 785>7 786>7 787>7
+783p7 c(11|154R9)
+784p7 name{9|47P9}
+785p7 argument{9|47P9}
+786p7 cb{775P9}
+787m7 userdata{21|67M9}
+793V13*pa_context_unload_module 794^7 795>7 796>7 797>7
+794p7 c(11|154R9)
+795m7 idx{4|29M12}
+796p7 cb{11|161P9}
+797m7 userdata{21|67M9}
+805P9*pa_context_string_cb_t 806^10 807>10 808>10 809>10 820r12
+806p10 arg1(11|154R9)
+807i10 arg2{8|35I9}
+808p10 arg3{9|47P9}
+809m10 arg4{21|67M9}
+815V13*pa_context_send_message_to_object 816^7 817>7 818>7 819>7 820>7 821>7
+816p7 c(11|154R9)
+817p7 recipient_name{9|47P9}
+818p7 message{9|47P9}
+819p7 message_parameters{9|47P9}
+820p7 cb{805P9}
+821m7 userdata{21|67M9}
+833R9*pa_client_info 840e4 849r33
+834m7*index{4|29M12}
+835p7*name{9|47P9}
+836m7*owner_module{4|29M12}
+837p7*driver{9|47P9}
+838p7*proplist
+847P9*pa_client_info_cb_t 848^10 849^10 850>10 851>10 858r12 867r12
+848p10 arg1(11|154R9)
+849p10 arg2(833R9)
+850i10 arg3{8|35I9}
+851m10 arg4{21|67M9}
+855V13*pa_context_get_client_info 856^7 857>7 858>7 859>7
+856p7 c(11|154R9)
+857m7 idx{4|29M12}
+858p7 cb{847P9}
+859m7 userdata{21|67M9}
+865V13*pa_context_get_client_info_list 866^7 867>7 868>7
+866p7 c(11|154R9)
+867p7 cb{847P9}
+868m7 userdata{21|67M9}
+874V13*pa_context_kill_client 875^7 876>7 877>7 878>7
+875p7 c(11|154R9)
+876m7 idx{4|29M12}
+877p7 cb{11|161P9}
+878m7 userdata{21|67M9}
+887R9*pa_card_profile_info 894e4 987r25 988r31
+888p7*name{9|47P9}
+889p7*description{9|47P9}
+890m7*n_sinks{4|29M12}
+891m7*n_sources{4|29M12}
+892m7*priority{4|29M12}
+905R9*pa_card_profile_info2 913e4 993r32
+906p7*name{9|47P9}
+907p7*description{9|47P9}
+908m7*n_sinks{4|29M12}
+909m7*n_sources{4|29M12}
+910m7*priority{4|29M12}
+911i7*available{8|35I9}
+930R9*pa_card_port_info 944e4
+931p7*name{9|47P9}
+932p7*description{9|47P9}
+933m7*priority{4|29M12}
+934i7*available{8|35I9}
+935i7*direction{8|35I9}
+936m7*n_profiles{4|29M12}
+937m7*profiles{21|67M9}
+938p7*proplist
+939i7*latency_offset{3|31I12}
+940m7*profiles2{21|67M9}
+941p7*availability_group{9|47P9}
+942m7*c_type{4|29M12}
+981R9*pa_card_info 995e4 1011r33
+982m7*index{4|29M12}
+983p7*name{9|47P9}
+984m7*owner_module{4|29M12}
+985p7*driver{9|47P9}
+986m7*n_profiles{4|29M12}
+987p7*profiles(887R9)
+988p7*active_profile(887R9)
+989p7*proplist
+990m7*n_ports{4|29M12}
+991m7*ports{21|67M9}
+992m7*profiles2{21|67M9}
+993p7*active_profile2(905R9)
+1009P9*pa_card_info_cb_t 1010^10 1011^10 1012>10 1013>10 1020r12 1030r12
+. 1039r12
+1010p10 arg1(11|154R9)
+1011p10 arg2(981R9)
+1012i10 arg3{8|35I9}
+1013m10 arg4{21|67M9}
+1017V13*pa_context_get_card_info_by_index 1018^7 1019>7 1020>7 1021>7
+1018p7 c(11|154R9)
+1019m7 idx{4|29M12}
+1020p7 cb{1009P9}
+1021m7 userdata{21|67M9}
+1027V13*pa_context_get_card_info_by_name 1028^7 1029>7 1030>7 1031>7
+1028p7 c(11|154R9)
+1029p7 name{9|47P9}
+1030p7 cb{1009P9}
+1031m7 userdata{21|67M9}
+1037V13*pa_context_get_card_info_list 1038^7 1039>7 1040>7
+1038p7 c(11|154R9)
+1039p7 cb{1009P9}
+1040m7 userdata{21|67M9}
+1046V13*pa_context_set_card_profile_by_index 1047^7 1048>7 1049>7 1050>7
+. 1051>7
+1047p7 c(11|154R9)
+1048m7 idx{4|29M12}
+1049p7 profile{9|47P9}
+1050p7 cb{11|161P9}
+1051m7 userdata{21|67M9}
+1057V13*pa_context_set_card_profile_by_name 1058^7 1059>7 1060>7 1061>7 1062>7
+1058p7 c(11|154R9)
+1059p7 name{9|47P9}
+1060p7 profile{9|47P9}
+1061p7 cb{11|161P9}
+1062m7 userdata{21|67M9}
+1068V13*pa_context_set_port_latency_offset 1069^7 1070>7 1071>7 1072>7 1073>7
+. 1074>7
+1069p7 c(11|154R9)
+1070p7 card_name{9|47P9}
+1071p7 port_name{9|47P9}
+1072i7 offset{3|31I12}
+1073p7 cb{11|161P9}
+1074m7 userdata{21|67M9}
+1086R9*pa_sink_input_info 1106e4 1128r33
+1087m7*index{4|29M12}
+1088p7*name{9|47P9}
+1089m7*owner_module{4|29M12}
+1090m7*client{4|29M12}
+1091m7*sink{4|29M12}
+1092r7*sample_spec{18|209R9}
+1093r7*channel_map{10|270R9}
+1094r7*volume{19|160R9}
+1095m7*buffer_usec{18|220M12}
+1096m7*sink_usec{18|220M12}
+1097p7*resample_method{9|47P9}
+1098p7*driver{9|47P9}
+1099i7*mute{8|35I9}
+1100p7*proplist
+1101i7*corked{8|35I9}
+1102i7*has_volume{8|35I9}
+1103i7*volume_writable{8|35I9}
+1104p7*format
+1126P9*pa_sink_input_info_cb_t 1127^10 1128^10 1129>10 1130>10 1137r12 1146r12
+1127p10 arg1(11|154R9)
+1128p10 arg2(1086R9)
+1129i10 arg3{8|35I9}
+1130m10 arg4{21|67M9}
+1134V13*pa_context_get_sink_input_info 1135^7 1136>7 1137>7 1138>7
+1135p7 c(11|154R9)
+1136m7 idx{4|29M12}
+1137p7 cb{1126P9}
+1138m7 userdata{21|67M9}
+1144V13*pa_context_get_sink_input_info_list 1145^7 1146>7 1147>7
+1145p7 c(11|154R9)
+1146p7 cb{1126P9}
+1147m7 userdata{21|67M9}
+1153V13*pa_context_move_sink_input_by_name 1154^7 1155>7 1156>7 1157>7 1158>7
+1154p7 c(11|154R9)
+1155m7 idx{4|29M12}
+1156p7 sink_name{9|47P9}
+1157p7 cb{11|161P9}
+1158m7 userdata{21|67M9}
+1164V13*pa_context_move_sink_input_by_index 1165^7 1166>7 1167>7 1168>7 1169>7
+1165p7 c(11|154R9)
+1166m7 idx{4|29M12}
+1167m7 sink_idx{4|29M12}
+1168p7 cb{11|161P9}
+1169m7 userdata{21|67M9}
+1175V13*pa_context_set_sink_input_volume 1176^7 1177>7 1178^7 1179>7 1180>7
+1176p7 c(11|154R9)
+1177m7 idx{4|29M12}
+1178p7 volume(19|160R9)
+1179p7 cb{11|161P9}
+1180m7 userdata{21|67M9}
+1186V13*pa_context_set_sink_input_mute 1187^7 1188>7 1189>7 1190>7 1191>7
+1187p7 c(11|154R9)
+1188m7 idx{4|29M12}
+1189i7 mute{8|35I9}
+1190p7 cb{11|161P9}
+1191m7 userdata{21|67M9}
+1197V13*pa_context_kill_sink_input 1198^7 1199>7 1200>7 1201>7
+1198p7 c(11|154R9)
+1199m7 idx{4|29M12}
+1200p7 cb{11|161P9}
+1201m7 userdata{21|67M9}
+1213R9*pa_source_output_info 1233e4 1255r33
+1214m7*index{4|29M12}
+1215p7*name{9|47P9}
+1216m7*owner_module{4|29M12}
+1217m7*client{4|29M12}
+1218m7*source{4|29M12}
+1219r7*sample_spec{18|209R9}
+1220r7*channel_map{10|270R9}
+1221m7*buffer_usec{18|220M12}
+1222m7*source_usec{18|220M12}
+1223p7*resample_method{9|47P9}
+1224p7*driver{9|47P9}
+1225p7*proplist
+1226i7*corked{8|35I9}
+1227r7*volume{19|160R9}
+1228i7*mute{8|35I9}
+1229i7*has_volume{8|35I9}
+1230i7*volume_writable{8|35I9}
+1231p7*format
+1253P9*pa_source_output_info_cb_t 1254^10 1255^10 1256>10 1257>10 1264r12
+. 1273r12
+1254p10 arg1(11|154R9)
+1255p10 arg2(1213R9)
+1256i10 arg3{8|35I9}
+1257m10 arg4{21|67M9}
+1261V13*pa_context_get_source_output_info 1262^7 1263>7 1264>7 1265>7
+1262p7 c(11|154R9)
+1263m7 idx{4|29M12}
+1264p7 cb{1253P9}
+1265m7 userdata{21|67M9}
+1271V13*pa_context_get_source_output_info_list 1272^7 1273>7 1274>7
+1272p7 c(11|154R9)
+1273p7 cb{1253P9}
+1274m7 userdata{21|67M9}
+1280V13*pa_context_move_source_output_by_name 1281^7 1282>7 1283>7 1284>7
+. 1285>7
+1281p7 c(11|154R9)
+1282m7 idx{4|29M12}
+1283p7 source_name{9|47P9}
+1284p7 cb{11|161P9}
+1285m7 userdata{21|67M9}
+1291V13*pa_context_move_source_output_by_index 1292^7 1293>7 1294>7 1295>7
+. 1296>7
+1292p7 c(11|154R9)
+1293m7 idx{4|29M12}
+1294m7 source_idx{4|29M12}
+1295p7 cb{11|161P9}
+1296m7 userdata{21|67M9}
+1302V13*pa_context_set_source_output_volume 1303^7 1304>7 1305^7 1306>7 1307>7
+1303p7 c(11|154R9)
+1304m7 idx{4|29M12}
+1305p7 volume(19|160R9)
+1306p7 cb{11|161P9}
+1307m7 userdata{21|67M9}
+1313V13*pa_context_set_source_output_mute 1314^7 1315>7 1316>7 1317>7 1318>7
+1314p7 c(11|154R9)
+1315m7 idx{4|29M12}
+1316i7 mute{8|35I9}
+1317p7 cb{11|161P9}
+1318m7 userdata{21|67M9}
+1324V13*pa_context_kill_source_output 1325^7 1326>7 1327>7 1328>7
+1325p7 c(11|154R9)
+1326m7 idx{4|29M12}
+1327p7 cb{11|161P9}
+1328m7 userdata{21|67M9}
+1340R9*pa_stat_info 1347e4 1356r33
+1341m7*memblock_total{4|29M12}
+1342m7*memblock_total_size{4|29M12}
+1343m7*memblock_allocated{4|29M12}
+1344m7*memblock_allocated_size{4|29M12}
+1345m7*scache_size{4|29M12}
+1354P9*pa_stat_info_cb_t 1355^10 1356^10 1357>10 1363r12
+1355p10 arg1(11|154R9)
+1356p10 arg2(1340R9)
+1357m10 arg3{21|67M9}
+1361V13*pa_context_stat 1362^7 1363>7 1364>7
+1362p7 c(11|154R9)
+1363p7 cb{1354P9}
+1364m7 userdata{21|67M9}
+1376R9*pa_sample_info 1388e4 1402r33
+1377m7*index{4|29M12}
+1378p7*name{9|47P9}
+1379r7*volume{19|160R9}
+1380r7*sample_spec{18|209R9}
+1381r7*channel_map{10|270R9}
+1382m7*duration{18|220M12}
+1383m7*bytes{4|29M12}
+1384i7*lazy{8|35I9}
+1385p7*filename{9|47P9}
+1386p7*proplist
+1400P9*pa_sample_info_cb_t 1401^10 1402^10 1403>10 1404>10 1411r12 1421r12
+. 1430r12
+1401p10 arg1(11|154R9)
+1402p10 arg2(1376R9)
+1403i10 arg3{8|35I9}
+1404m10 arg4{21|67M9}
+1408V13*pa_context_get_sample_info_by_name 1409^7 1410>7 1411>7 1412>7
+1409p7 c(11|154R9)
+1410p7 name{9|47P9}
+1411p7 cb{1400P9}
+1412m7 userdata{21|67M9}
+1418V13*pa_context_get_sample_info_by_index 1419^7 1420>7 1421>7 1422>7
+1419p7 c(11|154R9)
+1420m7 idx{4|29M12}
+1421p7 cb{1400P9}
+1422m7 userdata{21|67M9}
+1428V13*pa_context_get_sample_info_list 1429^7 1430>7 1431>7
+1429p7 c(11|154R9)
+1430p7 cb{1400P9}
+1431m7 userdata{21|67M9}
+1440E9*pa_autoload_type 1443e4 1445r34
+1441n7*PA_AUTOLOAD_SINK{1440E9}
+1442n7*PA_AUTOLOAD_SOURCE{1440E9}
+1445E12*pa_autoload_type_t{1440E9} 1455r24 1477r16 1507r16 1520r16
+1452R9*pa_autoload_info 1459e4 1468r33
+1453m7*index{4|29M12}
+1454p7*name{9|47P9}
+1455e7*c_type{1445E12}
+1456p7*module{9|47P9}
+1457p7*argument{9|47P9}
+1466P9*pa_autoload_info_cb_t 1467^10 1468^10 1469>10 1470>10 1478r12 1488r12
+. 1497r12
+1467p10 arg1(11|154R9)
+1468p10 arg2(1452R9)
+1469i10 arg3{8|35I9}
+1470m10 arg4{21|67M9}
+1474V13*pa_context_get_autoload_info_by_name 1475^7 1476>7 1477>7 1478>7
+. 1479>7
+1475p7 c(11|154R9)
+1476p7 name{9|47P9}
+1477e7 c_type{1445E12}
+1478p7 cb{1466P9}
+1479m7 userdata{21|67M9}
+1485V13*pa_context_get_autoload_info_by_index 1486^7 1487>7 1488>7 1489>7
+1486p7 c(11|154R9)
+1487m7 idx{4|29M12}
+1488p7 cb{1466P9}
+1489m7 userdata{21|67M9}
+1495V13*pa_context_get_autoload_info_list 1496^7 1497>7 1498>7
+1496p7 c(11|154R9)
+1497p7 cb{1466P9}
+1498m7 userdata{21|67M9}
+1504V13*pa_context_add_autoload 1505^7 1506>7 1507>7 1508>7 1509>7 1510>7
+. 1511>7
+1505p7 c(11|154R9)
+1506p7 name{9|47P9}
+1507e7 c_type{1445E12}
+1508p7 module{9|47P9}
+1509p7 argument{9|47P9}
+1510p7 arg6{775P9}
+1511m7 userdata{21|67M9}
+1517V13*pa_context_remove_autoload_by_name 1518^7 1519>7 1520>7 1521>7 1522>7
+1518p7 c(11|154R9)
+1519p7 name{9|47P9}
+1520e7 c_type{1445E12}
+1521p7 cb{11|161P9}
+1522m7 userdata{21|67M9}
+1528V13*pa_context_remove_autoload_by_index 1529^7 1530>7 1531>7 1532>7
+1529p7 c(11|154R9)
+1530m7 idx{4|29M12}
+1531p7 cb{11|161P9}
+1532m7 userdata{21|67M9}
+X 16 pulse_operation_h.ads
+9K9 pulse_operation_h 14|340r48 350r48 359r48 370r48 381r48 392r48 403r48
+. 414r48 425r48 436r48 447r48 567r48 577r48 586r48 597r48 608r48 619r48 630r48
+. 641r48 652r48 663r48 674r48 718r48 760r48 769r48 787r48 797r48 821r48 859r48
+. 868r48 878r48 1021r48 1031r48 1040r48 1051r48 1062r48 1074r48 1138r48 1147r48
+. 1158r48 1169r48 1180r48 1191r48 1201r48 1265r48 1274r48 1285r48 1296r48
+. 1307r48 1318r48 1328r48 1364r48 1412r48 1422r48 1431r48 1479r48 1489r48
+. 1498r48 1511r48 1522r48 1532r48
+X 17 pulse_proplist_h.ads
+10K9*pulse_proplist_h 14|290r25 517r25 736r25 838r25 938r25 989r25 1100r25
+. 1225r25 1386r25 17|515e21
+X 18 pulse_sample_h.ads
+10K9*pulse_sample_h 14|8w6 280r29 287r25 291r36 507r29 514r25 518r36 691r29
+. 1092r29 1095r29 1096r27 1219r29 1221r29 1222r29 1380r29 1382r26 18|378e19
+209R9*pa_sample_spec 14|280r44 507r44 691r44 1092r44 1219r44 1380r44 18|214e4
+220M12*pa_usec_t{4|31M12} 14|287r40 291r51 514r40 518r51 1095r44 1096r42
+. 1221r44 1222r44 1382r41
+X 19 pulse_volume_h.ads
+12K9*pulse_volume_h 14|10w6 283r24 292r29 368r32 379r32 510r24 519r29 595r32
+. 606r32 1094r24 1178r32 1227r24 1305r32 1379r24 19|674e19
+143M12*pa_volume_t{4|29M12} 14|292r44 519r44
+160R9*pa_cvolume 14|283r39 368r47 379r47 510r39 595r47 606r47 1094r39 1178r47
+. 1227r39 1305r47 1379r39 19|164e4
+X 21 system.ads
+37K9*System 14|13w6 297r15 300r17 332r17 340r18 350r18 359r18 370r18 381r18
+. 392r18 403r18 414r18 425r18 436r18 447r18 524r15 527r17 559r17 567r18 577r18
+. 586r18 597r18 608r18 619r18 630r18 641r18 652r18 663r18 674r18 711r17 718r18
+. 752r17 760r18 769r18 778r17 787r18 797r18 809r17 821r18 851r17 859r18 868r18
+. 878r18 937r18 940r19 991r15 992r19 1013r17 1021r18 1031r18 1040r18 1051r18
+. 1062r18 1074r18 1130r17 1138r18 1147r18 1158r18 1169r18 1180r18 1191r18
+. 1201r18 1257r17 1265r18 1274r18 1285r18 1296r18 1307r18 1318r18 1328r18
+. 1357r17 1364r18 1404r17 1412r18 1422r18 1431r18 1470r17 1479r18 1489r18
+. 1498r18 1511r18 1522r18 1532r18 21|154e11
+67M9*Address 14|297r22 300r24 332r24 340r25 350r25 359r25 370r25 381r25 392r25
+. 403r25 414r25 425r25 436r25 447r25 524r22 527r24 559r24 567r25 577r25 586r25
+. 597r25 608r25 619r25 630r25 641r25 652r25 663r25 674r25 711r24 718r25 752r24
+. 760r25 769r25 778r24 787r25 797r25 809r24 821r25 851r24 859r25 868r25 878r25
+. 937r25 940r26 991r22 992r26 1013r24 1021r25 1031r25 1040r25 1051r25 1062r25
+. 1074r25 1130r24 1138r25 1147r25 1158r25 1169r25 1180r25 1191r25 1201r25
+. 1257r24 1265r25 1274r25 1285r25 1296r25 1307r25 1318r25 1328r25 1357r24
+. 1364r25 1404r24 1412r25 1422r25 1431r25 1470r24 1479r25 1489r25 1498r25
+. 1511r25 1522r25 1532r25
+

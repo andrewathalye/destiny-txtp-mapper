@@ -1,0 +1,1095 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U vgmstream_h%s		vgmstream_h.ads		1dccbad4 NE OO PK IL
+W bits_stdint_intn_h%s	bits_stdint_intn_h.ads	bits_stdint_intn_h.ali
+W bits_stdint_uintn_h%s	bits_stdint_uintn_h.ads	bits_stdint_uintn_h.ali
+W g72x_state_h%s	g72x_state_h.ads	g72x_state_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+W streamfile_h%s	streamfile_h.ads	streamfile_h.ali
+W streamtypes_h%s	streamtypes_h.ads	streamtypes_h.ali
+W sys_types_h%s		sys_types_h.ads		sys_types_h.ali
+W system%s		system.ads		system.ali
+W vgmstream_common%s	vgmstream_common.ads	vgmstream_common.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_intn_h.ads  20220411204005 e7dfa178 bits_stdint_intn_h%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_file_h.ads	20220404024050 84da6495 bits_types_file_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_file_h.ads  20220404024050 657f2b73 bits_types_struct_file_h%s
+D g72x_state_h.ads	20220404024050 45d2049e g72x_state_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D streamfile_h.ads	20220404024811 d16d62ab streamfile_h%s
+D streamtypes_h.ads	20220411002006 b3efd96b streamtypes_h%s
+D sys_types_h.ads	20220411204005 8e7f8f86 sys_types_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D unchdeal.ads		20210520051135 214516a4 unchecked_deallocation%s
+D vgmstream_common.ads	20220411202458 95d61bb0 vgmstream_common%s
+D vgmstream_h.ads	20220411203651 2b4e7fac vgmstream_h%s
+G a e
+G c Z s s [init_vgmstream vgmstream_h 1568 13 none]
+G c Z s s [init_vgmstream_from_streamfile vgmstream_h 1574 13 none]
+G c Z s s [reset_vgmstream vgmstream_h 1580 14 none]
+G c Z s s [close_vgmstream vgmstream_h 1586 14 none]
+G c Z s s [get_vgmstream_play_samples vgmstream_h 1592 13 none]
+G c Z s s [render_vgmstream vgmstream_h 1603 13 none]
+G c Z s s [seek_vgmstream vgmstream_h 1613 14 none]
+G c Z s s [describe_vgmstream vgmstream_h 1621 14 none]
+G c Z s s [describe_vgmstream_info vgmstream_h 1629 14 none]
+G c Z s s [get_vgmstream_average_bitrate vgmstream_h 1635 13 none]
+G c Z s s [vgmstream_get_formats vgmstream_h 1643 13 none]
+G c Z s s [vgmstream_get_common_formats vgmstream_h 1649 13 none]
+G c Z s s [vgmstream_force_loop vgmstream_h 1657 14 none]
+G c Z s s [vgmstream_set_loop_target vgmstream_h 1667 14 none]
+G c Z s s [vgmstream_is_virtual_filename vgmstream_h 1673 13 none]
+G c Z s s [allocate_vgmstream vgmstream_h 1682 13 none]
+G c Z s s [setup_vgmstream vgmstream_h 1688 14 none]
+G c Z s s [vgmstream_open_stream vgmstream_h 1696 13 none]
+G c Z s s [vgmstream_open_stream_bf vgmstream_h 1704 13 none]
+G c Z s s [get_vgmstream_coding_description vgmstream_h 1714 14 none]
+G c Z s s [get_vgmstream_layout_description vgmstream_h 1722 14 none]
+G c Z s s [get_vgmstream_meta_description vgmstream_h 1730 14 none]
+G c Z s s [setup_state_vgmstream vgmstream_h 1738 14 none]
+G c Z s s [play_config_tIP vgmstream_h 1219 9 none]
+G c Z s s [play_state_tIP vgmstream_h 1255 9 none]
+G c Z s s [Tvgmstreamchannel_array1675BIP vgmstream_h 1292 4 none]
+G c Z s s [Tvgmstreamchannel_array1678BIP vgmstream_h 1293 4 none]
+G c Z s s [Tvgmstreamchannel_array1681BIP vgmstream_h 1294 4 none]
+G c Z s s [vgmstreamchannel_union1683IP vgmstream_h 1295 9 none]
+G c Z s s [vgmstreamchannel_union1684IP vgmstream_h 1305 9 none]
+G c Z s s [vgmstreamchannel_union1685IP vgmstream_h 1315 9 none]
+G c Z s s [vgmstreamchannel_union1686IP vgmstream_h 1325 9 none]
+G c Z s s [vgmstreamchannelIP vgmstream_h 1335 9 none]
+G c Z s s [vgmstreamIP vgmstream_h 1426 9 none]
+G c Z s s [segmented_layout_dataIP vgmstream_h 1485 9 none]
+G c Z s s [layered_layout_dataIP vgmstream_h 1500 9 none]
+G c Z s s [acm_codec_dataIP vgmstream_h 1511 9 none]
+G c Z s s [mixing_infoIP vgmstream_h 1519 9 none]
+G c Z s s [loop_infoIP vgmstream_h 1525 9 none]
+G c Z s s [interleave_infoIP vgmstream_h 1531 9 none]
+G c Z s s [stream_infoIP vgmstream_h 1539 9 none]
+G c Z s s [vgmstream_infoIP vgmstream_h 1547 9 none]
+X 3 bits_stdint_intn_h.ads
+8K9*bits_stdint_intn_h 33e23 22|6w6 1227r27 1228r28 1229r27 1230r26 1233r25
+. 1258r36 1259r32 1260r37 1261r33 1262r31 1263r31 1264r27 1265r28 1266r34
+. 1267r31 1268r31 1269r31 1292r66 1293r66 1294r67 1298r41 1300r41 1308r41
+. 1310r41 1318r41 1320r41 1328r41 1330r41 1427r29 1428r29 1434r35 1435r33
+. 1448r32 1449r36 1452r39 1454r37 1455r41 1458r36 1463r32 1596r48 1605r22
+. 1613r78
+27I12*int16_t{6|43I12} 22|1292r85 1294r86 1298r60 1308r60 1318r60 1328r60
+29I12*int32_t{6|47I12} 22|1227r46 1228r47 1229r46 1230r45 1233r44 1258r55
+. 1259r51 1260r56 1261r52 1262r50 1263r50 1264r46 1265r47 1266r53 1267r50
+. 1268r50 1269r50 1293r85 1300r60 1310r60 1320r60 1330r60 1427r48 1428r48
+. 1434r54 1435r52 1448r51 1449r55 1452r58 1454r56 1455r60 1458r55 1463r51
+. 1596r67 1605r41 1613r97
+X 4 bits_stdint_uintn_h.ads
+8K9*bits_stdint_uintn_h 33e24 22|10w6 1352r25 1353r26 1354r25 1445r32
+27M12*uint16_t{6|45M12} 22|1352r45 1353r46 1354r45
+29M12*uint32_t{6|49M12} 22|1445r52
+X 6 bits_types_h.ads
+43I12*uu_int16_t{10|36I9}
+45M12*uu_uint16_t{10|45M9}
+47I12*uu_int32_t{10|35I9}
+136I12*uu_off_t{10|37I9}
+X 8 g72x_state_h.ads
+7K9*g72x_state_h 51e17 22|9w6 1350r32
+15R9*g72x_state 28e4 22|1350r45
+X 9 interfac.ads
+38K9*Interfaces 231e15 22|5r6 5r24 14r6 1425r35 1538r34 1546r40 1568r40 1623r14
+. 1673r55 1716r15 1724r15 1732r15
+X 10 i-c.ads
+18K20*C 237e17 22|5w17 5r35 14r17 1425r46 1538r45 1546r51 1568r51 1623r25
+. 1673r66 1716r26 1724r26 1732r26
+35I9*int<integer> 22|1220r28 1221r30 1222r29 1223r28 1224r35 1225r29 1239r31
+. 1240r32 1241r31 1242r32 1243r30 1244r32 1245r31 1246r29 1247r25 1248r30
+. 1256r32 1257r33 1340r39 1348r34 1349r29 1351r30 1429r26 1433r27 1441r29
+. 1442r30 1446r35 1460r26 1461r30 1462r30 1471r32 1474r28 1475r29 1486r31
+. 1488r33 1490r32 1491r33 1492r32 1501r29 1504r32 1505r33 1506r34 1520r32
+. 1521r33 1526r23 1527r23 1532r23 1533r29 1534r28 1540r25 1541r23 1548r29
+. 1549r26 1551r32 1557r28 1559r25 1606r48 1624r16 1635r85 1659r19 1660r27
+. 1661r25 1667r89 1673r94 1682r49 1682r63 1699r48 1708r27 1708r39
+36I9*short<short_integer>
+37I9*long<long_integer>
+44M9*unsigned 22|1169r25 1194r25 1295r45 1305r45 1315r45 1325r45
+45M9*unsigned_short
+46M9*unsigned_long
+72F9*double<long_float> 22|1226r28 1231r28 1232r27 1234r29 1235r30 1236r29
+. 1237r28 1238r27 1593r19 1594r21 1595r26
+79E9*char<character>
+86A9*char_array(79E9)<62M9> 22|1425r48 1538r47 1546r53
+X 11 i-cstrin.ads
+36K22*Strings 106e25 22|14w19 1568r53 1623r27 1673r68 1716r28 1724r28 1732r28
+47P9*chars_ptr 22|1568r61 1623r35 1673r76 1716r36 1724r36 1732r36
+X 12 stddef_h.ads
+7K9*stddef_h 115e13 22|11w6 1436r39 1437r45 1438r39 1439r44 1440r28 1443r29
+. 1447r33 1451r36 1457r33 1477r29 1553r29 1643r50 1649r57 1717r18 1725r18
+. 1733r18
+69M12*size_t{10|46M9} 22|1436r48 1437r54 1438r48 1439r53 1440r37 1443r38
+. 1447r42 1451r45 1457r42 1477r38 1553r38 1643r59 1649r66 1717r27 1725r27
+. 1733r27
+X 13 streamfile_h.ads
+14K9*streamfile_h 695e17 22|7w6 1336r31 1512r31 1574r57 1698r19 1706r19
+54R9*u_STREAMFILE
+84R12*STREAMFILE{54R9} 22|1336r44 1512r44 1574r70 1698r32 1706r32
+X 14 streamtypes_h.ads
+8K9*streamtypes_h 26e18 22|13w6 1476r23 1489r23 1503r23
+24I12*sample_t{3|27I12} 22|1476r37 1489r37 1503r37
+X 15 sys_types_h.ads
+8K9*sys_types_h 112e16 22|8w6 1337r38 1338r24 1339r37 1450r38 1453r35 1456r35
+. 1459r40 1699r22 1707r22
+55I12*off_t{6|136I12} 22|1337r50 1338r36 1339r49 1450r50 1453r47 1456r47
+. 1459r52 1699r34 1707r34
+X 16 system.ads
+37K9*System 154e11 22|12w6 1467r25 1468r21 1469r20 1470r21 1487r18 1502r16
+. 1513r16 1514r19 1643r74 1649r81
+67M9*Address 22|1467r32 1468r28 1469r27 1470r28 1487r25 1502r23 1513r23 1514r26
+. 1643r81 1649r88
+X 21 vgmstream_common.ads
+4K9*VGMStream_Common 11e21 22|16w6 16r28
+5I17*Sample{14|24I12}
+6A14*Sample_Buffer(5I17)<integer>
+8P14*Sample_Buffer_Access(6A14) 22|1604r16
+X 22 vgmstream_h.ads
+18K9*vgmstream_h 1743l5 1743e16
+173E9*coding_t 287e4 1430r29
+174n7*coding_SILENCE{173E9}
+175n7*coding_PCM16LE{173E9}
+176n7*coding_PCM16BE{173E9}
+177n7*coding_PCM16_int{173E9}
+178n7*coding_PCM8{173E9}
+179n7*coding_PCM8_int{173E9}
+180n7*coding_PCM8_U{173E9}
+181n7*coding_PCM8_U_int{173E9}
+182n7*coding_PCM8_SB{173E9}
+183n7*coding_PCM4{173E9}
+184n7*coding_PCM4_U{173E9}
+185n7*coding_ULAW{173E9}
+186n7*coding_ULAW_int{173E9}
+187n7*coding_ALAW{173E9}
+188n7*coding_PCMFLOAT{173E9}
+189n7*coding_PCM24LE{173E9}
+190n7*coding_CRI_ADX{173E9}
+191n7*coding_CRI_ADX_fixed{173E9}
+192n7*coding_CRI_ADX_exp{173E9}
+193n7*coding_CRI_ADX_enc_8{173E9}
+194n7*coding_CRI_ADX_enc_9{173E9}
+195n7*coding_NGC_DSP{173E9}
+196n7*coding_NGC_DSP_subint{173E9}
+197n7*coding_NGC_DTK{173E9}
+198n7*coding_NGC_AFC{173E9}
+199n7*coding_VADPCM{173E9}
+200n7*coding_G721{173E9}
+201n7*coding_XA{173E9}
+202n7*coding_XA8{173E9}
+203n7*coding_XA_EA{173E9}
+204n7*coding_PSX{173E9}
+205n7*coding_PSX_badflags{173E9}
+206n7*coding_PSX_cfg{173E9}
+207n7*coding_PSX_pivotal{173E9}
+208n7*coding_HEVAG{173E9}
+209n7*coding_EA_XA{173E9}
+210n7*coding_EA_XA_int{173E9}
+211n7*coding_EA_XA_V2{173E9}
+212n7*coding_MAXIS_XA{173E9}
+213n7*coding_EA_XAS_V0{173E9}
+214n7*coding_EA_XAS_V1{173E9}
+215n7*coding_IMA{173E9}
+216n7*coding_IMA_int{173E9}
+217n7*coding_DVI_IMA{173E9}
+218n7*coding_DVI_IMA_int{173E9}
+219n7*coding_3DS_IMA{173E9}
+220n7*coding_SNDS_IMA{173E9}
+221n7*coding_QD_IMA{173E9}
+222n7*coding_WV6_IMA{173E9}
+223n7*coding_ALP_IMA{173E9}
+224n7*coding_FFTA2_IMA{173E9}
+225n7*coding_BLITZ_IMA{173E9}
+226n7*coding_MS_IMA{173E9}
+227n7*coding_XBOX_IMA{173E9}
+228n7*coding_XBOX_IMA_mch{173E9}
+229n7*coding_XBOX_IMA_int{173E9}
+230n7*coding_NDS_IMA{173E9}
+231n7*coding_DAT4_IMA{173E9}
+232n7*coding_RAD_IMA{173E9}
+233n7*coding_RAD_IMA_mono{173E9}
+234n7*coding_APPLE_IMA4{173E9}
+235n7*coding_FSB_IMA{173E9}
+236n7*coding_WWISE_IMA{173E9}
+237n7*coding_REF_IMA{173E9}
+238n7*coding_AWC_IMA{173E9}
+239n7*coding_UBI_IMA{173E9}
+240n7*coding_UBI_SCE_IMA{173E9}
+241n7*coding_H4M_IMA{173E9}
+242n7*coding_MTF_IMA{173E9}
+243n7*coding_CD_IMA{173E9}
+244n7*coding_MSADPCM{173E9}
+245n7*coding_MSADPCM_int{173E9}
+246n7*coding_MSADPCM_ck{173E9}
+247n7*coding_WS{173E9}
+248n7*coding_AICA{173E9}
+249n7*coding_AICA_int{173E9}
+250n7*coding_CP_YM{173E9}
+251n7*coding_ASKA{173E9}
+252n7*coding_NXAP{173E9}
+253n7*coding_TGC{173E9}
+254n7*coding_NDS_PROCYON{173E9}
+255n7*coding_L5_555{173E9}
+256n7*coding_LSF{173E9}
+257n7*coding_MTAF{173E9}
+258n7*coding_MTA2{173E9}
+259n7*coding_MC3{173E9}
+260n7*coding_FADPCM{173E9}
+261n7*coding_ASF{173E9}
+262n7*coding_DSA{173E9}
+263n7*coding_XMD{173E9}
+264n7*coding_TANTALUS{173E9}
+265n7*coding_PCFX{173E9}
+266n7*coding_OKI16{173E9}
+267n7*coding_OKI4S{173E9}
+268n7*coding_PTADPCM{173E9}
+269n7*coding_IMUSE{173E9}
+270n7*coding_COMPRESSWAVE{173E9}
+271n7*coding_SDX2{173E9}
+272n7*coding_SDX2_int{173E9}
+273n7*coding_CBD2{173E9}
+274n7*coding_CBD2_int{173E9}
+275n7*coding_SASSC{173E9}
+276n7*coding_DERF{173E9}
+277n7*coding_WADY{173E9}
+278n7*coding_NWA{173E9}
+279n7*coding_ACM{173E9}
+280n7*coding_CIRCUS_ADPCM{173E9}
+281n7*coding_UBI_ADPCM{173E9}
+282n7*coding_EA_MT{173E9}
+283n7*coding_CIRCUS_VQ{173E9}
+284n7*coding_RELIC{173E9}
+285n7*coding_CRI_HCA{173E9}
+286n7*coding_TAC{173E9}
+309E9*layout_t 354e4 1431r29
+310n7*layout_none{309E9}
+311n7*layout_interleave{309E9}
+312n7*layout_blocked_ast{309E9}
+313n7*layout_blocked_halpst{309E9}
+314n7*layout_blocked_xa{309E9}
+315n7*layout_blocked_ea_schl{309E9}
+316n7*layout_blocked_ea_1snh{309E9}
+317n7*layout_blocked_caf{309E9}
+318n7*layout_blocked_wsi{309E9}
+319n7*layout_blocked_str_snds{309E9}
+320n7*layout_blocked_ws_aud{309E9}
+321n7*layout_blocked_matx{309E9}
+322n7*layout_blocked_dec{309E9}
+323n7*layout_blocked_xvas{309E9}
+324n7*layout_blocked_vs{309E9}
+325n7*layout_blocked_mul{309E9}
+326n7*layout_blocked_gsb{309E9}
+327n7*layout_blocked_thp{309E9}
+328n7*layout_blocked_filp{309E9}
+329n7*layout_blocked_ea_swvr{309E9}
+330n7*layout_blocked_adm{309E9}
+331n7*layout_blocked_bdsp{309E9}
+332n7*layout_blocked_mxch{309E9}
+333n7*layout_blocked_ivaud{309E9}
+334n7*layout_blocked_tra{309E9}
+335n7*layout_blocked_ps2_iab{309E9}
+336n7*layout_blocked_vs_str{309E9}
+337n7*layout_blocked_rws{309E9}
+338n7*layout_blocked_hwas{309E9}
+339n7*layout_blocked_ea_sns{309E9}
+340n7*layout_blocked_awc{309E9}
+341n7*layout_blocked_vgs{309E9}
+342n7*layout_blocked_xwav{309E9}
+343n7*layout_blocked_xvag_subsong{309E9}
+344n7*layout_blocked_ea_wve_au00{309E9}
+345n7*layout_blocked_ea_wve_ad10{309E9}
+346n7*layout_blocked_sthd{309E9}
+347n7*layout_blocked_h4m{309E9}
+348n7*layout_blocked_xa_aiff{309E9}
+349n7*layout_blocked_vs_square{309E9}
+350n7*layout_blocked_vid1{309E9}
+351n7*layout_blocked_ubi_sce{309E9}
+352n7*layout_segmented{309E9}
+353n7*layout_layered{309E9}
+685E9*meta_t 1148e4 1432r27
+686n7*meta_SILENCE{685E9}
+687n7*meta_DSP_STD{685E9}
+688n7*meta_DSP_CSTR{685E9}
+689n7*meta_DSP_RS03{685E9}
+690n7*meta_DSP_STM{685E9}
+691n7*meta_AGSC{685E9}
+692n7*meta_CSMP{685E9}
+693n7*meta_RFRM{685E9}
+694n7*meta_DSP_MPDSP{685E9}
+695n7*meta_DSP_JETTERS{685E9}
+696n7*meta_DSP_MSS{685E9}
+697n7*meta_DSP_GCM{685E9}
+698n7*meta_DSP_STR{685E9}
+699n7*meta_DSP_SADB{685E9}
+700n7*meta_DSP_WSI{685E9}
+701n7*meta_IDSP_TT{685E9}
+702n7*meta_DSP_WII_MUS{685E9}
+703n7*meta_DSP_WII_WSD{685E9}
+704n7*meta_WII_NDP{685E9}
+705n7*meta_DSP_YGO{685E9}
+706n7*meta_STRM{685E9}
+707n7*meta_RSTM{685E9}
+708n7*meta_AFC{685E9}
+709n7*meta_AST{685E9}
+710n7*meta_RWSD{685E9}
+711n7*meta_RWAR{685E9}
+712n7*meta_RWAV{685E9}
+713n7*meta_CWAV{685E9}
+714n7*meta_FWAV{685E9}
+715n7*meta_RSTM_SPM{685E9}
+716n7*meta_THP{685E9}
+717n7*meta_RSTM_shrunken{685E9}
+718n7*meta_SWAV{685E9}
+719n7*meta_NDS_RRDS{685E9}
+720n7*meta_WII_BNS{685E9}
+721n7*meta_WIIU_BTSND{685E9}
+722n7*meta_ADX_03{685E9}
+723n7*meta_ADX_04{685E9}
+724n7*meta_ADX_05{685E9}
+725n7*meta_AIX{685E9}
+726n7*meta_AAX{685E9}
+727n7*meta_UTF_DSP{685E9}
+728n7*meta_DTK{685E9}
+729n7*meta_RSF{685E9}
+730n7*meta_HALPST{685E9}
+731n7*meta_GCSW{685E9}
+732n7*meta_CAF{685E9}
+733n7*meta_MYSPD{685E9}
+734n7*meta_HIS{685E9}
+735n7*meta_BNSF{685E9}
+736n7*meta_XA{685E9}
+737n7*meta_ADS{685E9}
+738n7*meta_NPS{685E9}
+739n7*meta_RXWS{685E9}
+740n7*meta_RAW_INT{685E9}
+741n7*meta_EXST{685E9}
+742n7*meta_SVAG_KCET{685E9}
+743n7*meta_PS_HEADERLESS{685E9}
+744n7*meta_MIB_MIH{685E9}
+745n7*meta_PS2_MIC{685E9}
+746n7*meta_PS2_VAGi{685E9}
+747n7*meta_PS2_VAGp{685E9}
+748n7*meta_PS2_pGAV{685E9}
+749n7*meta_PS2_VAGp_AAAP{685E9}
+750n7*meta_SEB{685E9}
+751n7*meta_STR_WAV{685E9}
+752n7*meta_ILD{685E9}
+753n7*meta_PS2_PNB{685E9}
+754n7*meta_VPK{685E9}
+755n7*meta_PS2_BMDX{685E9}
+756n7*meta_PS2_IVB{685E9}
+757n7*meta_PS2_SND{685E9}
+758n7*meta_SVS{685E9}
+759n7*meta_XSS{685E9}
+760n7*meta_SL3{685E9}
+761n7*meta_HGC1{685E9}
+762n7*meta_AUS{685E9}
+763n7*meta_RWS{685E9}
+764n7*meta_FSB1{685E9}
+765n7*meta_FSB2{685E9}
+766n7*meta_FSB3{685E9}
+767n7*meta_FSB4{685E9}
+768n7*meta_FSB5{685E9}
+769n7*meta_RWX{685E9}
+770n7*meta_XWB{685E9}
+771n7*meta_PS2_XA30{685E9}
+772n7*meta_MUSC{685E9}
+773n7*meta_MUSX{685E9}
+774n7*meta_LEG{685E9}
+775n7*meta_FILP{685E9}
+776n7*meta_IKM{685E9}
+777n7*meta_STER{685E9}
+778n7*meta_BG00{685E9}
+779n7*meta_PS2_RSTM{685E9}
+780n7*meta_PS2_KCES{685E9}
+781n7*meta_PS2_DXH{685E9}
+782n7*meta_VSV{685E9}
+783n7*meta_SCD_PCM{685E9}
+784n7*meta_PS2_PCM{685E9}
+785n7*meta_PS2_RKV{685E9}
+786n7*meta_PS2_VAS{685E9}
+787n7*meta_PS2_TEC{685E9}
+788n7*meta_PS2_ENTH{685E9}
+789n7*meta_SDT{685E9}
+790n7*meta_NGC_TYDSP{685E9}
+791n7*meta_CAPDSP{685E9}
+792n7*meta_DC_STR{685E9}
+793n7*meta_DC_STR_V2{685E9}
+794n7*meta_NGC_BH2PCM{685E9}
+795n7*meta_SAP{685E9}
+796n7*meta_DC_IDVI{685E9}
+797n7*meta_KRAW{685E9}
+798n7*meta_PS2_OMU{685E9}
+799n7*meta_PS2_XA2{685E9}
+800n7*meta_NUB{685E9}
+801n7*meta_IDSP_NL{685E9}
+802n7*meta_IDSP_IE{685E9}
+803n7*meta_SPT_SPD{685E9}
+804n7*meta_ISH_ISD{685E9}
+805n7*meta_GSP_GSB{685E9}
+806n7*meta_YDSP{685E9}
+807n7*meta_FFCC_STR{685E9}
+808n7*meta_UBI_JADE{685E9}
+809n7*meta_GCA{685E9}
+810n7*meta_NGC_SSM{685E9}
+811n7*meta_PS2_JOE{685E9}
+812n7*meta_NGC_YMF{685E9}
+813n7*meta_SADL{685E9}
+814n7*meta_PS2_CCC{685E9}
+815n7*meta_FAG{685E9}
+816n7*meta_PS2_MIHB{685E9}
+817n7*meta_NGC_PDT{685E9}
+818n7*meta_DC_ASD{685E9}
+819n7*meta_NAOMI_SPSD{685E9}
+820n7*meta_RSD{685E9}
+821n7*meta_PS2_ASS{685E9}
+822n7*meta_SEG{685E9}
+823n7*meta_NDS_STRM_FFTA2{685E9}
+824n7*meta_KNON{685E9}
+825n7*meta_ZWDSP{685E9}
+826n7*meta_VGS{685E9}
+827n7*meta_DCS_WAV{685E9}
+828n7*meta_SMP{685E9}
+829n7*meta_WII_SNG{685E9}
+830n7*meta_MUL{685E9}
+831n7*meta_SAT_BAKA{685E9}
+832n7*meta_VSF{685E9}
+833n7*meta_PS2_VSF_TTA{685E9}
+834n7*meta_ADS_MIDWAY{685E9}
+835n7*meta_PS2_SPS{685E9}
+836n7*meta_PS2_XA2_RRP{685E9}
+837n7*meta_NGC_DSP_KONAMI{685E9}
+838n7*meta_UBI_CKD{685E9}
+839n7*meta_RAW_WAVM{685E9}
+840n7*meta_WVS{685E9}
+841n7*meta_XBOX_MATX{685E9}
+842n7*meta_XMU{685E9}
+843n7*meta_XVAS{685E9}
+844n7*meta_EA_SCHL{685E9}
+845n7*meta_EA_SCHL_fixed{685E9}
+846n7*meta_EA_BNK{685E9}
+847n7*meta_EA_1SNH{685E9}
+848n7*meta_EA_EACS{685E9}
+849n7*meta_RAW_PCM{685E9}
+850n7*meta_GENH{685E9}
+851n7*meta_AIFC{685E9}
+852n7*meta_AIFF{685E9}
+853n7*meta_STR_SNDS{685E9}
+854n7*meta_WS_AUD{685E9}
+855n7*meta_WS_AUD_old{685E9}
+856n7*meta_RIFF_WAVE{685E9}
+857n7*meta_RIFF_WAVE_POS{685E9}
+858n7*meta_RIFF_WAVE_labl{685E9}
+859n7*meta_RIFF_WAVE_smpl{685E9}
+860n7*meta_RIFF_WAVE_wsmp{685E9}
+861n7*meta_RIFF_WAVE_MWV{685E9}
+862n7*meta_RIFX_WAVE{685E9}
+863n7*meta_RIFX_WAVE_smpl{685E9}
+864n7*meta_XNB{685E9}
+865n7*meta_PC_MXST{685E9}
+866n7*meta_SAB{685E9}
+867n7*meta_NWA{685E9}
+868n7*meta_NWA_NWAINFOINI{685E9}
+869n7*meta_NWA_GAMEEXEINI{685E9}
+870n7*meta_SAT_DVI{685E9}
+871n7*meta_DC_KCEY{685E9}
+872n7*meta_ACM{685E9}
+873n7*meta_MUS_ACM{685E9}
+874n7*meta_DEC{685E9}
+875n7*meta_VS{685E9}
+876n7*meta_FFXI_BGW{685E9}
+877n7*meta_FFXI_SPW{685E9}
+878n7*meta_STS{685E9}
+879n7*meta_PS2_P2BT{685E9}
+880n7*meta_PS2_GBTS{685E9}
+881n7*meta_NGC_DSP_IADP{685E9}
+882n7*meta_PS2_TK5{685E9}
+883n7*meta_PS2_MCG{685E9}
+884n7*meta_ZSD{685E9}
+885n7*meta_REDSPARK{685E9}
+886n7*meta_IVAUD{685E9}
+887n7*meta_NDS_HWAS{685E9}
+888n7*meta_NGC_LPS{685E9}
+889n7*meta_NAOMI_ADPCM{685E9}
+890n7*meta_SD9{685E9}
+891n7*meta_2DX9{685E9}
+892n7*meta_PS2_VGV{685E9}
+893n7*meta_GCUB{685E9}
+894n7*meta_MAXIS_XA{685E9}
+895n7*meta_NGC_SCK_DSP{685E9}
+896n7*meta_CAFF{685E9}
+897n7*meta_EXAKT_SC{685E9}
+898n7*meta_WII_WAS{685E9}
+899n7*meta_PONA_3DO{685E9}
+900n7*meta_PONA_PSX{685E9}
+901n7*meta_XBOX_HLWAV{685E9}
+902n7*meta_AST_MV{685E9}
+903n7*meta_AST_MMV{685E9}
+904n7*meta_DMSG{685E9}
+905n7*meta_NGC_DSP_AAAP{685E9}
+906n7*meta_PS2_WB{685E9}
+907n7*meta_S14{685E9}
+908n7*meta_SSS{685E9}
+909n7*meta_PS2_GCM{685E9}
+910n7*meta_PS2_SMPL{685E9}
+911n7*meta_PS2_MSA{685E9}
+912n7*meta_PS2_VOI{685E9}
+913n7*meta_P3D{685E9}
+914n7*meta_PS2_TK1{685E9}
+915n7*meta_NGC_RKV{685E9}
+916n7*meta_DSP_DDSP{685E9}
+917n7*meta_NGC_DSP_MPDS{685E9}
+918n7*meta_DSP_STR_IG{685E9}
+919n7*meta_EA_SWVR{685E9}
+920n7*meta_PS2_B1S{685E9}
+921n7*meta_PS2_WAD{685E9}
+922n7*meta_DSP_XIII{685E9}
+923n7*meta_DSP_CABELAS{685E9}
+924n7*meta_PS2_ADM{685E9}
+925n7*meta_LPCM_SHADE{685E9}
+926n7*meta_DSP_BDSP{685E9}
+927n7*meta_PS2_VMS{685E9}
+928n7*meta_XAU{685E9}
+929n7*meta_GH3_BAR{685E9}
+930n7*meta_FFW{685E9}
+931n7*meta_DSP_DSPW{685E9}
+932n7*meta_PS2_JSTM{685E9}
+933n7*meta_SQEX_SCD{685E9}
+934n7*meta_NGC_NST_DSP{685E9}
+935n7*meta_BAF{685E9}
+936n7*meta_XVAG{685E9}
+937n7*meta_PS3_CPS{685E9}
+938n7*meta_MSF{685E9}
+939n7*meta_PS3_PAST{685E9}
+940n7*meta_SGXD{685E9}
+941n7*meta_WII_RAS{685E9}
+942n7*meta_SPM{685E9}
+943n7*meta_X360_TRA{685E9}
+944n7*meta_VGS_PS{685E9}
+945n7*meta_PS2_IAB{685E9}
+946n7*meta_VS_STR{685E9}
+947n7*meta_LSF_N1NJ4N{685E9}
+948n7*meta_XWAV{685E9}
+949n7*meta_RAW_SNDS{685E9}
+950n7*meta_PS2_WMUS{685E9}
+951n7*meta_HYPERSCAN_KVAG{685E9}
+952n7*meta_IOS_PSND{685E9}
+953n7*meta_BOS_ADP{685E9}
+954n7*meta_QD_ADP{685E9}
+955n7*meta_EB_SFX{685E9}
+956n7*meta_EB_SF0{685E9}
+957n7*meta_MTAF{685E9}
+958n7*meta_PS2_VAG1{685E9}
+959n7*meta_PS2_VAG2{685E9}
+960n7*meta_TUN{685E9}
+961n7*meta_WPD{685E9}
+962n7*meta_MN_STR{685E9}
+963n7*meta_MSS{685E9}
+964n7*meta_PS2_HSF{685E9}
+965n7*meta_IVAG{685E9}
+966n7*meta_PS2_2PFS{685E9}
+967n7*meta_PS2_VBK{685E9}
+968n7*meta_OTM{685E9}
+969n7*meta_CSTM{685E9}
+970n7*meta_FSTM{685E9}
+971n7*meta_IDSP_NAMCO{685E9}
+972n7*meta_KT_WIIBGM{685E9}
+973n7*meta_KTSS{685E9}
+974n7*meta_MCA{685E9}
+975n7*meta_XB3D_ADX{685E9}
+976n7*meta_HCA{685E9}
+977n7*meta_SVAG_SNK{685E9}
+978n7*meta_PS2_VDS_VDM{685E9}
+979n7*meta_FFMPEG{685E9}
+980n7*meta_X360_CXS{685E9}
+981n7*meta_AKB{685E9}
+982n7*meta_X360_PASX{685E9}
+983n7*meta_XMA_RIFF{685E9}
+984n7*meta_X360_AST{685E9}
+985n7*meta_WWISE_RIFF{685E9}
+986n7*meta_UBI_RAKI{685E9}
+987n7*meta_SXD{685E9}
+988n7*meta_OGL{685E9}
+989n7*meta_MC3{685E9}
+990n7*meta_GTD{685E9}
+991n7*meta_TA_AAC{685E9}
+992n7*meta_MTA2{685E9}
+993n7*meta_NGC_ULW{685E9}
+994n7*meta_XA_XA30{685E9}
+995n7*meta_XA_04SW{685E9}
+996n7*meta_TXTH{685E9}
+997n7*meta_SK_AUD{685E9}
+998n7*meta_AHX{685E9}
+999n7*meta_STM{685E9}
+1000n7*meta_BINK{685E9}
+1001n7*meta_EA_SNU{685E9}
+1002n7*meta_AWC{685E9}
+1003n7*meta_OPUS{685E9}
+1004n7*meta_RAW_AL{685E9}
+1005n7*meta_PC_AST{685E9}
+1006n7*meta_NAAC{685E9}
+1007n7*meta_UBI_SB{685E9}
+1008n7*meta_EZW{685E9}
+1009n7*meta_VXN{685E9}
+1010n7*meta_EA_SNR_SNS{685E9}
+1011n7*meta_EA_SPS{685E9}
+1012n7*meta_VID1{685E9}
+1013n7*meta_PC_FLX{685E9}
+1014n7*meta_MOGG{685E9}
+1015n7*meta_OGG_VORBIS{685E9}
+1016n7*meta_OGG_SLI{685E9}
+1017n7*meta_OPUS_SLI{685E9}
+1018n7*meta_OGG_SFL{685E9}
+1019n7*meta_OGG_KOVS{685E9}
+1020n7*meta_OGG_encrypted{685E9}
+1021n7*meta_KMA9{685E9}
+1022n7*meta_XWC{685E9}
+1023n7*meta_SQEX_SAB{685E9}
+1024n7*meta_SQEX_MAB{685E9}
+1025n7*meta_WAF{685E9}
+1026n7*meta_WAVE{685E9}
+1027n7*meta_WAVE_segmented{685E9}
+1028n7*meta_SMV{685E9}
+1029n7*meta_NXAP{685E9}
+1030n7*meta_EA_WVE_AU00{685E9}
+1031n7*meta_EA_WVE_AD10{685E9}
+1032n7*meta_STHD{685E9}
+1033n7*meta_MP4{685E9}
+1034n7*meta_PCM_SRE{685E9}
+1035n7*meta_DSP_MCADPCM{685E9}
+1036n7*meta_UBI_LYN{685E9}
+1037n7*meta_MSB_MSH{685E9}
+1038n7*meta_TXTP{685E9}
+1039n7*meta_SMC_SMH{685E9}
+1040n7*meta_PPST{685E9}
+1041n7*meta_SPS_N1{685E9}
+1042n7*meta_UBI_BAO{685E9}
+1043n7*meta_DSP_SWITCH_AUDIO{685E9}
+1044n7*meta_H4M{685E9}
+1045n7*meta_ASF{685E9}
+1046n7*meta_XMD{685E9}
+1047n7*meta_CKS{685E9}
+1048n7*meta_CKB{685E9}
+1049n7*meta_WV6{685E9}
+1050n7*meta_WAVEBATCH{685E9}
+1051n7*meta_HD3_BD3{685E9}
+1052n7*meta_BNK_SONY{685E9}
+1053n7*meta_SCD_SSCF{685E9}
+1054n7*meta_DSP_VAG{685E9}
+1055n7*meta_DSP_ITL{685E9}
+1056n7*meta_A2M{685E9}
+1057n7*meta_AHV{685E9}
+1058n7*meta_MSV{685E9}
+1059n7*meta_SDF{685E9}
+1060n7*meta_SVG{685E9}
+1061n7*meta_VIS{685E9}
+1062n7*meta_VAI{685E9}
+1063n7*meta_AIF_ASOBO{685E9}
+1064n7*meta_AO{685E9}
+1065n7*meta_APC{685E9}
+1066n7*meta_WV2{685E9}
+1067n7*meta_XAU_KONAMI{685E9}
+1068n7*meta_DERF{685E9}
+1069n7*meta_SADF{685E9}
+1070n7*meta_UTK{685E9}
+1071n7*meta_NXA{685E9}
+1072n7*meta_ADPCM_CAPCOM{685E9}
+1073n7*meta_UE4OPUS{685E9}
+1074n7*meta_XWMA{685E9}
+1075n7*meta_VA3{685E9}
+1076n7*meta_XOPUS{685E9}
+1077n7*meta_VS_SQUARE{685E9}
+1078n7*meta_NWAV{685E9}
+1079n7*meta_XPCM{685E9}
+1080n7*meta_MSF_TAMASOFT{685E9}
+1081n7*meta_XPS_DAT{685E9}
+1082n7*meta_ZSND{685E9}
+1083n7*meta_DSP_ADPY{685E9}
+1084n7*meta_DSP_ADPX{685E9}
+1085n7*meta_OGG_OPUS{685E9}
+1086n7*meta_IMC{685E9}
+1087n7*meta_GIN{685E9}
+1088n7*meta_DSF{685E9}
+1089n7*meta_208{685E9}
+1090n7*meta_DSP_DS2{685E9}
+1091n7*meta_MUS_VC{685E9}
+1092n7*meta_STRM_ABYLIGHT{685E9}
+1093n7*meta_MSF_KONAMI{685E9}
+1094n7*meta_XWMA_KONAMI{685E9}
+1095n7*meta_9TAV{685E9}
+1096n7*meta_BWAV{685E9}
+1097n7*meta_RAD{685E9}
+1098n7*meta_SMACKER{685E9}
+1099n7*meta_MZRT{685E9}
+1100n7*meta_XAVS{685E9}
+1101n7*meta_PSF{685E9}
+1102n7*meta_DSP_ITL_i{685E9}
+1103n7*meta_IMA{685E9}
+1104n7*meta_XMV_VALVE{685E9}
+1105n7*meta_UBI_HX{685E9}
+1106n7*meta_BMP_KONAMI{685E9}
+1107n7*meta_ISB{685E9}
+1108n7*meta_XSSB{685E9}
+1109n7*meta_XMA_UE3{685E9}
+1110n7*meta_FWSE{685E9}
+1111n7*meta_FDA{685E9}
+1112n7*meta_TGC{685E9}
+1113n7*meta_KWB{685E9}
+1114n7*meta_LRMD{685E9}
+1115n7*meta_WWISE_FX{685E9}
+1116n7*meta_DIVA{685E9}
+1117n7*meta_IMUSE{685E9}
+1118n7*meta_KTSR{685E9}
+1119n7*meta_KAT{685E9}
+1120n7*meta_PCM_SUCCESS{685E9}
+1121n7*meta_ADP_KONAMI{685E9}
+1122n7*meta_SDRH{685E9}
+1123n7*meta_WADY{685E9}
+1124n7*meta_DSP_SQEX{685E9}
+1125n7*meta_DSP_WIIVOICE{685E9}
+1126n7*meta_SBK{685E9}
+1127n7*meta_DSP_WIIADPCM{685E9}
+1128n7*meta_DSP_CWAC{685E9}
+1129n7*meta_COMPRESSWAVE{685E9}
+1130n7*meta_KTAC{685E9}
+1131n7*meta_MJB_MJH{685E9}
+1132n7*meta_BSNF{685E9}
+1133n7*meta_TAC{685E9}
+1134n7*meta_IDSP_TOSE{685E9}
+1135n7*meta_DSP_KWA{685E9}
+1136n7*meta_OGV_3RDEYE{685E9}
+1137n7*meta_PIFF_TPCM{685E9}
+1138n7*meta_WXD_WXH{685E9}
+1139n7*meta_BNK_RELIC{685E9}
+1140n7*meta_XSH_XSD_XSS{685E9}
+1141n7*meta_PSB{685E9}
+1142n7*meta_LOPU_FB{685E9}
+1143n7*meta_LPCM_FB{685E9}
+1144n7*meta_WBK{685E9}
+1145n7*meta_WBK_NSLB{685E9}
+1146n7*meta_DSP_APEX{685E9}
+1147n7*meta_MPEG{685E9}
+1169M12*speaker_t{10|44M9} 1170r26 1171r26 1172r26 1173r27 1174r26 1175r26
+. 1176r27 1177r27 1178r26 1179r26 1180r26 1181r26 1182r27 1183r27 1184r27
+. 1185r27 1186r27 1187r27
+1170m4*speaker_FL{1169M12}
+1171m4*speaker_FR{1169M12}
+1172m4*speaker_FC{1169M12}
+1173m4*speaker_LFE{1169M12}
+1174m4*speaker_BL{1169M12}
+1175m4*speaker_BR{1169M12}
+1176m4*speaker_FLC{1169M12}
+1177m4*speaker_FRC{1169M12}
+1178m4*speaker_BC{1169M12}
+1179m4*speaker_SL{1169M12}
+1180m4*speaker_SR{1169M12}
+1181m4*speaker_TC{1169M12}
+1182m4*speaker_TFL{1169M12}
+1183m4*speaker_TFC{1169M12}
+1184m4*speaker_TFR{1169M12}
+1185m4*speaker_TBL{1169M12}
+1186m4*speaker_TBC{1169M12}
+1187m4*speaker_TBR{1169M12}
+1194M12*mapping_t{10|44M9} 1195r28 1196r30 1197r31 1198r36 1199r28 1200r37
+. 1201r33 1202r31 1203r36 1204r40 1205r31 1206r40 1207r31 1208r31 1209r40
+1195m4*mapping_MONO{1194M12}
+1196m4*mapping_STEREO{1194M12}
+1197m4*mapping_2POINT1{1194M12}
+1198m4*mapping_2POINT1_xiph{1194M12}
+1199m4*mapping_QUAD{1194M12}
+1200m4*mapping_QUAD_surround{1194M12}
+1201m4*mapping_QUAD_side{1194M12}
+1202m4*mapping_5POINT0{1194M12}
+1203m4*mapping_5POINT0_xiph{1194M12}
+1204m4*mapping_5POINT0_surround{1194M12}
+1205m4*mapping_5POINT1{1194M12}
+1206m4*mapping_5POINT1_surround{1194M12}
+1207m4*mapping_7POINT0{1194M12}
+1208m4*mapping_7POINT1{1194M12}
+1209m4*mapping_7POINT1_surround{1194M12}
+1219R9*play_config_t 1250e4 1472r24
+1220i7*config_set{10|35I9}
+1221i7*play_forever{10|35I9}
+1222i7*ignore_loop{10|35I9}
+1223i7*force_loop{10|35I9}
+1224i7*really_force_loop{10|35I9}
+1225i7*ignore_fade{10|35I9}
+1226f7*loop_count{10|72F9}
+1227i7*pad_begin{3|29I12}
+1228i7*trim_begin{3|29I12}
+1229i7*body_time{3|29I12}
+1230i7*trim_end{3|29I12}
+1231f7*fade_delay{10|72F9}
+1232f7*fade_time{10|72F9}
+1233i7*pad_end{3|29I12}
+1234f7*pad_begin_s{10|72F9}
+1235f7*trim_begin_s{10|72F9}
+1236f7*body_time_s{10|72F9}
+1237f7*trim_end_s{10|72F9}
+1238f7*pad_end_s{10|72F9}
+1239i7*pad_begin_set{10|35I9}
+1240i7*trim_begin_set{10|35I9}
+1241i7*body_time_set{10|35I9}
+1242i7*loop_count_set{10|35I9}
+1243i7*trim_end_set{10|35I9}
+1244i7*fade_delay_set{10|35I9}
+1245i7*fade_time_set{10|35I9}
+1246i7*pad_end_set{10|35I9}
+1247i7*is_txtp{10|35I9}
+1248i7*is_mini_txtp{10|35I9}
+1255R9*play_state_t 1271e4 1473r24
+1256i7*input_channels{10|35I9}
+1257i7*output_channels{10|35I9}
+1258i7*pad_begin_duration{3|29I12}
+1259i7*pad_begin_left{3|29I12}
+1260i7*trim_begin_duration{3|29I12}
+1261i7*trim_begin_left{3|29I12}
+1262i7*body_duration{3|29I12}
+1263i7*fade_duration{3|29I12}
+1264i7*fade_left{3|29I12}
+1265i7*fade_start{3|29I12}
+1266i7*pad_end_duration{3|29I12}
+1267i7*pad_end_start{3|29I12}
+1268i7*play_duration{3|29I12}
+1269i7*play_position{3|29I12}
+1292A9*VGMSTREAMCHANNEL_array1675(3|27I12)<integer> 1341r28
+1293A9*VGMSTREAMCHANNEL_array1678(3|29I12)<integer> 1342r34
+1294A9*VGMSTREAMCHANNEL_array1681(3|27I12)<integer> 1343r30
+1295R9*VGMSTREAMCHANNEL_union1683 1295d37 1303e4 1344r26
+1295m37*discr{10|44M9} 1296r12
+1298i13*adpcm_history1_16{3|27I12}
+1300i13*adpcm_history1_32{3|29I12}
+1305R9*VGMSTREAMCHANNEL_union1684 1305d37 1313e4 1345r26
+1305m37*discr{10|44M9} 1306r12
+1308i13*adpcm_history2_16{3|27I12}
+1310i13*adpcm_history2_32{3|29I12}
+1315R9*VGMSTREAMCHANNEL_union1685 1315d37 1323e4 1346r26
+1315m37*discr{10|44M9} 1316r12
+1318i13*adpcm_history3_16{3|27I12}
+1320i13*adpcm_history3_32{3|29I12}
+1325R9*VGMSTREAMCHANNEL_union1686 1325d37 1333e4 1347r26
+1325m37*discr{10|44M9} 1326r12
+1328i13*adpcm_history4_16{3|27I12}
+1330i13*adpcm_history4_32{3|29I12}
+1335R9*VGMSTREAMCHANNEL 1356e4 1464r19 1465r25 1466r24
+1336p7*the_streamfile(13|84R12)
+1337i7*channel_start_offset{15|55I12}
+1338i7*offset{15|55I12}
+1339i7*frame_header_offset{15|55I12}
+1340i7*samples_left_in_frame{10|35I9}
+1341a7*adpcm_coef{1292A9}
+1342a7*adpcm_coef_3by32{1293A9}
+1343a7*vadpcm_coefs{1294A9}
+1344r7*anon4302{1295R9}
+1345r7*anon4306{1305R9}
+1346r7*anon4310{1315R9}
+1347r7*anon4314{1325R9}
+1348i7*adpcm_step_index{10|35I9}
+1349i7*adpcm_scale{10|35I9}
+1350r7*the_g72x_state{8|15R9}
+1351i7*adx_channels{10|35I9}
+1352m7*adx_xor{4|27M12}
+1353m7*adx_mult{4|27M12}
+1354m7*adx_add{4|27M12}
+1425A12*VGMSTREAM_array1690{10|86A9}<10|62M9> 1444r29
+1426R9*VGMSTREAM 1479e4 1568r86 1574r96 1580r54 1586r54 1596r30 1606r30 1613r53
+. 1622r30 1629r62 1635r67 1658r30 1667r64 1682r82 1688r54 1697r30 1705r30
+. 1715r30 1723r30 1731r30 1738r60
+1427i7*num_samples{3|29I12}
+1428i7*sample_rate{3|29I12}
+1429i7*channels{10|35I9}
+1430e7*coding_type{173E9}
+1431e7*layout_type{309E9}
+1432e7*meta_type{685E9}
+1433i7*loop_flag{10|35I9}
+1434i7*loop_start_sample{3|29I12}
+1435i7*loop_end_sample{3|29I12}
+1436m7*interleave_block_size{12|69M12}
+1437m7*interleave_first_block_size{12|69M12}
+1438m7*interleave_first_skip{12|69M12}
+1439m7*interleave_last_block_size{12|69M12}
+1440m7*frame_size{12|69M12}
+1441i7*num_streams{10|35I9}
+1442i7*stream_index{10|35I9}
+1443m7*stream_size{12|69M12}
+1444a7*stream_name{1425A12}
+1445m7*channel_layout{4|29M12}
+1446i7*allow_dual_stereo{10|35I9}
+1447m7*full_block_size{12|69M12}
+1448i7*current_sample{3|29I12}
+1449i7*samples_into_block{3|29I12}
+1450i7*current_block_offset{15|55I12}
+1451m7*current_block_size{12|69M12}
+1452i7*current_block_samples{3|29I12}
+1453i7*next_block_offset{15|55I12}
+1454i7*loop_current_sample{3|29I12}
+1455i7*loop_samples_into_block{3|29I12}
+1456i7*loop_block_offset{15|55I12}
+1457m7*loop_block_size{12|69M12}
+1458i7*loop_block_samples{3|29I12}
+1459i7*loop_next_block_offset{15|55I12}
+1460i7*hit_loop{10|35I9}
+1461i7*codec_endian{10|35I9}
+1462i7*codec_config{10|35I9}
+1463i7*ws_output_size{3|29I12}
+1464p7*ch(1335R9)
+1465p7*start_ch(1335R9)
+1466p7*loop_ch(1335R9)
+1467m7*start_vgmstream{16|67M9}
+1468m7*mixing_data{16|67M9}
+1469m7*codec_data{16|67M9}
+1470m7*layout_data{16|67M9}
+1471i7*config_enabled{10|35I9}
+1472r7*config{1219R9}
+1473r7*pstate{1255R9}
+1474i7*loop_count{10|35I9}
+1475i7*loop_target{10|35I9}
+1476p7*tmpbuf(14|24I12)
+1477m7*tmpbuf_size{12|69M12}
+1485R9*segmented_layout_data 1494e4
+1486i7*segment_count{10|35I9}
+1487m7*segments{16|67M9}
+1488i7*current_segment{10|35I9}
+1489p7*buffer(14|24I12)
+1490i7*input_channels{10|35I9}
+1491i7*output_channels{10|35I9}
+1492i7*mixed_channels{10|35I9}
+1500R9*layered_layout_data 1508e4
+1501i7*layer_count{10|35I9}
+1502m7*layers{16|67M9}
+1503p7*buffer(14|24I12)
+1504i7*input_channels{10|35I9}
+1505i7*output_channels{10|35I9}
+1506i7*external_looping{10|35I9}
+1511R9*acm_codec_data 1516e4
+1512p7*the_streamfile(13|84R12)
+1513m7*handle{16|67M9}
+1514m7*io_config{16|67M9}
+1519R9*mixing_info 1523e4 1550r33
+1520i7*input_channels{10|35I9}
+1521i7*output_channels{10|35I9}
+1525R9*loop_info 1529e4 1552r31
+1526i7*start{10|35I9}
+1527i7*c_end{10|35I9}
+1531R9*interleave_info 1536e4 1556r37
+1532i7*value{10|35I9}
+1533i7*first_block{10|35I9}
+1534i7*last_block{10|35I9}
+1538A12*anon1709_array1707{10|86A9}<10|62M9> 1542r22
+1539R9*stream_info 1544e4 1560r33
+1540i7*current{10|35I9}
+1541i7*total{10|35I9}
+1542a7*name{1538A12}
+1546A12*vgmstream_info_array1707{10|86A9}<10|62M9> 1554r26 1555r24 1558r26
+1547R9*vgmstream_info 1562e4 1629r87
+1548i7*sample_rate{10|35I9}
+1549i7*channels{10|35I9}
+1550r7*the_mixing_info{1519R9}
+1551i7*channel_layout{10|35I9}
+1552r7*the_loop_info{1525R9}
+1553m7*num_samples{12|69M12}
+1554a7*encoding{1546A12}
+1555a7*layout{1546A12}
+1556r7*the_interleave_info{1531R9}
+1557i7*frame_size{10|35I9}
+1558a7*metadata{1546A12}
+1559i7*bitrate{10|35I9}
+1560r7*the_stream_info{1539R9}
+1568V13*init_vgmstream(1426R9) 1568>29
+1568p29 filename{11|47P9}
+1574V13*init_vgmstream_from_STREAMFILE(1426R9) 1574^45
+1574p45 sf(13|84R12)
+1580U14*reset_vgmstream 1580^31
+1580p31 the_vgmstream(1426R9)
+1586U14*close_vgmstream 1586^31
+1586p31 the_vgmstream(1426R9)
+1592V13*get_vgmstream_play_samples{3|29I12} 1593>7 1594>7 1595>7 1596^7
+1593f7 looptimes{10|72F9}
+1594f7 fadeseconds{10|72F9}
+1595f7 fadedelayseconds{10|72F9}
+1596p7 the_vgmstream(1426R9)
+1603V13*render_vgmstream{10|35I9} 1604>7 1605>7 1606^7
+1604p7 buffer{21|8P14}
+1605i7 sample_count{3|29I12}
+1606p7 the_vgmstream(1426R9)
+1613U14*seek_vgmstream 1613^30 1613>64
+1613p30 the_vgmstream(1426R9)
+1613i64 seek_sample{3|29I12}
+1621U14*describe_vgmstream 1622^7 1623>7 1624>7
+1622p7 the_vgmstream(1426R9)
+1623p7 desc{11|47P9}
+1624i7 length{10|35I9}
+1629U14*describe_vgmstream_info 1629^39 1629^73
+1629p39 the_vgmstream(1426R9)
+1629p73 desc(1547R9)
+1635V13*get_vgmstream_average_bitrate{10|35I9} 1635^44
+1635p44 the_vgmstream(1426R9)
+1643V13*vgmstream_get_formats{16|67M9} 1643^36
+1643p36 size(12|69M12)
+1649V13*vgmstream_get_common_formats{16|67M9} 1649^43
+1649p43 size(12|69M12)
+1657U14*vgmstream_force_loop 1658^7 1659>7 1660>7 1661>7
+1658p7 the_vgmstream(1426R9)
+1659i7 loop_flag{10|35I9}
+1660i7 loop_start_sample{10|35I9}
+1661i7 loop_end_sample{10|35I9}
+1667U14*vgmstream_set_loop_target 1667^41 1667>75
+1667p41 the_vgmstream(1426R9)
+1667i75 loop_target{10|35I9}
+1673V13*vgmstream_is_virtual_filename{10|35I9} 1673>44
+1673p44 filename{11|47P9}
+1682V13*allocate_vgmstream(1426R9) 1682>33 1682>54
+1682i33 channel_count{10|35I9}
+1682i54 looped{10|35I9}
+1688U14*setup_vgmstream 1688^31
+1688p31 the_vgmstream(1426R9)
+1696V13*vgmstream_open_stream{10|35I9} 1697^7 1698^7 1699>7
+1697p7 the_vgmstream(1426R9)
+1698p7 sf(13|84R12)
+1699i7 start_offset{15|55I12}
+1704V13*vgmstream_open_stream_bf{10|35I9} 1705^7 1706^7 1707>7 1708>7
+1705p7 the_vgmstream(1426R9)
+1706p7 sf(13|84R12)
+1707i7 start_offset{15|55I12}
+1708i7 force_multibuffer{10|35I9}
+1714U14*get_vgmstream_coding_description 1715^7 1716>7 1717>7
+1715p7 the_vgmstream(1426R9)
+1716p7 c_out{11|47P9}
+1717m7 out_size{12|69M12}
+1722U14*get_vgmstream_layout_description 1723^7 1724>7 1725>7
+1723p7 the_vgmstream(1426R9)
+1724p7 c_out{11|47P9}
+1725m7 out_size{12|69M12}
+1730U14*get_vgmstream_meta_description 1731^7 1732>7 1733>7
+1731p7 the_vgmstream(1426R9)
+1732p7 c_out{11|47P9}
+1733m7 out_size{12|69M12}
+1738U14*setup_state_vgmstream 1738^37
+1738p37 the_vgmstream(1426R9)
+

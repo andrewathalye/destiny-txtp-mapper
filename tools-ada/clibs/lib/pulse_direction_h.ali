@@ -1,0 +1,55 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_direction_h%s	pulse_direction_h.ads	c4b4e6d4 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W pulse_def_h%s		pulse_def_h.ads		pulse_def_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_intn_h.ads  20220411204005 e7dfa178 bits_stdint_intn_h%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_timeval_h.ads  20220411204005 f9cdbe47 bits_types_struct_timeval_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_def_h.ads	20220411204005 1fe1c178 pulse_def_h%s
+D pulse_direction_h.ads	20220411203905 36f6f4aa pulse_direction_h%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_direction_valid pulse_direction_h 32 13 none]
+G c Z s s [pa_direction_to_string pulse_direction_h 38 13 none]
+X 7 interfac.ads
+38K9*Interfaces 231e15 11|5r6 5r24 7r6 38r84
+X 8 i-c.ads
+18K20*C 237e17 11|5w17 5r35 7r17 38r95
+35I9*int<integer> 11|32r80
+44M9*unsigned
+X 9 i-cstrin.ads
+36K22*Strings 106e25 11|7w19 38r97
+47P9*chars_ptr 11|38r105
+X 10 pulse_def_h.ads
+12K9*pulse_def_h 1102e16 11|6w6 32r45 38r49
+275M12*pa_direction{8|44M9}
+281M12*pa_direction_t{275M12} 11|32r57 38r61
+X 11 pulse_direction_h.ads
+9K9*pulse_direction_h 43l5 43e22
+32V13*pa_direction_valid{8|35I9} 32>33
+32m33 direction{10|281M12}
+38V13*pa_direction_to_string{9|47P9} 38>37
+38m37 direction{10|281M12}
+

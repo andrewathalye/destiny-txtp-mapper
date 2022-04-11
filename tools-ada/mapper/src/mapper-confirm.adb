@@ -1,13 +1,16 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
+with Mapper.Pulse; use Mapper.Pulse;
+
 package body Mapper.Confirm is
 	-- Confirm input entry
 	procedure Confirm_Entry (T : Text_Entry) is
 		C : Character; -- Input character for response
+		PT : Play_Task;
 	begin
 		Put_Line ("[Info] Confirm " & T.Name.all & " (" & T.ID.all & ")");
 		loop
-			Play_Track (T);
+			PT.Play ("txtp/" & Swap_Whitespace (T.ID.all) & ".txtp");
 			Put ("[Interactive] Keep current name (y/n/?) ");
 			Get (C);
 			declare -- Clear out residual newline
@@ -29,8 +32,10 @@ package body Mapper.Confirm is
 						exit;
 					end;
 				when others =>
-					null;
+					Play_Task_Exit.Set;
 			end case;
 		end loop;
+
+		Play_Task_Exit.Set; -- Exit task if still going
 	end Confirm_Entry;
 end Mapper.Confirm;

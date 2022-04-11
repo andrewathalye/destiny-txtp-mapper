@@ -1,0 +1,36 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_types_u_sigset_t_h%s  bits_types_u_sigset_t_h.ads  2457bb8e NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_u_sigset_t_h.ads  20220411204005 fde96557 bits_types_u_sigset_t_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tuu_sigset_t_array916BIP bits_types_u_sigset_t_h 9 4 none]
+G c Z s s [uu_sigset_tIP bits_types_u_sigset_t_h 10 9 none]
+X 3 bits_types_u_sigset_t_h.ads
+7K9*bits_types_u_sigset_t_h 15l5 15e28
+9A9*uu_sigset_t_array916(5|46M9)<integer> 11r24
+10R9*uu_sigset_t 13e4
+11a7*uu_val{9A9}
+X 4 interfac.ads
+38K9*Interfaces 3|5r6 5r24 4|231e15
+X 5 i-c.ads
+18K20*C 3|5w17 5r35 5|237e17
+46M9*unsigned_long 3|9r60
+

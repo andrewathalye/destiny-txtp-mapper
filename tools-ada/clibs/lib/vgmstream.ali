@@ -1,0 +1,144 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U vgmstream%b		vgmstream.adb		d322c09d NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+
+U vgmstream%s		vgmstream.ads		7f764814 EE NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W plugins_h%s		plugins_h.ads		plugins_h.ali
+W system%s		system.ads		system.ali
+W unchecked_deallocation%s
+W vgmstream_common%s	vgmstream_common.ads	vgmstream_common.ali
+W vgmstream_h%s		vgmstream_h.ads		vgmstream_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_intn_h.ads  20220411204005 e7dfa178 bits_stdint_intn_h%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_file_h.ads	20220404024050 84da6495 bits_types_file_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_file_h.ads  20220404024050 657f2b73 bits_types_struct_file_h%s
+D g72x_state_h.ads	20220404024050 45d2049e g72x_state_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D plugins_h.ads		20220404024833 3014f94c plugins_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D streamfile_h.ads	20220404024811 d16d62ab streamfile_h%s
+D streamtypes_h.ads	20220411002006 b3efd96b streamtypes_h%s
+D sys_types_h.ads	20220411204005 8e7f8f86 sys_types_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D unchdeal.ads		20210520051135 214516a4 unchecked_deallocation%s
+D vgmstream.ads		20220411203607 abdb8b24 vgmstream%s
+D vgmstream.adb		20220405180017 955a98bf vgmstream%b
+D vgmstream_common.ads	20220411202458 95d61bb0 vgmstream_common%s
+D vgmstream_h.ads	20220411203651 2b4e7fac vgmstream_h%s
+G a e
+G c Z s s [free vgmstream 30 19 none]
+G c Z s b [vgmstream_init vgmstream 34 18 none]
+G c Z s b [vgmstream_get_samples vgmstream 40 18 none]
+G c Z s s [vgmstream_get_sample_rate vgmstream 43 18 none]
+G r c none [vgmstream_init vgmstream 34 18 none] [init_vgmstream vgmstream_h 1568 13 none]
+X 3 bits_stdint_intn_h.ads
+27I12*int16_t{6|43I12}
+29I12*int32_t{6|47I12}
+X 6 bits_types_h.ads
+43I12*uu_int16_t{10|36I9}
+47I12*uu_int32_t{10|35I9}
+X 9 interfac.ads
+38K9*Interfaces 231e15 22|2r6 2r24 23|1r6 1r24 2r6 2r32
+X 10 i-c.ads
+18K20*C 237e17 22|2w17 2r35 23|1w17 1r35 2r17 2r43
+35I9*int<integer> 22|48r66 48r112
+36I9*short<short_integer>
+72F9*double<long_float>
+X 11 i-cstrin.ads
+36K22*Strings 106e25 23|2w19 2r45
+47P9*chars_ptr 23|7r21
+60V13*New_String{47P9} 23|7s34
+62U14*Free 23|11s17
+X 12 plugins_h.ads
+12K9*plugins_h 223e14 22|6w6 6r21 52r113
+56R9*vgmstream_cfg_t 68e4 22|13r37 31r28 52r88
+57i7*allow_play_forever{10|35I9} 22|18m17
+58i7*disable_config_override{10|35I9} 22|17m62
+59i7*play_forever{10|35I9} 22|19m17
+60i7*ignore_loop{10|35I9} 22|23m17
+61i7*force_loop{10|35I9} 22|24m17
+62i7*really_force_loop{10|35I9} 22|25m17
+63i7*ignore_fade{10|35I9} 22|26m17
+64f7*loop_count{10|72F9} 22|21m17
+65f7*fade_delay{10|72F9} 22|22m17
+66f7*fade_time{10|72F9} 22|20m17
+71U14*vgmstream_apply_config 22|52r123
+X 15 streamtypes_h.ads
+24I12*sample_t{3|27I12}
+X 17 system.ads
+37K9*System 154e11 22|3w6 3r18
+X 21 unchdeal.ads
+17+9 Object 22|31r18
+18P9 Name(17+9) 22|31r45
+20u11*Unchecked_Deallocation 22|1w6 30r31
+X 22 vgmstream.ads
+10K9*VGMStream 54l5 54e14 23|4b14 25l5 25t14
+12P14*VGMStream_Access(25|1426R9) 34r53 40r45 43r49 23|6r53 8r21 10r22 18r45
+13R17*VGMStream_Config{12|56R9} 14r48 17r41
+14P14*VGMStream_Config_Access(13R17) 31r53
+17r9*VGMStream_CLI_Config{13R17}
+30U19*Free[21|20]
+34V18*VGMStream_Init{12P14} 34>34 23|6b18 13l13 13t27
+34a34 S{string} 23|6b34 7r46
+37U19*VGMStream_Close=37:78
+37p36 V(25|1426R9)
+40V18*VGMStream_Get_Samples{natural} 40>41 23|18b18 24l13 24t34
+40p41 V{12P14} 23|18b41 20r20 20r48 21r41 23r33
+43V18*VGMStream_Get_Sample_Rate{natural} 43>45
+43p45 V{12P14} 43r95
+48V18*VGMStream_Render=48:124{10|35I9}
+48p36 S{24|8P14}
+48i62 N{3|29I12}
+48p71 V(25|1426R9)
+52U19*VGMStream_Apply_Config=52:123
+52p43 V(25|1426R9)
+52p77 C(12|56R9)
+X 23 vgmstream.adb
+7p17 C{11|47P9} 10r56 11m23 11r23
+8p17 A{22|12P14} 10m17 12r24
+X 24 vgmstream_common.ads
+4K9*VGMStream_Common 22|8w6 8r28 24|11e21
+5I17*Sample{15|24I12}
+6A14*Sample_Buffer(5I17)<integer>
+8P14*Sample_Buffer_Access(6A14) 22|48r40
+X 25 vgmstream_h.ads
+18K9*vgmstream_h 22|5w6 5r23 12r45 37r47 48r82 52r54 25|1743e16
+1220i7*config_set{10|35I9} 23|20r61
+1268i7*play_duration{3|29I12} 23|23r46
+1426R9*VGMSTREAM 22|12r57 37r59 48r94 52r66 25|1479e4
+1427i7*num_samples{3|29I12} 23|21r47
+1428i7*sample_rate{3|29I12} 22|43r101
+1471i7*config_enabled{10|35I9} 23|20r26
+1472r7*config{1219R9} 23|20r54
+1473r7*pstate{1255R9} 23|23r39
+1568V13*init_vgmstream(1426R9) 23|10s40
+1586U14*close_vgmstream 22|37r78
+1603V13*render_vgmstream{10|35I9} 22|48r124
+

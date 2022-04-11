@@ -1,0 +1,51 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_struct_mutex_h%s	bits_struct_mutex_h.ads	eeb51350 NE OO PK IL
+W bits_thread_shared_types_h%s  bits_thread_shared_types_h.ads  bits_thread_shared_types_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_struct_mutex_h.ads  20220411204005 826364b8 bits_struct_mutex_h%s
+D bits_thread_shared_types_h.ads  20220411204005 b568a931 bits_thread_shared_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cexten.ads		20210520051132 be1de098 interfaces.c.extensions%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [uu_pthread_mutex_sIP bits_struct_mutex_h 25 9 none]
+G r s uu_pthread_internal_list [uu_pthread_mutex_sIP bits_struct_mutex_h 25 9 none] [uu_pthread_internal_listIP bits_thread_shared_types_h 44 9 none]
+X 3 bits_struct_mutex_h.ads
+8K9*bits_struct_mutex_h 40l5 40e24
+25R9*uu_pthread_mutex_s 35e4
+26i7*uu_lock{6|35I9}
+27m7*uu_count{6|44M9}
+28i7*uu_owner{6|35I9}
+29m7*uu_nusers{6|44M9}
+30i7*uu_kind{6|35I9}
+31i7*uu_spins{6|36I9}
+32i7*uu_elision{6|36I9}
+33r7*uu_list{4|50R12}
+X 4 bits_thread_shared_types_h.ads
+8K9*bits_thread_shared_types_h 3|6w6 33r25 4|132e31
+44R9*uu_pthread_internal_list
+50R12*uu_pthread_list_t{44R9} 3|33r52
+X 5 interfac.ads
+38K9*Interfaces 3|5r6 5r24 5|231e15
+X 6 i-c.ads
+18K20*C 3|5w17 5r35 6|237e17
+35I9*int<integer> 3|26r25 28r26 30r25
+36I9*short<short_integer> 3|31r26 32r28
+44M9*unsigned 3|27r26 29r27
+

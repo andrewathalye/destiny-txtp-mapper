@@ -1,0 +1,75 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_util_h%s	pulse_util_h.ads	610a9da0 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_util_h.ads	20220411203905 749ca7ff pulse_util_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_get_user_name pulse_util_h 31 13 none]
+G c Z s s [pa_get_host_name pulse_util_h 37 13 none]
+G c Z s s [pa_get_fqdn pulse_util_h 43 13 none]
+G c Z s s [pa_get_home_dir pulse_util_h 49 13 none]
+G c Z s s [pa_get_binary_name pulse_util_h 57 13 none]
+G c Z s s [pa_path_get_filename pulse_util_h 65 13 none]
+G c Z s s [pa_msleep pulse_util_h 71 13 none]
+G c Z s s [pa_thread_make_realtime pulse_util_h 81 13 none]
+X 3 interfac.ads
+38K9*Interfaces 231e15 6|5r6 5r24 6r6 31r35 31r95 37r35 37r95 43r30 43r90
+. 49r34 49r94 57r37 57r97 65r39 65r78
+X 4 i-c.ads
+18K20*C 237e17 6|5w17 5r35 6r17 31r46 31r106 37r46 37r106 43r41 43r101 49r45
+. 49r105 57r48 57r108 65r50 65r89
+35I9*int<integer> 6|71r50 81r47 81r59
+46M9*unsigned_long 6|71r28
+X 5 i-cstrin.ads
+36K22*Strings 106e25 6|6w19 31r48 31r108 37r48 37r108 43r43 43r103 49r47
+. 49r107 57r50 57r110 65r52 65r91
+47P9*chars_ptr 6|31r56 31r116 37r56 37r116 43r51 43r111 49r55 49r115 57r58
+. 57r118 65r60 65r99
+X 6 pulse_util_h.ads
+9K9*pulse_util_h 86l5 86e17
+31V13*pa_get_user_name{5|47P9} 31>31 31>67
+31p31 s{5|47P9}
+31m67 l{7|69M12}
+37V13*pa_get_host_name{5|47P9} 37>31 37>67
+37p31 s{5|47P9}
+37m67 l{7|69M12}
+43V13*pa_get_fqdn{5|47P9} 43>26 43>62
+43p26 s{5|47P9}
+43m62 l{7|69M12}
+49V13*pa_get_home_dir{5|47P9} 49>30 49>66
+49p30 s{5|47P9}
+49m66 l{7|69M12}
+57V13*pa_get_binary_name{5|47P9} 57>33 57>69
+57p33 s{5|47P9}
+57m69 l{7|69M12}
+65V13*pa_path_get_filename{5|47P9} 65>35
+65p35 p{5|47P9}
+71V13*pa_msleep{4|35I9} 71>24
+71m24 t{4|46M9}
+81V13*pa_thread_make_realtime{4|35I9} 81>38
+81i38 rtprio{4|35I9}
+X 7 stddef_h.ads
+7K9*stddef_h 6|7w6 31r71 37r71 43r66 49r70 57r73 7|115e13
+69M12*size_t{4|46M9} 6|31r80 37r80 43r75 49r79 57r82
+

@@ -1,0 +1,53 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U bits_types_u_locale_t_h%s  bits_types_u_locale_t_h.ads  38fef956 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_u_locale_t_h.ads  20220404024050 d55d2a50 bits_types_u_locale_t_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [uu_locale_dataIP bits_types_u_locale_t_h 33 9 none]
+G c Z s s [Tanon1364_array1368BIP bits_types_u_locale_t_h 35 4 none]
+G c Z s s [Tanon1364_array1371BIP bits_types_u_locale_t_h 36 4 none]
+G c Z s s [uu_locale_structIP bits_types_u_locale_t_h 37 9 none]
+X 3 bits_types_u_locale_t_h.ads
+8K9*bits_types_u_locale_t_h 50l5 50e28
+33R9*uu_locale_data 35r57
+35A9*anon1364_array1368(33R9)<integer> 38r20
+36A9*anon1364_array1371(6|47P9)<integer> 42r18
+37R9*uu_locale_struct 44e4 48r35
+38a7*uu_locales{35A9}
+39p7*uu_ctype_b(5|45M9)
+40p7*uu_ctype_tolower(5|35I9)
+41p7*uu_ctype_toupper(5|35I9)
+42a7*uu_names{36A9}
+48P9*uu_locale_t(37R9)
+X 4 interfac.ads
+38K9*Interfaces 3|5r6 5r24 6r6 36r50 4|231e15
+X 5 i-c.ads
+18K20*C 3|5w17 5r35 6r17 36r61 5|237e17
+35I9*int<integer> 3|40r33 41r33
+45M9*unsigned_short 3|39r27
+X 6 i-cstrin.ads
+36K22*Strings 3|6w19 36r63 6|106e25
+47P9*chars_ptr 3|36r71
+

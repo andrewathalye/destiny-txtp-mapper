@@ -1,0 +1,41 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U log_h%s		log_h.ads		7f806a7a NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D log_h.ads		20220404024050 04e422be log_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [vgm_log_set_callback log_h 29 14 none]
+X 3 interfac.ads
+38K9*Interfaces 231e15 5|5r6 5r24
+X 4 i-c.ads
+18K20*C 237e17 5|5w17 5r35
+35I9*int<integer> 5|31r15 32r16
+X 5 log_h.ads
+8K9*log_h 47l5 47e10
+29U14*vgm_log_set_callback 30>7 31>7 32>7 33>7
+30m7 ctx_p{6|67M9}
+31i7 level{4|35I9}
+32i7 c_type{4|35I9}
+33m7 callback{6|67M9}
+X 6 system.ads
+37K9*System 5|6w6 30r15 33r18 6|154e11
+67M9*Address 5|30r22 33r25
+

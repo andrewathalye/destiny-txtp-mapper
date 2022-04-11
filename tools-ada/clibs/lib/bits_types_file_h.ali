@@ -1,0 +1,40 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_types_file_h%s	bits_types_file_h.ads	381b913f NE OO PK
+W bits_types_struct_file_h%s  bits_types_struct_file_h.ads  bits_types_struct_file_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_file_h.ads	20220404024050 84da6495 bits_types_file_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_file_h.ads  20220404024050 657f2b73 bits_types_struct_file_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+X 3 bits_types_file_h.ads
+8K9*bits_types_FILE_h 13l5 13e22
+11R12*FILE{5|50R9}
+X 5 bits_types_struct_file_h.ads
+11K9*bits_types_struct_FILE_h 3|6w6 11r20 5|102e29
+47R9*u_IO_FILE 3|11r45 5|81e4
+50R9*u_IO_FILE
+X 6 interfac.ads
+38K9*Interfaces 3|5r6 5r24 6|231e15
+X 7 i-c.ads
+18K20*C 3|5w17 5r35 7|237e17
+

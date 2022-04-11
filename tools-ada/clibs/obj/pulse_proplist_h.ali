@@ -1,0 +1,228 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U pulse_proplist_h%s	pulse_proplist_h.ads	19fe6594 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_proplist_h.ads	20220411203905 aeb2c9d6 pulse_proplist_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_proplist_new pulse_proplist_h 281 13 none]
+G c Z s s [pa_proplist_free pulse_proplist_h 287 14 none]
+G c Z s s [pa_proplist_key_valid pulse_proplist_h 293 13 none]
+G c Z s s [pa_proplist_sets pulse_proplist_h 303 13 none]
+G c Z s s [pa_proplist_setp pulse_proplist_h 318 13 none]
+G c Z s s [pa_proplist_setf pulse_proplist_h 329 13 none]
+G c Z s s [pa_proplist_set pulse_proplist_h 343 13 none]
+G c Z s s [pa_proplist_gets pulse_proplist_h 357 13 none]
+G c Z s s [pa_proplist_get pulse_proplist_h 369 13 none]
+G c Z s s [pa_proplist_update pulse_proplist_h 403 14 none]
+G c Z s s [pa_proplist_unset pulse_proplist_h 415 13 none]
+G c Z s s [pa_proplist_unset_many pulse_proplist_h 426 13 none]
+G c Z s s [pa_proplist_iterate pulse_proplist_h 441 13 none]
+G c Z s s [pa_proplist_to_string pulse_proplist_h 451 13 none]
+G c Z s s [pa_proplist_to_string_sep pulse_proplist_h 460 13 none]
+G c Z s s [pa_proplist_from_string pulse_proplist_h 468 13 none]
+G c Z s s [pa_proplist_contains pulse_proplist_h 476 13 none]
+G c Z s s [pa_proplist_clear pulse_proplist_h 482 14 none]
+G c Z s s [pa_proplist_copy pulse_proplist_h 490 13 none]
+G c Z s s [pa_proplist_size pulse_proplist_h 496 13 none]
+G c Z s s [pa_proplist_isempty pulse_proplist_h 502 13 none]
+G c Z s s [pa_proplist_equal pulse_proplist_h 510 13 none]
+G c Z s s [pa_proplistIP pulse_proplist_h 278 9 none]
+X 3 interfac.ads
+38K9*Interfaces 231e15 6|5r6 5r24 6r6 293r42 305r13 306r15 318r62 331r13
+. 332r16 345r13 357r70 357r109 371r13 415r62 441r98 451r76 460r79 460r118
+. 468r44 476r74
+X 4 i-c.ads
+18K20*C 237e17 6|5w17 5r35 6r17 293r53 305r24 306r26 318r73 331r24 332r27
+. 345r24 357r81 357r120 371r24 415r73 441r109 451r87 460r90 460r129 468r55
+. 476r85
+35I9*int<integer> 6|293r81 306r54 318r101 333r16 347r40 373r47 415r101 426r91
+. 476r113 502r74 510r105
+44M9*unsigned 6|496r71
+46M9*unsigned_long
+X 5 i-cstrin.ads
+36K22*Strings 106e25 6|6w19 293r55 305r26 306r28 318r75 331r26 332r29 345r26
+. 357r83 357r122 371r26 415r75 441r111 451r89 460r92 460r131 468r57 476r87
+47P9*chars_ptr 6|293r63 305r34 306r36 318r83 331r34 332r37 345r34 357r91
+. 357r130 371r34 415r83 441r119 451r97 460r100 460r139 468r65 476r95
+X 6 pulse_proplist_h.ads
+10K9*pulse_proplist_h 515l5 515e21
+12a4*PA_PROP_MEDIA_NAME{string}
+14a4*PA_PROP_MEDIA_TITLE{string}
+16a4*PA_PROP_MEDIA_ARTIST{string}
+18a4*PA_PROP_MEDIA_COPYRIGHT{string}
+20a4*PA_PROP_MEDIA_SOFTWARE{string}
+22a4*PA_PROP_MEDIA_LANGUAGE{string}
+24a4*PA_PROP_MEDIA_FILENAME{string}
+26a4*PA_PROP_MEDIA_ICON{string}
+28a4*PA_PROP_MEDIA_ICON_NAME{string}
+30a4*PA_PROP_MEDIA_ROLE{string}
+32a4*PA_PROP_FILTER_WANT{string}
+34a4*PA_PROP_FILTER_APPLY{string}
+36a4*PA_PROP_FILTER_SUPPRESS{string}
+38a4*PA_PROP_EVENT_ID{string}
+40a4*PA_PROP_EVENT_DESCRIPTION{string}
+42a4*PA_PROP_EVENT_MOUSE_X{string}
+44a4*PA_PROP_EVENT_MOUSE_Y{string}
+46a4*PA_PROP_EVENT_MOUSE_HPOS{string}
+48a4*PA_PROP_EVENT_MOUSE_VPOS{string}
+50a4*PA_PROP_EVENT_MOUSE_BUTTON{string}
+52a4*PA_PROP_WINDOW_NAME{string}
+54a4*PA_PROP_WINDOW_ID{string}
+56a4*PA_PROP_WINDOW_ICON{string}
+58a4*PA_PROP_WINDOW_ICON_NAME{string}
+60a4*PA_PROP_WINDOW_X{string}
+62a4*PA_PROP_WINDOW_Y{string}
+64a4*PA_PROP_WINDOW_WIDTH{string}
+66a4*PA_PROP_WINDOW_HEIGHT{string}
+68a4*PA_PROP_WINDOW_HPOS{string}
+70a4*PA_PROP_WINDOW_VPOS{string}
+72a4*PA_PROP_WINDOW_DESKTOP{string}
+74a4*PA_PROP_WINDOW_X11_DISPLAY{string}
+76a4*PA_PROP_WINDOW_X11_SCREEN{string}
+78a4*PA_PROP_WINDOW_X11_MONITOR{string}
+80a4*PA_PROP_WINDOW_X11_XID{string}
+82a4*PA_PROP_APPLICATION_NAME{string}
+84a4*PA_PROP_APPLICATION_ID{string}
+86a4*PA_PROP_APPLICATION_VERSION{string}
+88a4*PA_PROP_APPLICATION_ICON{string}
+90a4*PA_PROP_APPLICATION_ICON_NAME{string}
+92a4*PA_PROP_APPLICATION_LANGUAGE{string}
+94a4*PA_PROP_APPLICATION_PROCESS_ID{string}
+96a4*PA_PROP_APPLICATION_PROCESS_BINARY{string}
+98a4*PA_PROP_APPLICATION_PROCESS_USER{string}
+100a4*PA_PROP_APPLICATION_PROCESS_HOST{string}
+102a4*PA_PROP_APPLICATION_PROCESS_MACHINE_ID{string}
+104a4*PA_PROP_APPLICATION_PROCESS_SESSION_ID{string}
+106a4*PA_PROP_DEVICE_STRING{string}
+108a4*PA_PROP_DEVICE_API{string}
+110a4*PA_PROP_DEVICE_DESCRIPTION{string}
+112a4*PA_PROP_DEVICE_BUS_PATH{string}
+114a4*PA_PROP_DEVICE_SERIAL{string}
+116a4*PA_PROP_DEVICE_VENDOR_ID{string}
+118a4*PA_PROP_DEVICE_VENDOR_NAME{string}
+120a4*PA_PROP_DEVICE_PRODUCT_ID{string}
+122a4*PA_PROP_DEVICE_PRODUCT_NAME{string}
+124a4*PA_PROP_DEVICE_CLASS{string}
+126a4*PA_PROP_DEVICE_FORM_FACTOR{string}
+128a4*PA_PROP_DEVICE_BUS{string}
+130a4*PA_PROP_DEVICE_ICON{string}
+132a4*PA_PROP_DEVICE_ICON_NAME{string}
+134a4*PA_PROP_DEVICE_ACCESS_MODE{string}
+136a4*PA_PROP_DEVICE_MASTER_DEVICE{string}
+138a4*PA_PROP_DEVICE_BUFFERING_BUFFER_SIZE{string}
+140a4*PA_PROP_DEVICE_BUFFERING_FRAGMENT_SIZE{string}
+142a4*PA_PROP_DEVICE_PROFILE_NAME{string}
+144a4*PA_PROP_DEVICE_INTENDED_ROLES{string}
+146a4*PA_PROP_DEVICE_PROFILE_DESCRIPTION{string}
+148a4*PA_PROP_MODULE_AUTHOR{string}
+150a4*PA_PROP_MODULE_DESCRIPTION{string}
+152a4*PA_PROP_MODULE_USAGE{string}
+154a4*PA_PROP_MODULE_VERSION{string}
+156a4*PA_PROP_FORMAT_SAMPLE_FORMAT{string}
+158a4*PA_PROP_FORMAT_RATE{string}
+160a4*PA_PROP_FORMAT_CHANNELS{string}
+162a4*PA_PROP_FORMAT_CHANNEL_MAP{string}
+164a4*PA_PROP_CONTEXT_FORCE_DISABLE_SHM{string}
+166a4*PA_PROP_BLUETOOTH_CODEC{string}
+278R9*pa_proplist 281r43 287r43 304r18 318r42 330r18 344r18 357r51 370r27
+. 404r18 406r31 415r43 426r48 441r54 451r56 460r60 468r90 476r55 482r44 490r51
+. 490r78 496r51 502r54 510r52 510r85
+281V13*pa_proplist_new(278R9)
+287U14*pa_proplist_free 287^32
+287p32 p(278R9)
+293V13*pa_proplist_key_valid{4|35I9} 293>36
+293p36 key{5|47P9}
+303V13*pa_proplist_sets{4|35I9} 304^7 305>7 306>7
+304p7 p(278R9)
+305p7 key{5|47P9}
+306p7 value{5|47P9}
+318V13*pa_proplist_setp{4|35I9} 318^31 318>55
+318p31 p(278R9)
+318p55 pair{5|47P9}
+329V13*pa_proplist_setf{4|35I9} 330^7 331>7 332>7
+330p7 p(278R9)
+331p7 key{5|47P9}
+332p7 format{5|47P9}
+343V13*pa_proplist_set{4|35I9} 344^7 345>7 346>7 347>7
+344p7 p(278R9)
+345p7 key{5|47P9}
+346m7 data{8|67M9}
+347m7 nbytes{7|69M12}
+357V13*pa_proplist_gets{5|47P9} 357^31 357>64
+357p31 p(278R9)
+357p64 key{5|47P9}
+369V13*pa_proplist_get{4|35I9} 370^7 371>7 372>7 373^7
+370p7 p(278R9)
+371p7 key{5|47P9}
+372m7 data{8|67M9}
+373p7 nbytes(7|69M12)
+379E9*pa_update_mode 383e4 396r32
+380n7*PA_UPDATE_SET{379E9}
+381n7*PA_UPDATE_MERGE{379E9}
+382n7*PA_UPDATE_REPLACE{379E9}
+396E12*pa_update_mode_t{379E9} 405r14
+403U14*pa_proplist_update 404^7 405>7 406^7
+404p7 p(278R9)
+405e7 mode{396E12}
+406p7 other(278R9)
+415V13*pa_proplist_unset{4|35I9} 415^32 415>56
+415p32 p(278R9)
+415p56 key{5|47P9}
+426V13*pa_proplist_unset_many{4|35I9} 426^37 426>61
+426p37 p(278R9)
+426m61 keys{8|67M9}
+441V13*pa_proplist_iterate{5|47P9} 441^34 441>67
+441p34 p(278R9)
+441m67 state{8|67M9}
+451V13*pa_proplist_to_string{5|47P9} 451^36
+451p36 p(278R9)
+460V13*pa_proplist_to_string_sep{5|47P9} 460^40 460>73
+460p40 p(278R9)
+460p73 sep{5|47P9}
+468V13*pa_proplist_from_string(278R9) 468>38
+468p38 str{5|47P9}
+476V13*pa_proplist_contains{4|35I9} 476^35 476>68
+476p35 p(278R9)
+476p68 key{5|47P9}
+482U14*pa_proplist_clear 482^33
+482p33 p(278R9)
+490V13*pa_proplist_copy(278R9) 490^31
+490p31 p(278R9)
+496V13*pa_proplist_size{4|44M9} 496^31
+496p31 p(278R9)
+502V13*pa_proplist_isempty{4|35I9} 502^34
+502p34 p(278R9)
+510V13*pa_proplist_equal{4|35I9} 510^32 510^65
+510p32 a(278R9)
+510p65 b(278R9)
+X 7 stddef_h.ads
+7K9*stddef_h 6|8w6 347r16 373r23 7|115e13
+69M12*size_t{4|46M9} 6|347r25 373r32
+X 8 system.ads
+37K9*System 6|7w6 346r14 372r14 426r68 441r75 8|154e11
+67M9*Address 6|346r21 372r21 426r75 441r82
+

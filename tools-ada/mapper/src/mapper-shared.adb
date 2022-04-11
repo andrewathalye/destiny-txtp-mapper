@@ -15,29 +15,4 @@ package body Mapper.Shared is
 		end loop;
 		return O;
 	end Swap_Whitespace;
-
-	-- Play a track by Text_Entry
-	procedure Play_Track (T : Text_Entry) is
-	begin
-		Play_Track ("txtp/" & Swap_Whitespace (T.ID.all) & ".txtp");
-	end Play_Track;
-
-	-- Play a track using vgmstream123 TODO: Use the PulseAudio + VGMStream API directly
-	-- S should be the relative path to a txtp file
-	procedure Play_Track (S : String) is
-		P : String_Access := new String'(S); -- Filename parameter
-		A : constant Argument_List := (1 => P);
-		B : Boolean := False; -- Result of process
-		Play_Error : Exception;
-	begin
-		Spawn (VGMStream123_Path, A, B);
-		Free (P);
-		if not B then
-			raise Play_Error;
-		end if;
-	exception
-		when Play_Error =>
-			Put_Line (Standard_Error, "[Error] Could not play track: " & S);
-			raise Handled_Fatal_Error;
-	end Play_Track;
 end Mapper.Shared;

@@ -1,0 +1,70 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_types_sigevent_t_h%s  bits_types_sigevent_t_h.ads  8c4a00de NE OO PK IL
+Y bits_pthreadtypes_h%s	bits_pthreadtypes_h.ads	bits_pthreadtypes_h.ali
+W bits_types_h%s	bits_types_h.ads	bits_types_h.ali
+W bits_types_u_sigval_t_h%s  bits_types_u_sigval_t_h.ads  bits_types_u_sigval_t_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_pthreadtypes_h.ads  20220411204005 0d8fa210 bits_pthreadtypes_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_sigevent_t_h.ads  20220411204005 d3696936 bits_types_sigevent_t_h%s
+D bits_types_u_sigval_t_h.ads  20220411204005 5f8ac759 bits_types_u_sigval_t_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tanon1083_array1086BIP bits_types_sigevent_t_h 20 4 none]
+G c Z s s [anon1083_struct1087IP bits_types_sigevent_t_h 21 9 none]
+G c Z s s [anon1083_union1084IP bits_types_sigevent_t_h 26 9 none]
+G c Z s s [sigeventIP bits_types_sigevent_t_h 38 9 none]
+X 3 bits_pthreadtypes_h.ads
+10K9 bits_pthreadtypes_h 5|23r28
+X 4 bits_types_h.ads
+9K9*bits_types_h 241e17 5|8w6 31r29
+142I12*uu_pid_t{8|35I9} 5|31r42
+X 5 bits_types_sigevent_t_h.ads
+10K9*bits_types_sigevent_t_h 50l5 50e28
+20A9*anon1083_array1086(8|35I9)<integer> 29r29
+21R9*anon1083_struct1087 25e4 33r38
+22p7*u_function
+22r38 arg1{6|37R12}
+23p7*u_attribute
+26R9*anon1083_union1084 26d29 36e4 42r28
+26m29*discr{8|44M9} 27r12
+29a13*u_pad{20A9}
+31i13*u_tid{4|142I12}
+33r13*u_sigev_thread{21R9}
+38R9*sigevent 44e4 47r26
+39r7*sigev_value{6|37R12}
+40i7*sigev_signo{8|35I9}
+41i7*sigev_notify{8|35I9}
+42r7*u_sigev_un{26R9}
+47R12*sigevent_t{38R9}
+X 6 bits_types_u_sigval_t_h.ads
+8K9*bits_types_u_sigval_t_h 5|6w6 22r45 39r29 6|39e28
+37R12*uu_sigval_t{26R9} 5|22r69 39r53
+X 7 interfac.ads
+38K9*Interfaces 5|5r6 5r24 7|231e15
+X 8 i-c.ads
+18K20*C 5|5w17 5r35 8|237e17
+35I9*int<integer> 5|20r58 40r29 41r30
+44M9*unsigned 5|26r37
+

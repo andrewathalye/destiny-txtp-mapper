@@ -1,0 +1,440 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U stdio_h%s		stdio_h.ads		7a0a7c62 NE OO PK IL
+W bits_types_file_h%s	bits_types_file_h.ads	bits_types_file_h.ali
+W bits_types_h%s	bits_types_h.ads	bits_types_h.ali
+W bits_types_u_fpos_t_h%s  bits_types_u_fpos_t_h.ads  bits_types_u_fpos_t_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stdarg_h%s		stdarg_h.ads		stdarg_h.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_file_h.ads	20220404024050 84da6495 bits_types_file_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_file_h.ads  20220404024050 657f2b73 bits_types_struct_file_h%s
+D bits_types_u_fpos_t_h.ads  20220404024050 ec8fc456 bits_types_u_fpos_t_h%s
+D bits_types_u_mbstate_t_h.ads  20220404024050 e304f482 bits_types_u_mbstate_t_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D stdarg_h.ads		20220404024050 ab49efa2 stdarg_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D stdio_h.ads		20220405174421 dac24d39 stdio_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [remove stdio_h 92 13 none]
+G c Z s s [rename stdio_h 98 13 none]
+G c Z s s [renameat stdio_h 104 13 none]
+G c Z s s [fclose stdio_h 121 13 none]
+G c Z s s [tmpfile stdio_h 130 13 none]
+G c Z s s [tmpnam stdio_h 136 13 none]
+G c Z s s [tmpnam_r stdio_h 144 13 none]
+G c Z s s [tempnam stdio_h 157 13 none]
+G c Z s s [fflush stdio_h 166 13 none]
+G c Z s s [fflush_unlocked stdio_h 177 13 none]
+G c Z s s [fopen stdio_h 192 13 none]
+G c Z s s [freopen stdio_h 201 13 none]
+G c Z s s [fdopen stdio_h 210 13 none]
+G c Z s s [fmemopen stdio_h 219 13 none]
+G c Z s s [open_memstream stdio_h 231 13 none]
+G c Z s s [setbuf stdio_h 243 14 none]
+G c Z s s [setvbuf stdio_h 252 13 none]
+G c Z s s [setbuffer stdio_h 264 14 none]
+G c Z s s [setlinebuf stdio_h 273 14 none]
+G c Z s s [fprintf stdio_h 282 13 none]
+G c Z s s [printf stdio_h 292 13 none]
+G c Z s s [sprintf stdio_h 299 13 none]
+G c Z s s [vfprintf stdio_h 309 13 none]
+G c Z s s [vprintf stdio_h 321 13 none]
+G c Z s s [vsprintf stdio_h 327 13 none]
+G c Z s s [snprintf stdio_h 336 13 none]
+G c Z s s [vsnprintf stdio_h 345 13 none]
+G c Z s s [vdprintf stdio_h 358 13 none]
+G c Z s s [dprintf stdio_h 366 13 none]
+G c Z s s [fscanf stdio_h 386 13 none]
+G c Z s s [scanf stdio_h 392 13 none]
+G c Z s s [sscanf stdio_h 398 13 none]
+G c Z s s [vfscanf stdio_h 414 13 none]
+G c Z s s [vscanf stdio_h 422 13 none]
+G c Z s s [vsscanf stdio_h 427 13 none]
+G c Z s s [fgetc stdio_h 439 13 none]
+G c Z s s [getc stdio_h 444 13 none]
+G c Z s s [getchar stdio_h 453 13 none]
+G c Z s s [getc_unlocked stdio_h 462 13 none]
+G c Z s s [getchar_unlocked stdio_h 467 13 none]
+G c Z s s [fgetc_unlocked stdio_h 478 13 none]
+G c Z s s [fputc stdio_h 489 13 none]
+G c Z s s [putc stdio_h 494 13 none]
+G c Z s s [putchar stdio_h 503 13 none]
+G c Z s s [fputc_unlocked stdio_h 514 13 none]
+G c Z s s [putc_unlocked stdio_h 523 13 none]
+G c Z s s [putchar_unlocked stdio_h 528 13 none]
+G c Z s s [getw stdio_h 534 13 none]
+G c Z s s [putw stdio_h 540 13 none]
+G c Z s s [fgets stdio_h 549 13 none]
+G c Z s s [getdelim stdio_h 583 13 none]
+G c Z s s [getline stdio_h 598 13 none]
+G c Z s s [fputs stdio_h 610 13 none]
+G c Z s s [puts stdio_h 619 13 none]
+G c Z s s [ungetc stdio_h 628 13 none]
+G c Z s s [fread stdio_h 637 13 none]
+G c Z s s [fwrite stdio_h 650 13 none]
+G c Z s s [fread_unlocked stdio_h 671 13 none]
+G c Z s s [fwrite_unlocked stdio_h 680 13 none]
+G c Z s s [fseek stdio_h 693 13 none]
+G c Z s s [ftell stdio_h 705 13 none]
+G c Z s s [rewind stdio_h 714 14 none]
+G c Z s s [fseeko stdio_h 728 13 none]
+G c Z s s [ftello stdio_h 740 13 none]
+G c Z s s [fgetpos stdio_h 749 13 none]
+G c Z s s [fsetpos stdio_h 758 13 none]
+G c Z s s [clearerr stdio_h 764 14 none]
+G c Z s s [feof stdio_h 770 13 none]
+G c Z s s [ferror stdio_h 776 13 none]
+G c Z s s [clearerr_unlocked stdio_h 782 14 none]
+G c Z s s [feof_unlocked stdio_h 787 13 none]
+G c Z s s [ferror_unlocked stdio_h 792 13 none]
+G c Z s s [perror stdio_h 801 14 none]
+G c Z s s [fileno stdio_h 807 13 none]
+G c Z s s [fileno_unlocked stdio_h 813 13 none]
+G c Z s s [pclose stdio_h 822 13 none]
+G c Z s s [popen stdio_h 831 13 none]
+G c Z s s [ctermid stdio_h 837 13 none]
+G c Z s s [flockfile stdio_h 847 14 none]
+G c Z s s [ftrylockfile stdio_h 855 13 none]
+G c Z s s [funlockfile stdio_h 861 14 none]
+X 3 bits_types_file_h.ads
+8K9*bits_types_FILE_h 13e22 13|8w6 73r19 79r20 85r20 121r40 130r35 166r40
+. 177r49 192r123 204r26 204r64 210r91 222r64 231r108 243r41 253r26 265r26
+. 273r45 282r41 310r21 386r40 415r21 439r39 444r38 462r47 478r48 489r51 494r50
+. 514r60 523r59 534r38 540r50 552r26 587r26 601r26 610r78 628r52 641r26 654r21
+. 675r26 684r26 694r26 705r39 714r41 729r26 740r40 749r41 758r41 764r43 770r38
+. 776r40 782r52 787r47 792r49 807r40 813r49 822r40 831r122 847r44 855r46
+. 861r46
+11R12*FILE{5|50R9} 13|73r37 79r38 85r38 121r58 130r53 166r58 177r67 192r141
+. 204r44 204r82 210r109 222r82 231r126 243r59 253r44 265r44 273r63 282r59
+. 310r39 386r58 415r39 439r57 444r56 462r65 478r66 489r69 494r68 514r78 523r77
+. 534r56 540r68 552r44 587r44 601r44 610r96 628r70 641r44 654r39 675r44 684r44
+. 694r44 705r57 714r59 729r44 740r58 749r59 758r59 764r61 770r56 776r58 782r70
+. 787r65 792r67 807r58 813r67 822r58 831r140 847r62 855r64 861r64
+X 4 bits_types_h.ads
+9K9*bits_types_h 241e17 13|12w6 587r57 601r57 730r16 740r71
+136I12*uu_off_t{9|37I9} 13|730r29 740r84
+209I12*uu_ssize_t{9|37I9} 13|587r70 601r70
+X 5 bits_types_struct_file_h.ads
+50R9*u_IO_FILE
+X 6 bits_types_u_fpos_t_h.ads
+9K9*bits_types_u_fpos_t_h 23e26 13|7w6 50r22
+21R12*uu_fpos_t{15R9} 13|50r44
+X 8 interfac.ads
+38K9*Interfaces 231e15 13|5r6 5r24 9r6 92r35 98r30 98r71 106r16 108r16 136r28
+. 136r67 144r30 144r69 157r31 157r72 157r111 192r34 192r77 202r21 203r18
+. 210r45 222r18 243r74 254r16 266r16 282r77 292r33 299r29 299r73 311r19 321r34
+. 328r14 329r19 337r14 339r19 346r14 348r19 360r16 366r44 386r76 392r32 398r28
+. 398r72 416r19 422r33 428r14 429r19 550r14 552r57 610r27 619r26 801r29 831r33
+. 831r76 837r29 837r68
+X 9 i-c.ads
+18K20*C 237e17 13|5w17 5r35 9r17 92r46 98r41 98r82 106r27 108r27 136r39 136r78
+. 144r41 144r80 157r42 157r83 157r122 192r45 192r88 202r32 203r29 210r56
+. 222r29 243r85 254r27 266r27 282r88 292r44 299r40 299r84 311r30 321r45 328r25
+. 329r30 337r25 339r30 346r25 348r30 360r27 366r55 386r87 392r43 398r39 398r83
+. 416r30 422r44 428r25 429r30 550r25 552r68 610r38 619r37 801r40 831r44 831r87
+. 837r40 837r79
+35I9*int<integer> 13|92r74 98r110 105r18 107r18 108r55 121r71 166r71 177r80
+. 210r29 255r18 256r38 283r16 293r16 300r16 312r46 321r105 330r46 340r16
+. 349r46 359r15 361r46 366r30 367r16 387r16 393r16 399r16 417r46 422r104
+. 430r46 439r70 444r69 453r28 462r78 467r37 478r79 489r27 489r82 494r26 494r81
+. 503r29 503r41 514r36 514r91 523r35 523r90 528r38 528r50 534r69 540r26 540r81
+. 551r14 586r22 610r109 619r65 628r28 628r83 696r19 696r31 731r19 731r31
+. 749r96 758r105 770r69 776r71 787r78 792r80 807r71 813r80 822r71 855r77
+37I9*long<long_integer> 13|695r16 705r70
+46M9*unsigned_long
+X 10 i-cstrin.ads
+36K22*Strings 106e25 13|9w19 92r48 98r43 98r84 106r29 108r29 136r41 136r80
+. 144r43 144r82 157r44 157r85 157r124 192r47 192r90 202r34 203r31 210r58
+. 222r31 243r87 254r29 266r29 282r90 292r46 299r42 299r86 311r32 321r47 328r27
+. 329r32 337r27 339r32 346r27 348r32 360r29 366r57 386r89 392r45 398r41 398r85
+. 416r32 422r46 428r27 429r32 550r27 552r70 610r40 619r39 801r42 831r46 831r89
+. 837r42 837r81
+47P9*chars_ptr 13|92r56 98r51 98r92 106r37 108r37 136r49 136r88 144r51 144r90
+. 157r52 157r93 157r132 192r55 192r98 202r42 203r39 210r66 222r39 243r95
+. 254r37 266r37 282r98 292r54 299r50 299r94 311r40 321r55 328r35 329r40 337r35
+. 339r40 346r35 348r40 360r37 366r65 386r97 392r53 398r49 398r93 416r40 422r54
+. 428r35 429r40 550r35 552r78 610r48 619r47 801r50 831r54 831r97 837r50 837r89
+X 11 stdarg_h.ads
+8K9*stdarg_h 58e13 13|6w6 47r23
+32M12*uu_gnuc_va_list{14|67M9} 13|47r32
+X 12 stddef_h.ads
+7K9*stddef_h 115e13 13|11w6 221r16 231r77 256r14 267r17 338r19 347r19 585r21
+. 600r21 639r17 640r14 641r57 652r17 653r14 654r52 673r17 674r14 675r57 682r17
+. 683r14 684r57
+69M12*size_t{9|46M9} 13|221r25 231r86 256r23 267r26 338r28 347r28 585r30
+. 600r30 639r26 640r23 641r66 652r26 653r23 654r61 673r26 674r23 675r66 682r26
+. 683r23 684r66
+X 13 stdio_h.ads
+14K9*stdio_h 879l5 879e12
+16N4*BUFSIZ
+18N4*EOF
+20N4*SEEK_SET
+21N4*SEEK_CUR
+22N4*SEEK_END
+24a4*P_tmpdir{string}
+47M12*va_list{11|32M12}
+50R12*fpos_t{6|21R12} 749r81 758r90
+73p4*stdin(3|11R12)
+79p4*stdout(3|11R12)
+85p4*stderr(3|11R12)
+92V13*remove{9|35I9} 92>21
+92p21 uu_filename{10|47P9}
+98V13*rename{9|35I9} 98>21 98>62
+98p21 uu_old{10|47P9}
+98p62 uu_new{10|47P9}
+104V13*renameat{9|35I9} 105>7 106>7 107>7 108>7
+105i7 uu_oldfd{9|35I9}
+106p7 uu_old{10|47P9}
+107i7 uu_newfd{9|35I9}
+108p7 uu_new{10|47P9}
+121V13*fclose{9|35I9} 121^21
+121p21 uu_stream(3|11R12)
+130V13*tmpfile(3|11R12)
+136V13*tmpnam{10|47P9} 136>21
+136p21 arg1{10|47P9}
+144V13*tmpnam_r{10|47P9} 144>23
+144p23 uu_s{10|47P9}
+157V13*tempnam{10|47P9} 157>22 157>63
+157p22 uu_dir{10|47P9}
+157p63 uu_pfx{10|47P9}
+166V13*fflush{9|35I9} 166^21
+166p21 uu_stream(3|11R12)
+177V13*fflush_unlocked{9|35I9} 177^30
+177p30 uu_stream(3|11R12)
+192V13*fopen(3|11R12) 192>20 192>66
+192p20 uu_filename{10|47P9}
+192p66 uu_modes{10|47P9}
+201V13*freopen(3|11R12) 202>7 203>7 204^7
+202p7 uu_filename{10|47P9}
+203p7 uu_modes{10|47P9}
+204p7 uu_stream(3|11R12)
+210V13*fdopen(3|11R12) 210>21 210>34
+210i21 uu_fd{9|35I9}
+210p34 uu_modes{10|47P9}
+219V13*fmemopen(3|11R12) 220>7 221>7 222>7
+220m7 uu_s{14|67M9}
+221m7 uu_len{12|69M12}
+222p7 uu_modes{10|47P9}
+231V13*open_memstream(3|11R12) 231>29 231^57
+231m29 uu_bufloc{14|67M9}
+231p57 uu_sizeloc(12|69M12)
+243U14*setbuf 243^22 243>65
+243p22 uu_stream(3|11R12)
+243p65 uu_buf{10|47P9}
+252V13*setvbuf{9|35I9} 253^7 254>7 255>7 256>7
+253p7 uu_stream(3|11R12)
+254p7 uu_buf{10|47P9}
+255i7 uu_modes{9|35I9}
+256m7 uu_n{12|69M12}
+264U14*setbuffer 265^7 266>7 267>7
+265p7 uu_stream(3|11R12)
+266p7 uu_buf{10|47P9}
+267m7 uu_size{12|69M12}
+273U14*setlinebuf 273^26
+273p26 uu_stream(3|11R12)
+282V13*fprintf{9|35I9} 282^22 282>65
+282p22 uu_stream(3|11R12)
+282p65 uu_format{10|47P9}
+292V13*printf{9|35I9} 292>21
+292p21 uu_format{10|47P9}
+299V13*sprintf{9|35I9} 299>22 299>61
+299p22 uu_s{10|47P9}
+299p61 uu_format{10|47P9}
+309V13*vfprintf{9|35I9} 310^7 311>7 312^7
+310p7 uu_s(3|11R12)
+311p7 uu_format{10|47P9}
+312p7 uu_arg(14|67M9)
+321V13*vprintf{9|35I9} 321>22 321^66
+321p22 uu_format{10|47P9}
+321p66 uu_arg(14|67M9)
+327V13*vsprintf{9|35I9} 328>7 329>7 330^7
+328p7 uu_s{10|47P9}
+329p7 uu_format{10|47P9}
+330p7 uu_arg(14|67M9)
+336V13*snprintf{9|35I9} 337>7 338>7 339>7
+337p7 uu_s{10|47P9}
+338m7 uu_maxlen{12|69M12}
+339p7 uu_format{10|47P9}
+345V13*vsnprintf{9|35I9} 346>7 347>7 348>7 349^7
+346p7 uu_s{10|47P9}
+347m7 uu_maxlen{12|69M12}
+348p7 uu_format{10|47P9}
+349p7 uu_arg(14|67M9)
+358V13*vdprintf{9|35I9} 359>7 360>7 361^7
+359i7 uu_fd{9|35I9}
+360p7 uu_fmt{10|47P9}
+361p7 uu_arg(14|67M9)
+366V13*dprintf{9|35I9} 366>22 366>35
+366i22 uu_fd{9|35I9}
+366p35 uu_fmt{10|47P9}
+386V13*fscanf{9|35I9} 386^21 386>64
+386p21 uu_stream(3|11R12)
+386p64 uu_format{10|47P9}
+392V13*scanf{9|35I9} 392>20
+392p20 uu_format{10|47P9}
+398V13*sscanf{9|35I9} 398>21 398>60
+398p21 uu_s{10|47P9}
+398p60 uu_format{10|47P9}
+414V13*vfscanf{9|35I9} 415^7 416>7 417^7
+415p7 uu_s(3|11R12)
+416p7 uu_format{10|47P9}
+417p7 uu_arg(14|67M9)
+422V13*vscanf{9|35I9} 422>21 422^65
+422p21 uu_format{10|47P9}
+422p65 uu_arg(14|67M9)
+427V13*vsscanf{9|35I9} 428>7 429>7 430^7
+428p7 uu_s{10|47P9}
+429p7 uu_format{10|47P9}
+430p7 uu_arg(14|67M9)
+439V13*fgetc{9|35I9} 439^20
+439p20 uu_stream(3|11R12)
+444V13*getc{9|35I9} 444^19
+444p19 uu_stream(3|11R12)
+453V13*getchar{9|35I9}
+462V13*getc_unlocked{9|35I9} 462^28
+462p28 uu_stream(3|11R12)
+467V13*getchar_unlocked{9|35I9}
+478V13*fgetc_unlocked{9|35I9} 478^29
+478p29 uu_stream(3|11R12)
+489V13*fputc{9|35I9} 489>20 489^32
+489i20 uu_c{9|35I9}
+489p32 uu_stream(3|11R12)
+494V13*putc{9|35I9} 494>19 494^31
+494i19 uu_c{9|35I9}
+494p31 uu_stream(3|11R12)
+503V13*putchar{9|35I9} 503>22
+503i22 uu_c{9|35I9}
+514V13*fputc_unlocked{9|35I9} 514>29 514^41
+514i29 uu_c{9|35I9}
+514p41 uu_stream(3|11R12)
+523V13*putc_unlocked{9|35I9} 523>28 523^40
+523i28 uu_c{9|35I9}
+523p40 uu_stream(3|11R12)
+528V13*putchar_unlocked{9|35I9} 528>31
+528i31 uu_c{9|35I9}
+534V13*getw{9|35I9} 534^19
+534p19 uu_stream(3|11R12)
+540V13*putw{9|35I9} 540>19 540^31
+540i19 uu_w{9|35I9}
+540p31 uu_stream(3|11R12)
+549V13*fgets{10|47P9} 550>7 551>7 552^7
+550p7 uu_s{10|47P9}
+551i7 uu_n{9|35I9}
+552p7 uu_stream(3|11R12)
+583V13*getdelim{4|209I12} 584>7 585^7 586>7 587^7
+584m7 uu_lineptr{14|67M9}
+585p7 uu_n(12|69M12)
+586i7 uu_delimiter{9|35I9}
+587p7 uu_stream(3|11R12)
+598V13*getline{4|209I12} 599>7 600^7 601^7
+599m7 uu_lineptr{14|67M9}
+600p7 uu_n(12|69M12)
+601p7 uu_stream(3|11R12)
+610V13*fputs{9|35I9} 610>20 610^59
+610p20 uu_s{10|47P9}
+610p59 uu_stream(3|11R12)
+619V13*puts{9|35I9} 619>19
+619p19 uu_s{10|47P9}
+628V13*ungetc{9|35I9} 628>21 628^33
+628i21 uu_c{9|35I9}
+628p33 uu_stream(3|11R12)
+637V13*fread{12|69M12} 638>7 639>7 640>7 641^7
+638m7 uu_ptr{14|67M9}
+639m7 uu_size{12|69M12}
+640m7 uu_n{12|69M12}
+641p7 uu_stream(3|11R12)
+650V13*fwrite{12|69M12} 651>7 652>7 653>7 654^7
+651m7 uu_ptr{14|67M9}
+652m7 uu_size{12|69M12}
+653m7 uu_n{12|69M12}
+654p7 uu_s(3|11R12)
+671V13*fread_unlocked{12|69M12} 672>7 673>7 674>7 675^7
+672m7 uu_ptr{14|67M9}
+673m7 uu_size{12|69M12}
+674m7 uu_n{12|69M12}
+675p7 uu_stream(3|11R12)
+680V13*fwrite_unlocked{12|69M12} 681>7 682>7 683>7 684^7
+681m7 uu_ptr{14|67M9}
+682m7 uu_size{12|69M12}
+683m7 uu_n{12|69M12}
+684p7 uu_stream(3|11R12)
+693V13*fseek{9|35I9} 694^7 695>7 696>7
+694p7 uu_stream(3|11R12)
+695i7 uu_off{9|37I9}
+696i7 uu_whence{9|35I9}
+705V13*ftell{9|37I9} 705^20
+705p20 uu_stream(3|11R12)
+714U14*rewind 714^22
+714p22 uu_stream(3|11R12)
+728V13*fseeko{9|35I9} 729^7 730>7 731>7
+729p7 uu_stream(3|11R12)
+730i7 uu_off{4|136I12}
+731i7 uu_whence{9|35I9}
+740V13*ftello{4|136I12} 740^21
+740p21 uu_stream(3|11R12)
+749V13*fgetpos{9|35I9} 749^22 749^65
+749p22 uu_stream(3|11R12)
+749p65 uu_pos(50R12)
+758V13*fsetpos{9|35I9} 758^22 758^65
+758p22 uu_stream(3|11R12)
+758p65 uu_pos(50R12)
+764U14*clearerr 764^24
+764p24 uu_stream(3|11R12)
+770V13*feof{9|35I9} 770^19
+770p19 uu_stream(3|11R12)
+776V13*ferror{9|35I9} 776^21
+776p21 uu_stream(3|11R12)
+782U14*clearerr_unlocked 782^33
+782p33 uu_stream(3|11R12)
+787V13*feof_unlocked{9|35I9} 787^28
+787p28 uu_stream(3|11R12)
+792V13*ferror_unlocked{9|35I9} 792^30
+792p30 uu_stream(3|11R12)
+801U14*perror 801>22
+801p22 uu_s{10|47P9}
+807V13*fileno{9|35I9} 807^21
+807p21 uu_stream(3|11R12)
+813V13*fileno_unlocked{9|35I9} 813^30
+813p30 uu_stream(3|11R12)
+822V13*pclose{9|35I9} 822^21
+822p21 uu_stream(3|11R12)
+831V13*popen(3|11R12) 831>20 831>65
+831p20 uu_command{10|47P9}
+831p65 uu_modes{10|47P9}
+837V13*ctermid{10|47P9} 837>22
+837p22 uu_s{10|47P9}
+847U14*flockfile 847^25
+847p25 uu_stream(3|11R12)
+855V13*ftrylockfile{9|35I9} 855^27
+855p27 uu_stream(3|11R12)
+861U14*funlockfile 861^27
+861p27 uu_stream(3|11R12)
+X 14 system.ads
+37K9*System 13|10w6 220r14 231r41 312r23 321r82 330r23 349r23 361r23 417r23
+. 422r81 430r23 584r20 599r20 638r16 651r16 672r16 681r16 14|154e11
+67M9*Address 13|220r21 231r48 312r30 321r89 330r30 349r30 361r30 417r30 422r88
+. 430r30 584r27 599r27 638r23 651r23 672r23 681r23
+

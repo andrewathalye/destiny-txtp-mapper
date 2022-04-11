@@ -1,4 +1,4 @@
-with "../vgmstream-ada/vgmstream.gpr";
+with "../clibs/clibs.gpr";
 
 project Search is
 	for Languages use ("ada");

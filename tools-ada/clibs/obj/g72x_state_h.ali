@@ -1,0 +1,50 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U g72x_state_h%s	g72x_state_h.ads	9c6cda47 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D g72x_state_h.ads	20220404024050 45d2049e g72x_state_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tanon1656_array1657BIP g72x_state_h 13 4 none]
+G c Z s s [Tanon1656_array1659BIP g72x_state_h 14 4 none]
+G c Z s s [g72x_stateIP g72x_state_h 15 9 none]
+X 3 g72x_state_h.ads
+7K9*g72x_state_h 51l5 51e17
+13A9*anon1656_array1657(5|36I9)<integer> 21r19 23r20 25r20
+14A9*anon1656_array1659(5|36I9)<integer> 22r19 24r20
+15R9*g72x_state 28e4
+16i7*yl{5|37I9}
+17i7*yu{5|36I9}
+18i7*dms{5|36I9}
+19i7*dml{5|36I9}
+20i7*ap{5|36I9}
+21a7*a{13A9}
+22a7*b{14A9}
+23a7*pk{13A9}
+24a7*dq{14A9}
+25a7*sr{13A9}
+26e7*td{5|79E9}
+X 4 interfac.ads
+38K9*Interfaces 3|5r6 5r24 4|231e15
+X 5 i-c.ads
+18K20*C 3|5w17 5r35 5|237e17
+36I9*short<short_integer> 3|13r57 14r57 17r20 18r21 19r21 20r20
+37I9*long<long_integer> 3|16r20
+79E9*char<character> 3|26r20
+

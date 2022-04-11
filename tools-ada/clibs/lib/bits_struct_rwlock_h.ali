@@ -1,0 +1,51 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_struct_rwlock_h%s  bits_struct_rwlock_h.ads  3fc57a5f NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_struct_rwlock_h.ads  20220411204005 e67ba486 bits_struct_rwlock_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tanon958_array960BIP bits_struct_rwlock_h 24 4 none]
+G c Z s s [uu_pthread_rwlock_arch_tIP bits_struct_rwlock_h 25 9 none]
+X 3 bits_struct_rwlock_h.ads
+7K9*bits_struct_rwlock_h 47l5 47e25
+24A9*anon958_array960(5|49M9)<integer> 35r25
+25R9*uu_pthread_rwlock_arch_t 39e4
+26m7*uu_readers{5|44M9}
+27m7*uu_writers{5|44M9}
+28m7*uu_wrphase_futex{5|44M9}
+29m7*uu_writers_futex{5|44M9}
+30m7*uu_pad3{5|44M9}
+31m7*uu_pad4{5|44M9}
+32i7*uu_cur_writer{5|35I9}
+33i7*uu_shared{5|35I9}
+34i7*uu_rwelision{5|41I9}
+35a7*uu_pad1{24A9}
+36m7*uu_pad2{5|46M9}
+37m7*uu_flags{5|44M9}
+X 4 interfac.ads
+38K9*Interfaces 3|5r6 5r24 4|231e15
+X 5 i-c.ads
+18K20*C 3|5w17 5r35 5|237e17
+35I9*int<integer> 3|32r31 33r27
+41I9*signed_char<short_short_integer> 3|34r30
+44M9*unsigned 3|26r28 27r28 28r34 29r34 30r25 31r25 37r26
+46M9*unsigned_long 3|36r25
+49M9*unsigned_char 3|24r55
+

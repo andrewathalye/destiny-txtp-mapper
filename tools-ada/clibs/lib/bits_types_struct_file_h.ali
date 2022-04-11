@@ -1,0 +1,102 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_types_struct_file_h%s  bits_types_struct_file_h.ads  06ab5549 NE OO PK
+W bits_types_h%s	bits_types_h.ads	bits_types_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D bits_types_struct_file_h.ads  20220404024050 657f2b73 bits_types_struct_file_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [u_io_markerIP bits_types_struct_file_h 31 9 none]
+G c Z s s [u_io_codecvtIP bits_types_struct_file_h 33 9 none]
+G c Z s s [u_io_wide_dataIP bits_types_struct_file_h 35 9 none]
+G c Z s s [u_io_fileIP bits_types_struct_file_h 50 9 none]
+X 3 bits_types_h.ads
+9K9*bits_types_h 241e17 4|8w6 67r30 72r26
+136I12*uu_off_t{6|37I9} 4|67r43
+139I12*uu_off64_t{6|37I9} 4|72r39
+X 4 bits_types_struct_file_h.ads
+11K9*bits_types_struct_FILE_h 102l5 102e29
+31R9*u_IO_marker 63r26
+33R9*u_IO_codecvt 73r26
+35R9*u_IO_wide_data 74r28
+40M12*u_IO_lock_t{9|67M9}
+47R9*u_IO_FILE 50c9 64r24 75r31 81e4
+48A12*anon1189_array1198{6|86A9}<6|62M9> 70r28
+49A12*anon1189_array1203{6|86A9}<6|62M9> 79r27
+51i7*u_flags{6|35I9}
+52p7*u_IO_read_ptr{7|47P9}
+53p7*u_IO_read_end{7|47P9}
+54p7*u_IO_read_base{7|47P9}
+55p7*u_IO_write_base{7|47P9}
+56p7*u_IO_write_ptr{7|47P9}
+57p7*u_IO_write_end{7|47P9}
+58p7*u_IO_buf_base{7|47P9}
+59p7*u_IO_buf_end{7|47P9}
+60p7*u_IO_save_base{7|47P9}
+61p7*u_IO_backup_base{7|47P9}
+62p7*u_IO_save_end{7|47P9}
+63p7*u_markers(31R9)
+64p7*u_chain(47R9)
+65i7*u_fileno{6|35I9}
+66i7*u_flags2{6|35I9}
+67i7*u_old_offset{3|136I12}
+68m7*u_cur_column{6|45M9}
+69i7*u_vtable_offset{6|41I9}
+70a7*u_shortbuf{48A12}
+71m7*u_lock{9|67M9}
+72i7*u_offset{3|139I12}
+73p7*u_codecvt(33R9)
+74p7*u_wide_data(35R9)
+75p7*u_freeres_list(47R9)
+76m7*u_freeres_buf{9|67M9}
+77m7*uu_pad5{8|69M12}
+78i7*u_mode{6|35I9}
+79a7*u_unused2{49A12}
+X 5 interfac.ads
+38K9*Interfaces 4|5r6 5r24 7r6 48r34 49r34 52r23 53r23 54r24 55r25 56r24
+. 57r24 58r23 59r22 60r24 61r26 62r23 5|231e15
+X 6 i-c.ads
+18K20*C 4|5w17 5r35 7r17 48r45 49r45 52r34 53r34 54r35 55r36 56r35 57r35
+. 58r34 59r33 60r35 61r37 62r34 6|237e17
+35I9*int<integer> 4|51r25 65r26 66r26 78r24
+37I9*long<long_integer>
+41I9*signed_char<short_short_integer> 4|69r33
+45M9*unsigned_short 4|68r30
+46M9*unsigned_long
+79E9*char<character>
+86A9*char_array(79E9)<62M9> 4|48r47 49r47
+X 7 i-cstrin.ads
+36K22*Strings 4|7w19 52r36 53r36 54r37 55r38 56r37 57r37 58r36 59r35 60r37
+. 61r39 62r36 7|106e25
+47P9*chars_ptr 4|52r44 53r44 54r45 55r46 56r45 57r45 58r44 59r43 60r45 61r47
+. 62r44
+X 8 stddef_h.ads
+7K9*stddef_h 4|9w6 77r25 8|115e13
+69M12*size_t{6|46M9} 4|77r34
+X 9 system.ads
+37K9*System 4|6w6 40r27 71r16 76r23 9|154e11
+67M9*Address 4|40r34 71r23 76r30
+

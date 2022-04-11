@@ -1,0 +1,7 @@
+inttypes_h.ads:87:04: error: "PRIX8" conflicts with declaration at line 72
+inttypes_h.ads:88:04: error: "PRIX16" conflicts with declaration at line 73
+inttypes_h.ads:89:04: error: "PRIX32" conflicts with declaration at line 74
+inttypes_h.ads:92:04: error: "PRIXLEAST8" conflicts with declaration at line 77
+inttypes_h.ads:93:04: error: "PRIXLEAST16" conflicts with declaration at line 78
+inttypes_h.ads:94:04: error: "PRIXLEAST32" conflicts with declaration at line 79
+inttypes_h.ads:97:04: error: "PRIXFAST8" conflicts with declaration at line 82

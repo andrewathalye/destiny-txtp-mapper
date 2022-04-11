@@ -2,17 +2,19 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
 with VGMStream.Extra; use VGMStream.Extra;
+with Mapper.Pulse; use Mapper.Pulse;
 
 package body Mapper.Identify is
 	procedure Identify_Entry (T : Text_Entry) is
 		-- File name
 		F : constant String := "txtp/" & Swap_Whitespace (T.ID.all) & ".txtp";
 		C : Character; -- Store y / n / ? responses
+		PT : Play_Task;
 	begin
 		Put_Line ("[Info] Identify " & T.Name.all & " (" & T.ID.all & ")");
+		Put_Line ("[Info] Length:" & Integer'Image (Integer (Get_Length_Seconds (F))) & " seconds");
 		loop
-			Put_Line ("[Info] Length:" & Integer'Image (Integer (Get_Length_Seconds (F))) & " seconds");
-			Play_Track (F);
+			PT.Play (F);
 			Put ("[Interactive] Keep track? (y/n/?) ");
 			Get (C);
 			-- Clear buffer
@@ -33,8 +35,10 @@ package body Mapper.Identify is
 				when 'n' =>
 					exit;
 				when others =>
-					null;
+					Play_Task_Exit.Set;
 			end case;
 		end loop;
+
+		Play_Task_Exit.Set;
 	end Identify_Entry;
 end Mapper.Identify;

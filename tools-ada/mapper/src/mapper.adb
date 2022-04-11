@@ -29,7 +29,7 @@ package body Mapper is
 		T : Text_Entry; -- Current entry
 		M : Shared.Mode := Default;
 	begin
-		Put_Line ("txtp renamer tool v0.9a");
+		Put_Line ("txtp renamer tool v1.0");
 		New_Line;
 		Parse_Arguments (M, F);
 		while not End_of_File (F) loop

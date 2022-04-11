@@ -1,0 +1,95 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_mainloop_h%s	pulse_mainloop_h.ads	0738b808 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+Y pulse_mainloop_api_h%s  pulse_mainloop_api_h.ads  pulse_mainloop_api_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D pulse_mainloop_api_h.ads  20220411203905 2c5f10d1 pulse_mainloop_api_h%s
+D pulse_mainloop_h.ads	20220411203905 5003e01d pulse_mainloop_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_mainloop_new pulse_mainloop_h 79 13 none]
+G c Z s s [pa_mainloop_free pulse_mainloop_h 85 14 none]
+G c Z s s [pa_mainloop_prepare pulse_mainloop_h 94 13 none]
+G c Z s s [pa_mainloop_poll pulse_mainloop_h 100 13 none]
+G c Z s s [pa_mainloop_dispatch pulse_mainloop_h 108 13 none]
+G c Z s s [pa_mainloop_get_retval pulse_mainloop_h 114 13 none]
+G c Z s s [pa_mainloop_iterate pulse_mainloop_h 126 13 none]
+G c Z s s [pa_mainloop_run pulse_mainloop_h 139 13 none]
+G c Z s s [pa_mainloop_get_api pulse_mainloop_h 148 13 none]
+G c Z s s [pa_mainloop_quit pulse_mainloop_h 154 14 none]
+G c Z s s [pa_mainloop_wakeup pulse_mainloop_h 160 14 none]
+G c Z s s [pa_mainloop_set_poll_func pulse_mainloop_h 174 14 none]
+G c Z s s [pollfdIP pulse_mainloop_h 27 9 none]
+G c Z s s [pa_mainloopIP pulse_mainloop_h 76 9 none]
+X 3 interfac.ads
+38K9*Interfaces 231e15 6|5r6 5r24
+X 4 i-c.ads
+18K20*C 237e17 6|5w17 5r35
+35I9*int<integer> 6|94r68 94r80 100r62 108r66 114r77 128r15 129r23 129r35
+. 139r70 139r82 154r65 169r17 170r40
+46M9*unsigned_long 6|168r17
+X 5 pulse_mainloop_api_h.ads
+9K9 pulse_mainloop_api_h 6|148r72
+X 6 pulse_mainloop_h.ads
+9K9*pulse_mainloop_h 182l5 182e21
+27R9*pollfd 167r24
+76R9*pa_mainloop 79r43 85r43 94r45 100r42 108r46 114r57 127r18 139r41 148r45
+. 154r43 160r45 175r18
+79V13*pa_mainloop_new(76R9)
+85U14*pa_mainloop_free 85^32
+85p32 m(76R9)
+94V13*pa_mainloop_prepare{4|35I9} 94^34 94>58
+94p34 m(76R9)
+94i58 timeout{4|35I9}
+100V13*pa_mainloop_poll{4|35I9} 100^31
+100p31 m(76R9)
+108V13*pa_mainloop_dispatch{4|35I9} 108^35
+108p35 m(76R9)
+114V13*pa_mainloop_get_retval{4|35I9} 114^37
+114p37 m(76R9)
+126V13*pa_mainloop_iterate{4|35I9} 127^7 128>7 129^7
+127p7 m(76R9)
+128i7 block{4|35I9}
+129p7 retval(4|35I9)
+139V13*pa_mainloop_run{4|35I9} 139^30 139^54
+139p30 m(76R9)
+139p54 retval(4|35I9)
+148V13*pa_mainloop_get_api 148^34
+148p34 m(76R9)
+154U14*pa_mainloop_quit 154^32 154>56
+154p32 m(76R9)
+154i56 retval{4|35I9}
+160U14*pa_mainloop_wakeup 160^34
+160p34 m(76R9)
+166P9*pa_poll_func(4|35I9) 167^10 168>10 169>10 170>10 176r19
+167p10 arg1(27R9)
+168m10 arg2{4|46M9}
+169i10 arg3{4|35I9}
+170m10 arg4{7|67M9}
+174U14*pa_mainloop_set_poll_func 175^7 176>7 177>7
+175p7 m(76R9)
+176p7 poll_func{166P9}
+177m7 userdata{7|67M9}
+X 7 system.ads
+37K9*System 6|7w6 170r17 177r18 7|154e11
+67M9*Address 6|170r24 177r25
+

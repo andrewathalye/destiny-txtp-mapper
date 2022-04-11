@@ -1,0 +1,147 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_sample_h%s	pulse_sample_h.ads	34a73e25 NE OO PK IL
+W bits_stdint_uintn_h%s	bits_stdint_uintn_h.ads	bits_stdint_uintn_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_bytes_per_second pulse_sample_h 225 13 none]
+G c Z s s [pa_frame_size pulse_sample_h 231 13 none]
+G c Z s s [pa_sample_size pulse_sample_h 237 13 none]
+G c Z s s [pa_sample_size_of_format pulse_sample_h 245 13 none]
+G c Z s s [pa_bytes_to_usec pulse_sample_h 254 13 none]
+G c Z s s [pa_usec_to_bytes pulse_sample_h 264 13 none]
+G c Z s s [pa_sample_spec_init pulse_sample_h 273 13 none]
+G c Z s s [pa_sample_format_valid pulse_sample_h 279 13 none]
+G c Z s s [pa_sample_rate_valid pulse_sample_h 285 13 none]
+G c Z s s [pa_channels_valid pulse_sample_h 293 13 none]
+G c Z s s [pa_sample_spec_valid pulse_sample_h 299 13 none]
+G c Z s s [pa_sample_spec_equal pulse_sample_h 305 13 none]
+G c Z s s [pa_sample_format_to_string pulse_sample_h 311 13 none]
+G c Z s s [pa_parse_sample_format pulse_sample_h 317 13 none]
+G c Z s s [pa_sample_spec_snprint pulse_sample_h 329 13 none]
+G c Z s s [pa_bytes_snprint pulse_sample_h 344 13 none]
+G c Z s s [pa_sample_format_is_le pulse_sample_h 356 13 none]
+G c Z s s [pa_sample_format_is_be pulse_sample_h 365 13 none]
+G c Z s s [pa_sample_specIP pulse_sample_h 209 9 none]
+X 3 bits_stdint_uintn_h.ads
+8K9*bits_stdint_uintn_h 33e24 8|6w6 211r22 212r26 220r25 254r40 285r42 293r43
+25M12*uint8_t{4|41M12} 8|212r46 293r63
+29M12*uint32_t{4|49M12} 8|211r42 285r62
+31M12*uint64_t{4|53M12} 8|220r45 254r60
+X 4 bits_types_h.ads
+41M12*uu_uint8_t{6|49M9}
+53M12*uu_uint64_t{6|46M9}
+X 5 interfac.ads
+38K9*Interfaces 231e15 8|5r6 5r24 8r6 311r72 317r46 330r11 332r53 345r11
+. 347r28
+X 6 i-c.ads
+18K20*C 237e17 8|5w17 5r35 8r17 311r83 317r57 330r22 332r64 345r22 347r39
+35I9*int<integer> 8|146r32 279r63 285r79 293r79 299r81 305r114 356r68 365r68
+44M9*unsigned 8|279r46 347r11
+46M9*unsigned_long
+49M9*unsigned_char
+X 7 i-cstrin.ads
+36K22*Strings 106e25 8|8w19 311r85 317r59 330r24 332r66 345r24 347r41
+47P9*chars_ptr 8|311r93 317r67 330r32 332r74 345r32 347r49
+X 8 pulse_sample_h.ads
+10K9*pulse_sample_h 378l5 378e19
+12N4*PA_CHANNELS_MAX
+14N4*PA_RATE_MAX
+40N4*PA_SAMPLE_SPEC_SNPRINT_MAX
+42N4*PA_BYTES_SNPRINT_MAX
+146I12*pa_sample_format{6|35I9} 147r28 148r30 149r30 150r31 151r31 152r35
+. 153r35 154r31 155r31 156r31 157r31 158r34 159r34 160r29 161r33 182r34
+147i4*PA_SAMPLE_U8{146I12}
+148i4*PA_SAMPLE_ALAW{146I12}
+149i4*PA_SAMPLE_ULAW{146I12}
+150i4*PA_SAMPLE_S16LE{146I12}
+151i4*PA_SAMPLE_S16BE{146I12}
+152i4*PA_SAMPLE_FLOAT32LE{146I12}
+153i4*PA_SAMPLE_FLOAT32BE{146I12}
+154i4*PA_SAMPLE_S32LE{146I12}
+155i4*PA_SAMPLE_S32BE{146I12}
+156i4*PA_SAMPLE_S24LE{146I12}
+157i4*PA_SAMPLE_S24BE{146I12}
+158i4*PA_SAMPLE_S24_32LE{146I12}
+159i4*PA_SAMPLE_S24_32BE{146I12}
+160i4*PA_SAMPLE_MAX{146I12}
+161i4*PA_SAMPLE_INVALID{146I12}
+182I12*pa_sample_format_t{146I12} 210r24 245r43 311r45 317r85 356r41 365r41
+209R9*pa_sample_spec 214e4 225r57 231r51 237r52 254r93 264r69 273r48 273r78
+. 299r58 305r55 305r91 332r30
+210i7*format{182I12}
+211m7*rate{3|29M12}
+212m7*channels{3|25M12}
+220M12*pa_usec_t{3|31M12} 254r116 264r35
+225V13*pa_bytes_per_second{9|69M12} 225^34
+225p34 spec(209R9)
+231V13*pa_frame_size{9|69M12} 231^28
+231p28 spec(209R9)
+237V13*pa_sample_size{9|69M12} 237^29
+237p29 spec(209R9)
+245V13*pa_sample_size_of_format{9|69M12} 245>39
+245i39 f{182I12}
+254V13*pa_bytes_to_usec{220M12} 254>31 254^70
+254m31 length{3|31M12}
+254p70 spec(209R9)
+264V13*pa_usec_to_bytes{9|69M12} 264>31 264^46
+264m31 t{220M12}
+264p46 spec(209R9)
+273V13*pa_sample_spec_init(209R9) 273^34
+273p34 spec(209R9)
+279V13*pa_sample_format_valid{6|35I9} 279>37
+279m37 format{6|44M9}
+285V13*pa_sample_rate_valid{6|35I9} 285>35
+285m35 rate{3|29M12}
+293V13*pa_channels_valid{6|35I9} 293>32
+293m32 channels{3|25M12}
+299V13*pa_sample_spec_valid{6|35I9} 299^35
+299p35 spec(209R9)
+305V13*pa_sample_spec_equal{6|35I9} 305^35 305^71
+305p35 a(209R9)
+305p71 b(209R9)
+311V13*pa_sample_format_to_string{7|47P9} 311>41
+311i41 f{182I12}
+317V13*pa_parse_sample_format{182I12} 317>37
+317p37 format{7|47P9}
+329V13*pa_sample_spec_snprint{7|47P9} 330>7 331>7 332^7
+330p7 s{7|47P9}
+331m7 l{9|69M12}
+332p7 spec(209R9)
+344V13*pa_bytes_snprint{7|47P9} 345>7 346>7 347>7
+345p7 s{7|47P9}
+346m7 l{9|69M12}
+347m7 v{6|44M9}
+356V13*pa_sample_format_is_le{6|35I9} 356>37
+356i37 f{182I12}
+365V13*pa_sample_format_is_be{6|35I9} 365>37
+365i37 f{182I12}
+X 9 stddef_h.ads
+7K9*stddef_h 8|7w6 225r80 231r74 237r75 245r70 264r92 331r11 346r11 9|115e13
+69M12*size_t{6|46M9} 8|225r89 231r83 237r84 245r79 264r101 331r20 346r20
+

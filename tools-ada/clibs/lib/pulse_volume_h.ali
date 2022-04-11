@@ -1,0 +1,291 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pulse_volume_h%s	pulse_volume_h.ads	1443f0ff NE OO PK IL
+W bits_stdint_uintn_h%s	bits_stdint_uintn_h.ads	bits_stdint_uintn_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W pulse_channelmap_h%s	pulse_channelmap_h.ads	pulse_channelmap_h.ali
+Y pulse_sample_h%s	pulse_sample_h.ads	pulse_sample_h.ali
+W stddef_h%s		stddef_h.ads		stddef_h.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_stdint_uintn_h.ads  20220411204005 5ae8e32a bits_stdint_uintn_h%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D pulse_channelmap_h.ads  20220411204005 132839f7 pulse_channelmap_h%s
+D pulse_sample_h.ads	20220411204005 7bd9e750 pulse_sample_h%s
+D pulse_volume_h.ads	20220411203905 33ccf72d pulse_volume_h%s
+D stddef_h.ads		20220411204005 f835e959 stddef_h%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [pa_cvolume_equal pulse_volume_h 171 13 none]
+G c Z s s [pa_cvolume_init pulse_volume_h 180 13 none]
+G c Z s s [pa_cvolume_set pulse_volume_h 188 13 none]
+G c Z s s [pa_cvolume_snprint pulse_volume_h 203 13 none]
+G c Z s s [pa_sw_cvolume_snprint_db pulse_volume_h 218 13 none]
+G c Z s s [pa_cvolume_snprint_verbose pulse_volume_h 236 13 none]
+G c Z s s [pa_volume_snprint pulse_volume_h 253 13 none]
+G c Z s s [pa_sw_volume_snprint_db pulse_volume_h 268 13 none]
+G c Z s s [pa_volume_snprint_verbose pulse_volume_h 285 13 none]
+G c Z s s [pa_cvolume_avg pulse_volume_h 295 13 none]
+G c Z s s [pa_cvolume_avg_mask pulse_volume_h 306 13 none]
+G c Z s s [pa_cvolume_max pulse_volume_h 315 13 none]
+G c Z s s [pa_cvolume_max_mask pulse_volume_h 326 13 none]
+G c Z s s [pa_cvolume_min pulse_volume_h 335 13 none]
+G c Z s s [pa_cvolume_min_mask pulse_volume_h 346 13 none]
+G c Z s s [pa_cvolume_valid pulse_volume_h 355 13 none]
+G c Z s s [pa_cvolume_channels_equal_to pulse_volume_h 361 13 none]
+G c Z s s [pa_sw_volume_multiply pulse_volume_h 372 13 none]
+G c Z s s [pa_sw_cvolume_multiply pulse_volume_h 381 13 none]
+G c Z s s [pa_sw_cvolume_multiply_scalar pulse_volume_h 394 13 none]
+G c Z s s [pa_sw_volume_divide pulse_volume_h 407 13 none]
+G c Z s s [pa_sw_cvolume_divide pulse_volume_h 417 13 none]
+G c Z s s [pa_sw_cvolume_divide_scalar pulse_volume_h 430 13 none]
+G c Z s s [pa_sw_volume_from_db pulse_volume_h 439 13 none]
+G c Z s s [pa_sw_volume_to_db pulse_volume_h 445 13 none]
+G c Z s s [pa_sw_volume_from_linear pulse_volume_h 453 13 none]
+G c Z s s [pa_sw_volume_to_linear pulse_volume_h 459 13 none]
+G c Z s s [pa_cvolume_remap pulse_volume_h 468 13 none]
+G c Z s s [pa_cvolume_compatible pulse_volume_h 479 13 none]
+G c Z s s [pa_cvolume_compatible_with_channel_map pulse_volume_h 487 13 none]
+G c Z s s [pa_cvolume_get_balance pulse_volume_h 498 13 none]
+G c Z s s [pa_cvolume_set_balance pulse_volume_h 513 13 none]
+G c Z s s [pa_cvolume_get_fade pulse_volume_h 527 13 none]
+G c Z s s [pa_cvolume_set_fade pulse_volume_h 542 13 none]
+G c Z s s [pa_cvolume_get_lfe_balance pulse_volume_h 556 13 none]
+G c Z s s [pa_cvolume_set_lfe_balance pulse_volume_h 571 13 none]
+G c Z s s [pa_cvolume_scale pulse_volume_h 583 13 none]
+G c Z s s [pa_cvolume_scale_mask pulse_volume_h 595 13 none]
+G c Z s s [pa_cvolume_set_position pulse_volume_h 611 13 none]
+G c Z s s [pa_cvolume_get_position pulse_volume_h 625 13 none]
+G c Z s s [pa_cvolume_merge pulse_volume_h 638 13 none]
+G c Z s s [pa_cvolume_inc_clamp pulse_volume_h 650 13 none]
+G c Z s s [pa_cvolume_inc pulse_volume_h 661 13 none]
+G c Z s s [pa_cvolume_dec pulse_volume_h 669 13 none]
+G c Z s s [Tanon1719_array1720BIP pulse_volume_h 159 4 none]
+G c Z s s [pa_cvolumeIP pulse_volume_h 160 9 none]
+X 3 bits_stdint_uintn_h.ads
+8K9*bits_stdint_uintn_h 33e24 10|6w6 143r27 161r26
+25M12*uint8_t{4|41M12} 10|161r46
+29M12*uint32_t{4|49M12} 10|143r47
+X 4 bits_types_h.ads
+41M12*uu_uint8_t{6|49M9}
+X 5 interfac.ads
+38K9*Interfaces 231e15 10|5r6 5r24 7r6 204r11 206r46 219r11 221r46 237r11
+. 241r30 254r11 256r31 269r11 271r31 286r11 289r30
+X 6 i-c.ads
+18K20*C 237e17 10|5w17 5r35 7r17 204r22 206r57 219r22 221r57 237r22 241r41
+. 254r22 256r42 269r22 271r42 286r22 289r41
+35I9*int<integer> 10|171r102 241r18 289r18 355r70 361r99 479r127 487r148
+44M9*unsigned 10|190r18
+46M9*unsigned_long
+49M9*unsigned_char
+72F9*double<long_float> 10|439r39 445r57 453r43 459r61
+X 7 i-cstrin.ads
+36K22*Strings 106e25 10|7w19 204r24 206r59 219r24 221r59 237r24 241r43 254r24
+. 256r44 269r24 271r44 286r24 289r43
+47P9*chars_ptr 10|204r32 206r67 219r32 221r67 237r32 241r51 254r32 256r52
+. 269r32 271r52 286r32 289r51
+X 8 pulse_channelmap_h.ads
+11K9*pulse_channelmap_h 454e23 10|9w6 240r29 308r28 309r14 328r28 329r14
+. 348r28 349r14 470r30 471r28 487r106 498r91 515r29 527r88 544r29 556r95
+. 573r29 598r28 599r14 613r29 614r11 627r29 628r11
+142I12*pa_channel_position{6|35I9}
+223I12*pa_channel_position_t{142I12} 10|614r30 628r30
+228M12*pa_channel_position_mask_t{3|31M12} 10|309r33 329r33 349r33 599r33
+270R9*pa_channel_map 274e4 10|240r48 308r47 328r47 348r47 470r49 471r47 487r125
+. 498r110 515r48 527r107 544r48 556r114 573r48 598r47 613r48 627r48
+X 9 pulse_sample_h.ads
+10K9 pulse_sample_h 10|479r89
+X 10 pulse_volume_h.ads
+12K9*pulse_volume_h 674l5 674e19
+27N4*PA_CVOLUME_SNPRINT_MAX
+29N4*PA_SW_CVOLUME_SNPRINT_DB_MAX
+31N4*PA_CVOLUME_SNPRINT_VERBOSE_MAX
+33N4*PA_VOLUME_SNPRINT_MAX
+35N4*PA_SW_VOLUME_SNPRINT_DB_MAX
+37N4*PA_VOLUME_SNPRINT_VERBOSE_MAX
+143M12*pa_volume_t{3|29M12} 159r58 191r11 256r11 271r11 288r11 295r68 309r68
+. 315r68 329r68 335r68 349r68 361r79 372r40 372r57 372r77 397r11 407r38 407r55
+. 407r75 433r11 439r54 445r37 453r58 459r41 583r60 597r13 615r11 628r60 652r13
+. 653r15 661r58 669r58
+159A9*anon1719_array1720(143M12)<integer> 162r24
+160R9*pa_cvolume 164e4 171r51 171r83 180r41 180r67 189r18 191r38 206r27 221r27
+. 239r27 295r49 307r27 315r49 327r27 335r49 347r27 355r51 361r63 382r21 383r27
+. 384r27 384r53 395r21 396r27 397r38 418r21 419r27 420r27 420r53 431r21 432r27
+. 433r38 469r18 471r77 479r56 487r73 498r57 514r18 516r42 527r54 543r18 545r39
+. 556r61 572r18 574r42 583r42 583r87 596r18 599r75 612r19 615r38 626r28 639r21
+. 640r27 641r27 641r53 651r18 653r42 661r40 661r85 669r40 669r85
+161m7*channels{3|25M12}
+162a7*values{159A9}
+171V13*pa_cvolume_equal{6|35I9} 171^31 171^63
+171p31 a(160R9)
+171p63 b(160R9)
+180V13*pa_cvolume_init(160R9) 180^30
+180p30 a(160R9)
+188V13*pa_cvolume_set(160R9) 189^7 190>7 191>7
+189p7 a(160R9)
+190m7 channels{6|44M9}
+191m7 v{143M12}
+203V13*pa_cvolume_snprint{7|47P9} 204>7 205>7 206^7
+204p7 s{7|47P9}
+205m7 l{11|69M12}
+206p7 c(160R9)
+218V13*pa_sw_cvolume_snprint_dB{7|47P9} 219>7 220>7 221^7
+219p7 s{7|47P9}
+220m7 l{11|69M12}
+221p7 c(160R9)
+236V13*pa_cvolume_snprint_verbose{7|47P9} 237>7 238>7 239^7 240^7 241>7
+237p7 s{7|47P9}
+238m7 l{11|69M12}
+239p7 c(160R9)
+240p7 map(8|270R9)
+241i7 print_dB{6|35I9}
+253V13*pa_volume_snprint{7|47P9} 254>7 255>7 256>7
+254p7 s{7|47P9}
+255m7 l{11|69M12}
+256m7 v{143M12}
+268V13*pa_sw_volume_snprint_dB{7|47P9} 269>7 270>7 271>7
+269p7 s{7|47P9}
+270m7 l{11|69M12}
+271m7 v{143M12}
+285V13*pa_volume_snprint_verbose{7|47P9} 286>7 287>7 288>7 289>7
+286p7 s{7|47P9}
+287m7 l{11|69M12}
+288m7 v{143M12}
+289i7 print_dB{6|35I9}
+295V13*pa_cvolume_avg{143M12} 295^29
+295p29 a(160R9)
+306V13*pa_cvolume_avg_mask{143M12} 307^7 308^7 309>7
+307p7 a(160R9)
+308p7 cm(8|270R9)
+309m7 mask{8|228M12}
+315V13*pa_cvolume_max{143M12} 315^29
+315p29 a(160R9)
+326V13*pa_cvolume_max_mask{143M12} 327^7 328^7 329>7
+327p7 a(160R9)
+328p7 cm(8|270R9)
+329m7 mask{8|228M12}
+335V13*pa_cvolume_min{143M12} 335^29
+335p29 a(160R9)
+346V13*pa_cvolume_min_mask{143M12} 347^7 348^7 349>7
+347p7 a(160R9)
+348p7 cm(8|270R9)
+349m7 mask{8|228M12}
+355V13*pa_cvolume_valid{6|35I9} 355^31
+355p31 v(160R9)
+361V13*pa_cvolume_channels_equal_to{6|35I9} 361^43 361>75
+361p43 a(160R9)
+361m75 v{143M12}
+372V13*pa_sw_volume_multiply{143M12} 372>36 372>53
+372m36 a{143M12}
+372m53 b{143M12}
+381V13*pa_sw_cvolume_multiply(160R9) 382^7 383^7 384^7
+382p7 dest(160R9)
+383p7 a(160R9)
+384p7 b(160R9)
+394V13*pa_sw_cvolume_multiply_scalar(160R9) 395^7 396^7 397>7
+395p7 dest(160R9)
+396p7 a(160R9)
+397m7 b{143M12}
+407V13*pa_sw_volume_divide{143M12} 407>34 407>51
+407m34 a{143M12}
+407m51 b{143M12}
+417V13*pa_sw_cvolume_divide(160R9) 418^7 419^7 420^7
+418p7 dest(160R9)
+419p7 a(160R9)
+420p7 b(160R9)
+430V13*pa_sw_cvolume_divide_scalar(160R9) 431^7 432^7 433>7
+431p7 dest(160R9)
+432p7 a(160R9)
+433m7 b{143M12}
+439V13*pa_sw_volume_from_dB{143M12} 439>35
+439f35 f{6|72F9}
+445V13*pa_sw_volume_to_dB{6|72F9} 445>33
+445m33 v{143M12}
+453V13*pa_sw_volume_from_linear{143M12} 453>39
+453f39 v{6|72F9}
+459V13*pa_sw_volume_to_linear{6|72F9} 459>37
+459m37 v{143M12}
+468V13*pa_cvolume_remap(160R9) 469^7 470^7 471^7
+469p7 v(160R9)
+470p7 from(8|270R9)
+471p7 to(8|270R9)
+479V13*pa_cvolume_compatible{6|35I9} 479^36 479^68
+479p36 v(160R9)
+479p68 ss
+487V13*pa_cvolume_compatible_with_channel_map{6|35I9} 487^53 487^85
+487p53 v(160R9)
+487p85 cm(8|270R9)
+498V13*pa_cvolume_get_balance{float} 498^37 498^69
+498p37 v(160R9)
+498p69 map(8|270R9)
+513V13*pa_cvolume_set_balance(160R9) 514^7 515^7 516>7
+514p7 v(160R9)
+515p7 map(8|270R9)
+516f7 new_balance{float}
+527V13*pa_cvolume_get_fade{float} 527^34 527^66
+527p34 v(160R9)
+527p66 map(8|270R9)
+542V13*pa_cvolume_set_fade(160R9) 543^7 544^7 545>7
+543p7 v(160R9)
+544p7 map(8|270R9)
+545f7 new_fade{float}
+556V13*pa_cvolume_get_lfe_balance{float} 556^41 556^73
+556p41 v(160R9)
+556p73 map(8|270R9)
+571V13*pa_cvolume_set_lfe_balance(160R9) 572^7 573^7 574>7
+572p7 v(160R9)
+573p7 map(8|270R9)
+574f7 new_balance{float}
+583V13*pa_cvolume_scale(160R9) 583^31 583>54
+583p31 v(160R9)
+583m54 max{143M12}
+595V13*pa_cvolume_scale_mask(160R9) 596^7 597>7 598^7 599>7
+596p7 v(160R9)
+597m7 max{143M12}
+598p7 cm(8|270R9)
+599m7 mask{8|228M12}
+611V13*pa_cvolume_set_position(160R9) 612^7 613^7 614>7 615>7
+612p7 cv(160R9)
+613p7 map(8|270R9)
+614i7 t{8|223I12}
+615m7 v{143M12}
+625V13*pa_cvolume_get_position{143M12} 626^7 627^7 628>7
+626p7 cv(160R9)
+627p7 map(8|270R9)
+628i7 t{8|223I12}
+638V13*pa_cvolume_merge(160R9) 639^7 640^7 641^7
+639p7 dest(160R9)
+640p7 a(160R9)
+641p7 b(160R9)
+650V13*pa_cvolume_inc_clamp(160R9) 651^7 652>7 653>7
+651p7 v(160R9)
+652m7 inc{143M12}
+653m7 limit{143M12}
+661V13*pa_cvolume_inc(160R9) 661^29 661>52
+661p29 v(160R9)
+661m52 inc{143M12}
+669V13*pa_cvolume_dec(160R9) 669^29 669>52
+669p29 v(160R9)
+669m52 dec{143M12}
+X 11 stddef_h.ads
+7K9*stddef_h 10|8w6 205r11 220r11 238r11 255r11 270r11 287r11 11|115e13
+69M12*size_t{6|46M9} 10|205r20 220r20 238r20 255r20 270r20 287r20
+

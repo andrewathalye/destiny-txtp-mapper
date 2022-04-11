@@ -1,0 +1,117 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bits_types_h%s	bits_types_h.ads	9be19763 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20210520051131 76789da1 ada%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bits_types_h.ads	20220411204005 d498d278 bits_types_h%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
+D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
+D system.ads		20210520051135 a2da961d system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+G a e
+G c Z s s [Tuu_fsid_t_array837BIP bits_types_h 145 4 none]
+G c Z s s [uu_fsid_tIP bits_types_h 146 9 none]
+X 3 bits_types_h.ads
+9K9*bits_types_h 241l5 241e17
+30M12*uu_u_char{5|49M9}
+32M12*uu_u_short{5|45M9}
+34M12*uu_u_int{5|44M9}
+36M12*uu_u_long{5|46M9}
+39I12*uu_int8_t{5|41I9} 56r31
+41M12*uu_uint8_t{5|49M9} 58r32
+43I12*uu_int16_t{5|36I9} 60r32
+45M12*uu_uint16_t{5|45M9} 62r33
+47I12*uu_int32_t{5|35I9} 64r32
+49M12*uu_uint32_t{5|44M9} 66r33
+51I12*uu_int64_t{5|37I9} 68r32
+53M12*uu_uint64_t{5|46M9} 70r33
+56I12*uu_int_least8_t{39I12}
+58M12*uu_uint_least8_t{41M12}
+60I12*uu_int_least16_t{43I12}
+62M12*uu_uint_least16_t{45M12}
+64I12*uu_int_least32_t{47I12}
+66M12*uu_uint_least32_t{49M12}
+68I12*uu_int_least64_t{51I12}
+70M12*uu_uint_least64_t{53M12}
+73I12*uu_quad_t{5|37I9}
+75M12*uu_u_quad_t{5|46M9}
+78I12*uu_intmax_t{5|37I9}
+80M12*uu_uintmax_t{5|46M9}
+115M12*uu_dev_t{5|46M9}
+118M12*uu_uid_t{5|44M9}
+121M12*uu_gid_t{5|44M9}
+124M12*uu_ino_t{5|46M9}
+127M12*uu_ino64_t{5|46M9}
+130M12*uu_mode_t{5|44M9}
+133M12*uu_nlink_t{5|46M9}
+136I12*uu_off_t{5|37I9}
+139I12*uu_off64_t{5|37I9} 221r25
+142I12*uu_pid_t{5|35I9}
+145A9*uu_fsid_t_array837(5|35I9)<integer> 147r24
+146R9*uu_fsid_t 149e4
+147a7*uu_val{145A9}
+152I12*uu_clock_t{5|37I9}
+155M12*uu_rlim_t{5|46M9}
+158M12*uu_rlim64_t{5|46M9}
+161M12*uu_id_t{5|44M9}
+164I12*uu_time_t{5|37I9}
+167M12*uu_useconds_t{5|44M9}
+170I12*uu_suseconds_t{5|37I9}
+172I12*uu_suseconds64_t{5|37I9}
+175I12*uu_daddr_t{5|35I9}
+178I12*uu_key_t{5|35I9}
+181I12*uu_clockid_t{5|35I9}
+184M9*uu_timer_t<7|67M9>
+187I12*uu_blksize_t{5|37I9}
+191I12*uu_blkcnt_t{5|37I9}
+193I12*uu_blkcnt64_t{5|37I9}
+196M12*uu_fsblkcnt_t{5|46M9}
+198M12*uu_fsblkcnt64_t{5|46M9}
+201M12*uu_fsfilcnt_t{5|46M9}
+203M12*uu_fsfilcnt64_t{5|46M9}
+206I12*uu_fsword_t{5|37I9}
+209I12*uu_ssize_t{5|37I9}
+212I12*uu_syscall_slong_t{5|37I9}
+215M12*uu_syscall_ulong_t{5|46M9}
+221I12*uu_loff_t{139I12}
+223P9*uu_caddr_t<6|47P9>
+226I12*uu_intptr_t{5|37I9}
+229M12*uu_socklen_t{5|44M9}
+235I12*uu_sig_atomic_t{5|35I9}
+X 4 interfac.ads
+38K9*Interfaces 3|5r6 5r24 7r6 223r27 4|231e15
+X 5 i-c.ads
+18K20*C 3|5w17 5r35 7r17 223r38 5|237e17
+35I9*int<integer> 3|47r26 142r24 145r57 175r26 178r24 181r28 235r31
+36I9*short<short_integer> 3|43r26
+37I9*long<long_integer> 3|51r26 73r25 78r27 136r24 139r26 152r26 164r25 170r30
+. 172r32 187r28 191r27 193r29 206r27 209r26 212r34 226r27
+41I9*signed_char<short_short_integer> 3|39r25
+44M9*unsigned 3|34r24 49r27 118r24 121r24 130r25 161r23 167r29 229r28
+45M9*unsigned_short 3|32r26 45r27
+46M9*unsigned_long 3|36r25 53r27 75r27 80r28 115r24 124r24 127r26 133r26
+. 155r25 158r27 196r29 198r31 201r29 203r31 215r34
+49M9*unsigned_char 3|30r25 41r26
+X 6 i-cstrin.ads
+36K22*Strings 3|7w19 223r40 6|106e25
+47P9*chars_ptr 3|223r48
+X 7 system.ads
+37K9*System 3|6w6 184r27 7|154e11
+67M9*Address 3|184r34
+

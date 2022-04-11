@@ -1,0 +1,7 @@
+library project External_Pulse is
+	for Languages use ("C");
+	for Library_Kind use "dynamic";
+	for Library_Dir use "/usr/lib64/";
+	for Library_Name use "pulse-simple";
+	for Externally_Built use "true";
+end External_Pulse;
