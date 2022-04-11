@@ -13,6 +13,8 @@ with System;
 with streamtypes_h;
 with Interfaces.C.Strings;
 
+with VGMStream_Common; use VGMStream_Common;
+
 package vgmstream_h is
 
   -- * vgmstream.h - definitions for VGMSTREAM, encapsulating a multi-channel, looped audio stream
@@ -1598,7 +1600,7 @@ package vgmstream_h is
 
   -- Decode data into sample buffer. Returns < sample_count on stream end  
    function render_vgmstream
-     (buffer : access streamtypes_h.sample_t;
+     (buffer : Sample_Buffer_Access;
       sample_count : bits_stdint_intn_h.int32_t;
       the_vgmstream : access VGMSTREAM) return int  -- /home/andrew/src/vgmstream-r1721/src/vgmstream.h:1113
    with Import => True, 

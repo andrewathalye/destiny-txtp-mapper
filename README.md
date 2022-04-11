@@ -6,6 +6,12 @@ This repository contains mappings between TXTP names for Shadowkeep and approxim
 
 Please note: In order to comply with the Bungie EULA, you may _not_ redistribute any music files unaltered (and redistributing modified files is also risky). Please only use this tool for your personal listening pleasure, and purchase the official soundtracks where available.
 
+# Important Note
+Progress is currently under way to use only Ada and PulseAudio / VGMStream for all output work.
+The WAV exporter is now at least 80% functional with Ada-native code, however it does need some sanitation (currently produces warnings due to access types).
+I recommend using the previous version (v0.8a) until this warning is removed.
+Audio levels are also a bit high in this version, but they sound a little better to me so I may leave that as is.
+
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
 Next, collect the list of desired tracks and save it as tmp_tracks.txt.
@@ -63,7 +69,6 @@ Use wwiser to convert the bnk files to txtps:
 https://github.com/vgmstream/vgmstream
 Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
 Place vgmstream123 in tools-ext/ if you intend to make your own mappings.
-Place vgmstream-cli in tools-ext/ if you would like to export wav files.
 
 Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
 

@@ -142,9 +142,9 @@ package bits_types_h is
    subtype uu_pid_t is int;  -- /usr/include/bits/types.h:154
 
   -- Type of file system IDs.   
-   type uu_fsid_t_array870 is array (0 .. 1) of aliased int;
+   type uu_fsid_t_array837 is array (0 .. 1) of aliased int;
    type uu_fsid_t is record
-      uu_val : aliased uu_fsid_t_array870;  -- /usr/include/bits/types.h:155
+      uu_val : aliased uu_fsid_t_array837;  -- /usr/include/bits/types.h:155
    end record
    with Convention => C_Pass_By_Copy;  -- /usr/include/bits/types.h:155
 

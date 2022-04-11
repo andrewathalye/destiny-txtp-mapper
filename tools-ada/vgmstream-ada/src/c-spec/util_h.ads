@@ -3,10 +3,14 @@ pragma Style_Checks (Off);
 pragma Warnings ("U");
 
 with Interfaces.C; use Interfaces.C;
+with System;
+
 with bits_stdint_uintn_h;
 with bits_stdint_intn_h;
 with Interfaces.C.Strings;
 with streamtypes_h;
+
+with VGMStream_Common; use VGMStream_Common;
 
 package util_h is
 
@@ -249,7 +253,7 @@ package util_h is
         External_Name => "swap_extension";
 
   -- swap samples in machine endianness to little endian (useful to write .wav)  
-   procedure swap_samples_le (buf : access streamtypes_h.sample_t; count : int)  -- /home/andrew/src/vgmstream-r1721/src/util.h:184
+   procedure swap_samples_le (buf : Sample_Buffer_Access; count : int)  -- /home/andrew/src/vgmstream-r1721/src/util.h:184
    with Import => True, 
         Convention => C, 
         External_Name => "swap_samples_le";

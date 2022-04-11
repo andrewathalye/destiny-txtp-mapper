@@ -1,4 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Exceptions; use Ada.Exceptions;
 
 with VGMStream.Extra; use VGMStream.Extra;
 package body Mapper.Export is
@@ -14,10 +15,10 @@ package body Mapper.Export is
 		N : String renames T.Name.all;
 	begin
 		Put_Line ("[Info][T" & Task_ID'Image & "] Export " & N & " (" & I & ")");
-		Export_Wav ("output/" & N & ".wav", "txtp/" & Swap_Whitespace (I) & ".txtp");
+		Export_Wav (Dir.all & "/" & N & ".wav", "txtp/" & Swap_Whitespace (I) & ".txtp");
 	exception
-		when Export_Exception =>
-			Put_Line(Standard_Error, "[Error][T" & Task_ID'Image & "] Could not export track: " & N);
+		when E : Export_Exception =>
+			Put_Line(Standard_Error, "[Error][T" & Task_ID'Image & "] Could not export track: " & N & ": " & Exception_Message (E));
 			return;
 	end Export_Entry;
 

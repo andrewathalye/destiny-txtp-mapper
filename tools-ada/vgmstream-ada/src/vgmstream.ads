@@ -1,7 +1,11 @@
 with Unchecked_Deallocation;
+with Interfaces.C; use Interfaces.C;
+with System; use System;
 
 with vgmstream_h; use vgmstream_h;
 with plugins_h; use plugins_h;
+
+with VGMStream_Common; use VGMStream_Common;
 
 package VGMStream is
 	-- Types
@@ -37,6 +41,10 @@ package VGMStream is
 
 	-- Read Sample Rate
 	function VGMStream_Get_Sample_Rate (V : VGMStream_Access) return Natural is (Natural (V.all.sample_rate));
+
+	-- Render VGMStream into Buffer (must have appropriate space for N samples)
+	-- Return number of samples transferred (can be less than N)
+	function VGMStream_Render (S : Sample_Buffer_Access; N : int; V : access vgmstream_h.VGMSTREAM) return int renames render_vgmstream;
 
 	-- Apply Configuration
 	procedure VGMStream_Apply_Config (V : access vgmstream_h.VGMSTREAM; C : access vgmstream_cfg_t) renames plugins_h.vgmstream_apply_config;
