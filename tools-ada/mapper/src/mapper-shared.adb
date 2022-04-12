@@ -1,6 +1,3 @@
-with GNAT.OS_Lib; use GNAT.OS_Lib;
-with Ada.Text_IO; use Ada.Text_IO;
-
 package body Mapper.Shared is
 	-- Return new String with ' ' and '_' swapped from input string
 	function Swap_Whitespace (S : in String) return String

@@ -43,34 +43,45 @@ To export the top 150 new banks by size for identification:
 `./tools-sh/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
-In order to follow any of the steps in this document as written, you'll first need MinGW x64 and WSL x64 with GNAT installed
+In order to follow any of the steps in this document as written, you'll first need WSL x64 (or Linux and Wine) with GNAT installed
 
-Run the following steps on Windows:
-
+Download the latest releases of these projects:
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
-`./DepotDownloader.exe -app 1085660 -depot 1085661 -manifest 4160053308690659072 -username [steam username] `
 
-https://github.com/nblockbuster/DestinyUnpackerCPP
+https://github.com/nblockbuster/DestinyUnpackerCPP (download the RAR archive)
 In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
 
+https://github.com/bnnm/wwiser - download wwiser.pyz from releases
+
+--
+
+Run the following commands in command prompt once you have unpacked the files :
+`./DepotDownloader.exe -app 1085660 -depot 1085661 -manifest 4160053308690659072 -username [steam username] `
+
+The "packages folder" will be located somewhere within the DepotDownloader folder, alongside a Destiny 2.exe file -- DO NOT try to launch the game this way
 To create the BNK and WEM files:
 `./DestinyUnpackerCPP.exe -fp [packages folder] -o shadowkeep`
 
-https://github.com/bnnm/wwiser
+--
+
+PulseAudio has a Windows version, so you may find luck running this on Windows directly, however it has only been tested on Linux.
+
+Run the following commands in WSL x64 shell or Linux:
 Use wwiser to convert the bnk files to txtps:
-`py wwiser.pyz -g *.bnk`
+`py wwiser.pyz -g shadowkeep/bnk/*.bnk`
 
-I ran the below steps on Linux. PulseAudio has a Windows version, so you may find luck using it with the tool, however I have yet to try it.
-
-https://github.com/vgmstream/vgmstream
-Put a dynamic-library build of vgmstream in src/vgmstream-ada/ext_lib/
-
-Finally, place the wem folder inside of the txtp folder and put the txtp folder in the same folder as this tool.
+`mv shadowkeep/wem shadowkeep/bnk/txtp`
+`mv shadowkeep/bnk/txtp .`
 
 Please see the below section if you need the tools in this repository (most people will, unless you plan to use foobar2000 or another player for the txtp files and not rename them).
 
 # How to Compile the Necessary Tools?
+Download VGMStream and put a dynamic-library build of it in src/vgmstream-ada/ext_lib
+Only Vorbis support is needed (everything else in options can be turned off)
+`ninja libvgmstream.so` or a similar command should build the library once `ccmake .. - G Ninja` has been run from the build directory
+https://github.com/vgmstream/vgmstream
+
 In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler, as well as gprbuild.
 Please follow the below commands (in order) to compile all necessary tools:
 
