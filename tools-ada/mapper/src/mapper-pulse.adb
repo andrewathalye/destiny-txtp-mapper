@@ -1,4 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Real_Time; use Ada.Real_Time;
+
 with Interfaces.C; use Interfaces.C;
 with Interfaces.C.Strings; use Interfaces.C.Strings;
 with System.Address_To_Access_Conversions;
@@ -16,7 +18,7 @@ with Mapper.Shared; use Mapper.Shared;
 package body Mapper.Pulse is
 
 	-- Constants for task (avoid duplication)
-	C : constant VGMStream_Config_Access := new VGMStream_Config'(VGMStream_CLI_Config); -- Only needed once, so will not be freed
+	Config : constant VGMStream_Config_Access := new VGMStream_Config'(VGMStream_CLI_Config); -- Only needed once, so will not be freed
 	App_Name : constant chars_ptr := New_String ("txtp-mapper"); -- Only needed once, so will not be freed
 	SBS : constant Natural := 32768;
 
@@ -62,7 +64,7 @@ package body Mapper.Pulse is
 						raise Play_Error with "PulseAudio instance was null";
 					end if;
 		
-					VGMStream_Apply_Config (V, C);
+					VGMStream_Apply_Config (V, Config);
 					Play_Task_Exit.Unset; -- Make sure will not exit early if reused.
 				end Play;
 		
@@ -71,6 +73,12 @@ package body Mapper.Pulse is
 					B : Sample_Buffer_Access := new Sample_Buffer (1 .. L);
 					I : Natural := 0;
 					T : Natural := 0;
+
+					-- Cycle is 1/5 less than the time that a sample should last for. This allows for I/O and other margin of error
+					-- to reduce the number of audible gaps. Gaps may still occur if PulseAudio is used instead of PipeWire or real-time
+					-- scheduling is not used.
+					Cycle : constant Time_Span := Milliseconds ( Natural (Float (SBS) / Float (V.all.sample_rate) * Float (1000)) - 100);
+					Desired_Time : Time := Clock + Cycle;	
 		
 					pragma Warnings (Off); -- This pointer will have bounds by definition above, but does not in the generic case
 					package SATAC is new System.Address_To_Access_Conversions (Object => Sample_Buffer);
@@ -94,6 +102,8 @@ package body Mapper.Pulse is
 							raise Play_Error with "Failed to send data to PulseAudio";
 						end if;
 
+						delay until Desired_Time; -- Minimise stress on CPU / PulseAudio
+						Desired_Time := Desired_Time + Cycle;
 						if I >= L or Play_Task_Exit.Get then -- Exit if we've reached the end or been asked to exit by another thread
 							exit;
 						end if;
