@@ -17,7 +17,7 @@ begin
 		declare
 			T : constant String := Simple_Name (D);
 		begin
-			if T'Length > 14 then
+			if T'Length > 6 then
 				Delegate_Search_Task (Full_Name (D), T (T'First .. T'Last - 5)); -- Send work to task
 			else
 				Put_Line (Standard_Error, "[Error] Invalid file name length: " & T);

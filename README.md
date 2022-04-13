@@ -72,7 +72,9 @@ Use wwiser to convert the bnk files to txtps:
 `py wwiser.pyz -g shadowkeep/bnk/*.bnk`
 
 `mv shadowkeep/wem shadowkeep/bnk/txtp`
-`mv shadowkeep/bnk/txtp .`
+`mv shadowkeep/bnk/txtp txtp-d2sk`
+
+(Destiny 1 music extraction is beyond the scope of this README)
 
 Please see the below section if you need the tools in this repository (most people will, unless you plan to use foobar2000 or another player for the txtp files and not rename them).
 
@@ -89,3 +91,6 @@ Please follow the below commands (in order) to compile all necessary tools:
 `gprbuild -Pmapper/mapper`
 `gprbuild -Psearch/search`
 `gprbuild -Pfind/find`
+
+If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools-sh/switch_d2sk.sh`
+Otherwise, if you want to use Destiny 1 mappings, use `./tools-sh/switch_d1.sh`

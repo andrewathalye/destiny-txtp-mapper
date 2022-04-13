@@ -1,6 +1,12 @@
 txtp
 output
 
+txtp-d2sk
+txtp-d1
+
+matches
+tracks
+
 tools-ada/mapper/mapper
 tools-ada/mapper/obj
 
