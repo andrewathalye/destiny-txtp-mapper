@@ -11,9 +11,9 @@ Follow the steps in the section "How can I get the necessary files?"
 Next, collect the list of desired tracks and save it as tmp_tracks.txt.
 An easy way to do this is: `cat tracks/tracks_*confirmed.txt > tmp_tracks.txt`
 Run the tool as follows to export all confirmed tracks as WAVs:
-`./tools-ada/mapper/mapper tmp_tracks.txt output`
+`./src/mapper/mapper tmp_tracks.txt output`
 If you would like some identified but unconfirmed tracks to also be exported, run: (-a allows unconfirmed export)
-`./tools-ada/mapper/mapper -a tmp_tracks.txt output`
+`./src/mapper/mapper -a tmp_tracks.txt output`
 
 # How to create mappings?
 Follow the steps in the section "How can I get the necessary files?"
@@ -22,25 +22,25 @@ See the section "How can I find interesting banks?" for more information.
 Place them in a format similar to the example file in a text file of your choice.
 . means complete, + means needs identification, and ! means identified, but not confirmed.
 Run the tool as follows with the -i flag to automatically help you identify txtps.
-`./tools-ada/mapper/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
+`./src/mapper/mapper -i [list file] [any name, will not be used here] 2>> tracks_unconfirmed.txt`
 Note: Please do _not_ attempt to modify tracks_unconfirmed.txt while identifying. It can cause problems, unfortunately.
 
 As you will note, this produces a file containing many ! lines.
 The next step is to clean them up and organise them however you would like, and then
 run the tool again in confirm mode:
-`./tools-ada/mapper/mapper -c [list file] output 2>> tracks_confirmed.txt`
+`./src/mapper/mapper -c [list file] output 2>> tracks_confirmed.txt`
 
 Once again, organise the file to your taste, and you will have a complete mapping file with your chosen tracks.
 
 # How can I find interesting banks?
 Find txtp entries, list their sizes, remove duplicates, and sort:
-`./tools-sh/search_sort.sh > matches/matches_sorted.txt`
+`./tools/search_sort.sh > matches/matches_sorted.txt`
 Next, collect a master list of tracks: (This can be deleted after the next step)
 `cat tracks/* > tmp_all.txt`
 Next, remove entries that are already in one of your track files:
-`./tools-ada/find/find tmp_all.txt < matches/matches_sorted.txt > matches/matches_new.txt`
+`./src/find/find tmp_all.txt < matches/matches_sorted.txt > matches/matches_new.txt`
 To export the top 150 new banks by size for identification:
-`./tools-sh/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
+`./tools/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
 In order to follow any of the steps in this document as written, you'll first need WSL x64 (or Linux and Wine) with GNAT installed
@@ -51,6 +51,8 @@ Use this to download the last release of Destiny 2 before 10 Nov 2020.
 
 https://github.com/nblockbuster/DestinyUnpackerCPP (download the RAR archive)
 In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
+
+I'm currently working on a Linux version of this, but there are a few bugs at the moment.
 
 https://github.com/bnnm/wwiser - download wwiser.pyz from releases
 
@@ -87,10 +89,10 @@ https://github.com/vgmstream/vgmstream
 In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler, as well as gprbuild.
 Please follow the below commands (in order) to compile all necessary tools:
 
-`cd tools-ada/`
+`cd src/`
 `gprbuild -Pmapper/mapper`
 `gprbuild -Psearch/search`
 `gprbuild -Pfind/find`
 
-If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools-sh/switch_d2sk.sh`
-Otherwise, if you want to use Destiny 1 mappings, use `./tools-sh/switch_d1.sh`
+If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools/switch_d2sk.sh`
+Otherwise, if you want to use Destiny 1 mappings, use `./tools/switch_d1.sh`

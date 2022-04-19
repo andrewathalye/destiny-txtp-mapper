@@ -1,0 +1,21 @@
+with "../vgmstream-ada/vgmstream.gpr";
+with "../pulse-ada/pulse.gpr";
+
+project Mapper is
+	for Source_Dirs use ("src");
+	for Object_Dir use "obj";
+	for Exec_Dir use ".";
+	for Main use ("main.adb");
+
+	package Builder is
+		for Executable ("main.adb") use "mapper";
+	end Builder;
+
+	package Compiler is
+		for Switches ("Ada") use ("-gnatVa", "-gnatwa", "-O2");
+	end Compiler;
+
+	package Binder is
+		for Switches ("Ada") use ("-shared");	
+	end Binder;
+end Mapper;

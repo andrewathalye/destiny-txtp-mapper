@@ -7,20 +7,21 @@ txtp-d1
 matches
 tracks
 
-tools-ada/mapper/mapper
-tools-ada/mapper/obj
+src/mapper/mapper
+src/mapper/obj
 
-tools-ada/cleaner/cleaner
-tools-ada/cleaner/obj
+src/cleaner/cleaner
+src/cleaner/obj
 
-tools-ada/search/search
-tools-ada/search/obj
+src/search/search
+src/search/obj
 
-tools-ada/find/find
-tools-ada/find/obj
+src/find/find
+src/find/obj
 
-tools-ada/clibs/ext_lib
-tools-ada/clibs/lib
-tools-ada/clibs/obj
+src/vgmstream-ada/ext_lib
+src/vgmstream-ada/lib
+src/vgmstream-ada/obj
 
-tools-ada/clibs/lib/*
+src/pulse-ada/lib
+src/pulse-ada/obj
