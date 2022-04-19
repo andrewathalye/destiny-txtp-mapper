@@ -49,10 +49,13 @@ Download the latest releases of these projects:
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
 
+(This should work on Linux using .NET Core, but I've yet to try it)
+
 https://github.com/nblockbuster/DestinyUnpackerCPP (download the RAR archive)
 In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
 
 I'm currently working on a Linux version of this, but there are a few bugs at the moment.
+(https://github.com/andrewathalye/destiny-unpacker-linux)
 
 https://github.com/bnnm/wwiser - download wwiser.pyz from releases
 

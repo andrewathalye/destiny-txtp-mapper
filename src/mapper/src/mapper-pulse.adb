@@ -40,9 +40,6 @@ package body Mapper.Pulse is
 		P : Pulse_Simple_Access;
 
 		Play_Error : Exception;
-
-
-		B : aliased Sample_Buffer (1 .. Sample_Buffer_Size * 2);
 	begin
 		loop
 			select
@@ -69,6 +66,9 @@ package body Mapper.Pulse is
 					L : constant Natural := VGMStream_Get_Samples (V);
 					I : Natural := 0;
 					T : Natural := 0;
+
+					-- Buffer to hold samples
+					B : aliased Sample_Buffer (1 .. Sample_Buffer_Size * Natural (V.all.channels));
 
 					-- Cycle is 1/5 less than the time that a sample should last for. This allows for I/O and other margin of error
 					-- to reduce the number of audible gaps. Gaps may still occur if PulseAudio is used instead of PipeWire or real-time
