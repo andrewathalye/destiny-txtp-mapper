@@ -44,11 +44,14 @@ To export the top 150 new banks by size for identification:
 `./tools/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
-In order to follow any of the steps in this document as written, you'll first need WSL x64 or 64-bit Linux
+In order to follow any of the steps in this document as written, you'll first need WSL x64 or 64-bit Linux.  
+You will also need .NET SDK 6.0 and Python >= 3.0   
 (These tools can be made to work on Windows using Windows-specific versions, however I have only tested them on Linux)
 
-TODO: I am also working on a shell script that automates the entire process.
+If you are just interested in music, visit https://github.com/andrewathalye/destiny-shadowkeep-music/ and read the instructions there.  
+That repository contains a script that will automatically perform the below manual steps.  
 
+# Manual Steps
 Download the latest releases of these projects:
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
@@ -62,15 +65,14 @@ You may need TKinter to launch this, even though the instructions only use the C
 
 --
 
-Run the following commands in command prompt once you have unpacked the files :
-`./DepotDownloader.exe -app 1085660 -depot 1085661 -manifest 4160053308690659072 -username [steam username] `
+Run the following commands in a shell once you have unpacked the files :
+`dotnet DepotDownloader.dll -app 1085660 -depot 1085661 -manifest 4160053308690659072 -username [steam username] `
 
-The "packages folder" will be located somewhere within the DepotDownloader folder, alongside a Destiny 2.exe file -- DO NOT try to launch the game this way
+The "packages folder" will be located somewhere within the DepotDownloader folder, alongside a Destiny 2.exe file  
 To create the BNK and WEM files:
 `./destinyunpacker prebl packages shadowkeep`  
 You may see Oodle errors - these can be safely ignored.
 
-Run the following commands in WSL x64 shell or Linux:
 Use wwiser to convert the bnk files to txtps:
 `python3 wwiser.pyz -g shadowkeep/bnk/*.bnk`
 
