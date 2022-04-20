@@ -10,7 +10,6 @@ procedure Search is
 
 begin
 	Put_Line (Standard_Error, Command_Name & ": Search txtp directory for files and output with length");
-	Init_Search_Tasks; -- Setup tasks
 	Start_Search (S, "txtp/", "*.txtp");	
 	while More_Entries (S) loop
 		Get_Next_Entry (S, D);	

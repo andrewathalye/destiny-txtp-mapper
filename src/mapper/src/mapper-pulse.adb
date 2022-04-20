@@ -17,20 +17,6 @@ package body Mapper.Pulse is
 	-- Constants for task (avoid duplication)
 	App_Name : constant chars_ptr := New_String ("txtp-mapper"); -- Only needed once, so will not be freed
 
-	protected body Play_Task_Exit is	
-		procedure Set is
-		begin
-			Local := True;
-		end Set;
-
-		procedure Unset is
-		begin
-			Local := False;
-		end Unset;
-
-		function Get return Boolean is (Local);
-	end Play_Task_Exit;	
-
 	task body Play_Task is
 		V : VGMStream_Access;
 
@@ -59,7 +45,6 @@ package body Mapper.Pulse is
 					end if;
 		
 					VGMStream_Apply_Config (V, VGMStream_CLI_Config'Access);
-					Play_Task_Exit.Unset; -- Make sure will not exit early if reused.
 				end Play;
 
 				declare
@@ -96,9 +81,14 @@ package body Mapper.Pulse is
 
 						delay until Desired_Time; -- Minimise stress on CPU / PulseAudio
 						Desired_Time := Desired_Time + Cycle;
-						if Play_Task_Exit.Get then -- Exit if we've reached the end or been asked to exit by another thread
+
+						-- If Stop entry has been called, exit loop, otherwise keep going
+						select
+							accept Stop;
 							exit;
-						end if;
+						else
+							null;
+						end select;
 
 						I := I + Sample_Buffer_Size;
 					end loop;

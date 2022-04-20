@@ -7,8 +7,6 @@ with Ada.Directories; use Ada.Directories;
 with VGMStream; use VGMStream;
 
 package body VGMStream.Extra is
-	-- Internal Constants
-
 	-- WAV Header type
 	type Wav_String is new String (1 .. 4);
 	type Wav_Header is record

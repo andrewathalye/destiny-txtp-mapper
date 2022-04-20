@@ -23,8 +23,8 @@
 . 0249-1f60-1591-event_[1246133352=1106066065] Shell of What Was (Last Wish) (High Action)
 . 0249-1f60-1591-event_[1246133352=1139621371] Shell of What Was (High Action)
 . 0249-1f60-1591-event_[1246133352=1139621370] Shell of What Was (Action)
-. 0249-1f60-1591-event_[1246133352=1156398955] Watchtower (Last Wish) (Action)
-. 0249-1f60-1591-event_[1246133352=1122843663] Watchtower (Last Wish) (High Action)
+. 0249-1f60-1591-event_[1246133352=1156398955] Of Starlight and the Dark Alt (Action)
+. 0249-1f60-1591-event_[1246133352=1122843663] Keep of Voices Cursed (Action)
 . 0249-1f60-1591-event_[1246133352=1139621372] Morgeth Var. 1
 . 0249-1f60-1591-event_[1246133352=1139621373] Morgeth Var. 2
 

@@ -34,10 +34,10 @@ package body Mapper.Identify is
 				when 'n' =>
 					exit;
 				when others =>
-					Play_Task_Exit.Set;
+					PT.Stop;
 			end case;
 		end loop;
 
-		Play_Task_Exit.Set;
+		PT.Stop;
 	end Identify_Entry;
 end Mapper.Identify;

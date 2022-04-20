@@ -32,10 +32,10 @@ package body Mapper.Confirm is
 						exit;
 					end;
 				when others =>
-					Play_Task_Exit.Set;
+					PT.Stop;
 			end case;
 		end loop;
 
-		Play_Task_Exit.Set; -- Exit task if still going
+		PT.Stop; -- Exit task if still going
 	end Confirm_Entry;
 end Mapper.Confirm;

@@ -1,10 +1,11 @@
-# shadowkeep-txtp-mappings
+# destiny-txtp-mapper
 TXTP File Mapper and Exporter
 
-As a result of a recent incident involving mass takedowns of Destiny music, I've made a small tool to help you extract music from your own copy of the game.
-This repository contains mappings for Destiny 2 Shadowkeep TXTP names, as well as a tool that allows you to export tracks to WAV format and identify them.
+This tool allows you to extract music from your own copy of the games Destiny and Destiny 2.  
+The repository contains mappings for Destiny 2 Shadowkeep TXTP names and Destiny 1 Rise of Iron TXTP names, as well as a tool to export tracks to WAV,
+identify tracks, and confirm them.
 
-Please note: In order to comply with the Bungie EULA, you may only redistribute Destiny music files with their written permission. Therefore, please use this tool for your listening pleasure, and do not share the raw output files.
+>	In order to comply with the Bungie EULA, you may only redistribute Destiny music files with their written permission. Therefore, please use this tool for your listening pleasure, and do not share the raw output files.
 
 # How to use the mappings in this folder?
 Follow the steps in the section "How can I get the necessary files?"
@@ -43,21 +44,21 @@ To export the top 150 new banks by size for identification:
 `./tools/extract_new.sh matches/matches_new.txt >> tracks/tracks_unidentified.txt`
 
 # How can I get the necessary files?
-In order to follow any of the steps in this document as written, you'll first need WSL x64 (or Linux and Wine) with GNAT installed
+In order to follow any of the steps in this document as written, you'll first need WSL x64 or 64-bit Linux
+(These tools can be made to work on Windows using Windows-specific versions, however I have only tested them on Linux)
+
+TODO: I am also working on a shell script that automates the entire process.
 
 Download the latest releases of these projects:
 https://github.com/SteamRE/DepotDownloader
 Use this to download the last release of Destiny 2 before 10 Nov 2020.
 
-(This should work on Linux using .NET Core, but I've yet to try it)
-
-https://github.com/nblockbuster/DestinyUnpackerCPP (download the RAR archive)
-In case it is necessary when you read this, you can find the "oodle dll" in the Destiny 2 Shadowkeep bin folder as oo2_.....dll.
-
-I'm currently working on a Linux version of this, but there are a few bugs at the moment.
-(https://github.com/andrewathalye/destiny-unpacker-linux)
+https://github.com/andrewathalye/destiny-unpacker-linux  
+(Windows-specific version is https://github.com/nblockbuster/DestinyUnpackerCPP with different syntax)  
+Use this to unpack the packages folder in the depot you downloaded. See README.md for more information.
 
 https://github.com/bnnm/wwiser - download wwiser.pyz from releases
+You may need TKinter to launch this, even though the instructions only use the CLI.
 
 --
 
@@ -66,22 +67,23 @@ Run the following commands in command prompt once you have unpacked the files :
 
 The "packages folder" will be located somewhere within the DepotDownloader folder, alongside a Destiny 2.exe file -- DO NOT try to launch the game this way
 To create the BNK and WEM files:
-`./DestinyUnpackerCPP.exe -fp [packages folder] -o shadowkeep`
-
---
-
-PulseAudio has a Windows version, so you may find luck running this on Windows directly, however it has only been tested on Linux.
+`./destinyunpacker prebl packages shadowkeep`  
+You may see Oodle errors - these can be safely ignored.
 
 Run the following commands in WSL x64 shell or Linux:
 Use wwiser to convert the bnk files to txtps:
-`py wwiser.pyz -g shadowkeep/bnk/*.bnk`
+`python3 wwiser.pyz -g shadowkeep/bnk/*.bnk`
 
 `mv shadowkeep/wem shadowkeep/bnk/txtp`
 `mv shadowkeep/bnk/txtp txtp-d2sk`
 
-(Destiny 1 music extraction is beyond the scope of this README)
+(Destiny 1 music extraction is beyond the scope of this README)  
 
-Please see the below section if you need the tools in this repository (most people will, unless you plan to use foobar2000 or another player for the txtp files and not rename them).
+In order to acquire the actual tools, please download the latest release or, alternatively,
+see How to Complie the Necessary Tools below.  
+
+If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools/switch_d2sk.sh`  
+(Otherwise, if you want to use Destiny 1 mappings and have extracted your own files, use `./tools/switch_d1.sh`)  
 
 # How to Compile the Necessary Tools?
 Download VGMStream and put a dynamic-library build of it in src/vgmstream-ada/ext_lib
@@ -96,6 +98,3 @@ Please follow the below commands (in order) to compile all necessary tools:
 `gprbuild -Pmapper/mapper`
 `gprbuild -Psearch/search`
 `gprbuild -Pfind/find`
-
-If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools/switch_d2sk.sh`
-Otherwise, if you want to use Destiny 1 mappings, use `./tools/switch_d1.sh`
