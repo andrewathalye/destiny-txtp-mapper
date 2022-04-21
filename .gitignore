@@ -20,6 +20,7 @@ src/find/find
 src/find/obj
 
 src/vgmstream-ada/ext_lib
+src/vgmstream-ada/ext_src
 src/vgmstream-ada/lib
 src/vgmstream-ada/obj
 

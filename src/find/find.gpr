@@ -5,7 +5,7 @@ project Find is
 	for Exec_Dir use ".";
 
 	package Compiler is
-		for Switches ("Ada") use ("-gnatVa", "-gnatwa", "-O2");
+		for Switches ("Ada") use ("-gnatVa", "-gnatwa", "-O2", "-march=native");
 	end Compiler;
 
 	package Binder is

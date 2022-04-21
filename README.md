@@ -51,6 +51,8 @@ You will also need .NET SDK 6.0 and Python >= 3.0
 If you are just interested in music, visit https://github.com/andrewathalye/destiny-shadowkeep-music/ and read the instructions there.  
 That repository contains a script that will automatically perform the below manual steps.  
 
+Read on if you would like to use a different version than Destiny 2 Shadowkeep (not particularly straightforward, but supported in theory).   
+
 # Manual Steps
 Download the latest releases of these projects:
 https://github.com/SteamRE/DepotDownloader
@@ -88,10 +90,8 @@ If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools/switch_d2sk.s
 (Otherwise, if you want to use Destiny 1 mappings and have extracted your own files, use `./tools/switch_d1.sh`)  
 
 # How to Compile the Necessary Tools?
-Download VGMStream and put a dynamic-library build of it in src/vgmstream-ada/ext_lib
-Only Vorbis support is needed (everything else in options can be turned off)
-`ninja libvgmstream.so` or a similar command should build the library once `ccmake .. - G Ninja` has been run from the build directory
-https://github.com/vgmstream/vgmstream
+Run `./tools/build_vgmstream.sh` in order to build and install libvgmstream.so to the correct (local) directory.  
+Please note that libvorbis should be installed.
 
 In order to compile the tools here, you'll need GNAT or another Ada 2012 compiler, as well as gprbuild.
 Please follow the below commands (in order) to compile all necessary tools:
@@ -100,3 +100,6 @@ Please follow the below commands (in order) to compile all necessary tools:
 `gprbuild -Pmapper/mapper`
 `gprbuild -Psearch/search`
 `gprbuild -Pfind/find`
+
+# Credits
+Thank you to https://github.com/vgmstream/vgmstream, without which it would have been impossible to make this program.
