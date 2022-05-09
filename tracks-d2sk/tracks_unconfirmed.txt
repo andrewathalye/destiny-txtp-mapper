@@ -267,3 +267,5 @@
 ! 01e8-0675-0651-event_[1246133352=1156398949](1433286457=none) Planetary Core (Action)
 ! 01e8-0675-0651-event_[1246133352=1156398956](1433286457=none)_{s} The Pyramidion (Ambient)
 
+! 06df-1edd-1009-event_[1246133352=1122843652] Unworthy UNK FORM
+! 03ff-173b-0394-event_[2211399158=2054095106] Unworthy UNK FORM 2

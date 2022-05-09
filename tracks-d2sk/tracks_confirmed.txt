@@ -59,3 +59,6 @@
 . 03ae-126c-0338-event_[1246133352=1139621369] Gambit (Warden of Nothing)
 . 03ae-126c-0338-event_[1246133352=1156398948] Siege Dancers (Warden of Nothing)
 . 01fa-082b-0913-event_[207938986=680256650]_[1164767985=1156398948] The Gauntlet (Action)
+
+. 01fa-0235-0735-event_[1246133352=1139621362](1433286457=none)_{s}=(3176498016=3163453698) Savathun's Song (High Action)
+. 0215-11a8-0220-event_[2211399158=184709120] Looped (Action)
