@@ -1,0 +1,3 @@
+[submodule "src/vgmstream-ada"]
+	path = src/vgmstream-ada
+	url = https://www.github.com/andrewathalye/vgmstream-ada.git

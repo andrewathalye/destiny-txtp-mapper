@@ -62,3 +62,9 @@
 
 . 01fa-0235-0735-event_[1246133352=1139621362](1433286457=none)_{s}=(3176498016=3163453698) Savathun's Song (High Action)
 . 0215-11a8-0220-event_[2211399158=184709120] Looped (Action)
+
+. 03e8-0a1b-0254-event_[2211399158=2054095106] The Rider (High Action) (Destination Version)
+. 03e8-00e8-0243-event_[1246133352=1156398949] The Rider (High Action) (Baron Version)
+
+. 03e8-0a18-0279-event_[2211399158=2054095106] The Rifleman (High Action) (Destination Version)
+. 03e8-010e-0360-event_[1246133352=1156398955]_{r} The Rifleman (High Action) (Baron Version)

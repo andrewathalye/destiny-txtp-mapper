@@ -90,6 +90,7 @@ If you intend to use Destiny 2 Shadowkeep mappings, enter `./tools/switch_d2sk.s
 (Otherwise, if you want to use Destiny 1 mappings and have extracted your own files, use `./tools/switch_d1.sh`)  
 
 # How to Compile the Necessary Tools?
+First go to `./src/vgmstream-ada/`
 Run `./tools/build_vgmstream.sh` in order to build and install libvgmstream.so to the correct (local) directory.  
 Please note that libvorbis should be installed.
 
